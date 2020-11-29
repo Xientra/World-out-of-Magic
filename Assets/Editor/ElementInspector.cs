@@ -16,6 +16,9 @@ public class ElementInspector : Editor
 		// creates image input
 		e.image = (Texture2D)EditorGUILayout.ObjectField("Image", e.image, typeof(Texture2D), false);
 
+		// create category text input
+		e.category = EditorGUILayout.TextField("Category:", e.category);
+
 		// create description text box
 		GUILayout.Label("Description:");
 		e.description = GUILayout.TextArea(e.description, new[] { GUILayout.MaxHeight(48), GUILayout.ExpandHeight(true) });

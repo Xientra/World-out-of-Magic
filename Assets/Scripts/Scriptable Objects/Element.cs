@@ -7,6 +7,8 @@ public class Element : ScriptableObject
 
 	public Texture2D image;
 
+	public string category = "Core";
+
 	[TextArea(1, 10)]
 	public string description = "This is a new Element";
 }
