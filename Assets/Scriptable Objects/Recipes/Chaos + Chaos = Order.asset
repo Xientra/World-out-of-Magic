@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8caa43a728614504095aacd8cd56771d, type: 3}
-  m_Name: Magic to Chaos
+  m_Name: Chaos + Chaos = Order
   m_EditorClassIdentifier: 
-  ingredient1: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
-  ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
-  result: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
+  ingredient1: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
+  ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
+  result: {fileID: 11400000, guid: d3d0e4f3ac043624a965f33ec9ab4def, type: 2}

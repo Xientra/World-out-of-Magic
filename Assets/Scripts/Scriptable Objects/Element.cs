@@ -5,6 +5,8 @@ public class Element : ScriptableObject
 {
 	//public string name; // allready exists
 
+	public int importance = 0;
+
 	public Texture2D image;
 
 	public string category = "Core";
