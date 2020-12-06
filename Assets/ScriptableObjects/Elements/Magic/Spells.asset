@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: '[Mana]'
+  m_Name: Spells
   m_EditorClassIdentifier: 
   importance: 0
+  texture: {fileID: 0}
   image: {fileID: 0}
-  image22: {fileID: 0}
   category: Core
-  description: 'Every thing in existance has it. Some call it life energy some call
-    it ki but the most commenly heard name for it is mana because that is how the
-    wizards of the humans call it.
+  description: 'The Wirzards of the humans were the ones that brought logic into
+    magic and with that Spells were created.
 
 
-    [TODO: Who uses it how?]
+    A spell is a carfull crafted to
+    manipulate magic into a desired effect. It does not need a lot of mana but it
+    requires immense knowledge and precision.
 
-    Wizards use
-    it...'
+'

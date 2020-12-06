@@ -10,10 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Faeries
+  m_Name: Mutants
   m_EditorClassIdentifier: 
   importance: 0
   texture: {fileID: 0}
   image: {fileID: 0}
   category: Core
-  description: This is a new Element
+  description: 'Some humans innately posses more magic in them than others.
+
+    This
+    can just be how they are born or they came in contract with something that changed
+    them in that way.
+
+    Mutans are very rare and while having a lot of magic can
+    be very powerfull it is also very agonizing and many mutans eventualy become
+    monsters and are hunted.
+
+    Due to this mutans are often feared and disliked.'

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Monster
   m_EditorClassIdentifier: 
   importance: 0
+  texture: {fileID: 0}
   image: {fileID: 0}
-  image22: {fileID: 0}
   category: Creature
   description: 'Monsters are different from animals in the way, that they posses
     magic in them.

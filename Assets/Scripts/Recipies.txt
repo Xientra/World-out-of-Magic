@@ -4,7 +4,6 @@
 magic + magic = chaos
 
 chaos + chaos = order
-
 order + order = order
 
 magic + chaos = life
@@ -40,5 +39,7 @@ nature + magic = faeries
 === Human ===
 
 Life + Order = Humans
+
+Humans + Humans = Countries? Kingdoms?
 
 Humans + Animals = Demihumans

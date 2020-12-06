@@ -37,17 +37,21 @@ public class Combiner : MonoBehaviour
 	{
 		if ((ElementSelecter)sender == selecter1)
 		{
-			if (ingredientDisplay1.Element != e)
+			if (ingredientDisplay1.Element == null)
 				ingredientDisplay1.Element = e;
-			else
+			else if (ingredientDisplay2.Element == null)
 				ingredientDisplay2.Element = e;
+			else
+				ingredientDisplay1.Element = e;
 		}
 		else
 		{
-			if (ingredientDisplay2.Element != e)
+			if (ingredientDisplay2.Element == null)
 				ingredientDisplay2.Element = e;
-			else
+			else if (ingredientDisplay1.Element == null)
 				ingredientDisplay1.Element = e;
+			else
+				ingredientDisplay2.Element = e;
 		}
 	}
 

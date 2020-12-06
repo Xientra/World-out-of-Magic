@@ -15,7 +15,7 @@ public class GameData : MonoBehaviour
 
 	public Recipe[] recipes;
 
-	public Element[] elements;
+	public Element[] allElements;
 
 	[Header("Progress:")]
 
@@ -25,18 +25,9 @@ public class GameData : MonoBehaviour
 
 	public event EventHandler<Element> ElementDiscovered;
 
-	private void Awake()
-	{
-		singelton = this;
-
-		/*
-		if (unlockedElements == null)
-			unlockedElements = new List<Element>();
-
-		unlockedElements.Add(originElement);
-		*/
-	}
-
+	public static readonly string saveFileFolder = "Data";
+	public static readonly string saveFileName = "SaveData";
+	public static readonly string saveFileExtension = ".woom";
 
 	public List<Element> GetCategory(string category)
 	{
@@ -77,6 +68,8 @@ public class GameData : MonoBehaviour
 		// update ui
 		OnElementDiscovered(e);
 
+		Save();
+
 		// some animation
 		Debug.Log("Created " + e);
 	}
@@ -88,33 +81,49 @@ public class GameData : MonoBehaviour
 
 	// -========== Save and Load ==========- //
 
-	private void Start()
+	private void Awake()
 	{
-		//Load();
+		singelton = this;
+
+		Load();
 	}
 
 	private void OnDestroy()
 	{
-		//Save();
+		Save();
 	}
 
 
 	private void Save()
 	{
+		//string path = Application.dataPath + Path.DirectorySeparatorChar + saveFileFolder + Path.DirectorySeparatorChar + saveFileName + saveFileExtension;
+		//string path = Application.dataPath + "/" + saveFileFolder + "/" + saveFileName + saveFileExtension;
+		string path = Application.dataPath + "/" + saveFileName + saveFileExtension;
+
+
+		// get all IDs from the unlocked elements
+		int i = 0;
+		string[] toSaveIDs = new string[unlockedElements.Count];
+		foreach (Element e in unlockedElements)
+		{
+			if (e != null)
+				toSaveIDs[i] = e.ID;
+			i++;
+		}
+
+		SaveData charData = new SaveData(toSaveIDs);
+
 		BinaryFormatter formatter = new BinaryFormatter();
-		string path = Application.persistentDataPath + "\\WorldOutOfMagicSaveData.woom";
-
 		FileStream stream = new FileStream(path, FileMode.Create);
-
-		SaveData charData = new SaveData(unlockedElements);
-
 		formatter.Serialize(stream, charData);
 		stream.Close();
 	}
 
 	private void Load()
 	{
-		string path = Application.persistentDataPath + "\\WorldOutOfMagicSaveData.woom";
+		//string path = Application.dataPath + Path.DirectorySeparatorChar + saveFileFolder + Path.DirectorySeparatorChar + saveFileName + saveFileExtension;
+		//string path = Application.dataPath + "/" + saveFileFolder + "/" + saveFileName + saveFileExtension;
+		string path = Application.dataPath + "/" + saveFileName + saveFileExtension;
 
 		if (File.Exists(path))
 		{
@@ -125,11 +134,17 @@ public class GameData : MonoBehaviour
 
 			stream.Close();
 
-			unlockedElements = data.unlockedElements;
+
+			string[] loadedIDs = data.unlockedElementIDs;
+
+			unlockedElements.Clear();
+
+			for (int i = 0; i < loadedIDs.Length; i++)
+				unlockedElements.Add(Array.FindLast<Element>(allElements, e => e.ID == loadedIDs[i]));
 		}
 		else
 		{
-			Debug.LogError("Error: Save file not found in " + path);
+			Debug.LogWarning("No Save file found in: " + path);
 		}
 	}
 }
@@ -137,9 +152,9 @@ public class GameData : MonoBehaviour
 [System.Serializable]
 public class SaveData
 {
-	public List<Element> unlockedElements;
-	public SaveData(List<Element> unlockedElements)
+	public string[] unlockedElementIDs;
+	public SaveData(string[] unlockedElementIDs)
 	{
-		this.unlockedElements = unlockedElements;
+		this.unlockedElementIDs = unlockedElementIDs;
 	}
 }
