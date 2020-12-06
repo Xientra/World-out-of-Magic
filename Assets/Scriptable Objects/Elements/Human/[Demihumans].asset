@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Chaos
+  m_Name: '[Demihumans]'
   m_EditorClassIdentifier: 
-  image: {fileID: 2800000, guid: 651bc1ad151d24c4bbce6525cb7322ce, type: 3}
-  description: Chaos. It is not what shaped and created the world but what it is
-    what forced it to develop itself.
+  importance: 0
+  image: {fileID: 0}
+  image22: {fileID: 0}
+  category: Human
+  description: This is a new Element

@@ -9,10 +9,15 @@ public class GameData : MonoBehaviour
 {
 	public static GameData singelton;
 
+	[Header("General:")]
+
 	public Element originElement;
 
-
 	public Recipe[] recipes;
+
+	public Element[] elements;
+
+	[Header("Progress:")]
 
 	[SerializeField]
 	private List<Element> unlockedElements;
@@ -50,14 +55,18 @@ public class GameData : MonoBehaviour
 		for (int i = 0; i < recipes.Length; i++)
 		{
 			Recipe r = recipes[i];
-			if (r.ingredient1 == e1 && r.ingredient2 == e2)
+			if (r != null)
 			{
-				if (!unlockedElements.Contains(r.result))
-					DiscoverElement(r.result);
-				return r.result;
+				if (r.ingredient1 == e1 && r.ingredient2 == e2 || r.ingredient1 == e2 && r.ingredient2 == e1)
+				{
+					if (!unlockedElements.Contains(r.result))
+						DiscoverElement(r.result);
+					return r.result;
+				}
 			}
 		}
 
+		Debug.Log("No Combination");
 		return null;
 	}
 

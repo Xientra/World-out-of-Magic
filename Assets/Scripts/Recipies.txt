@@ -1,0 +1,44 @@
+
+=== Core ===
+
+magic + magic = chaos
+
+chaos + chaos = order
+
+order + order = order
+
+magic + chaos = life
+
+chaos + life = nature
+
+
+=== Magic ===
+
+magic + order = spells
+
+spells + huams = magicians
+
+humans + magic = mutants
+
+Mutants
+Mage
+Magician
+Wizard
+Sorcorer
+Witch
+
+mana
+
+=== Creatures ===
+
+life + nature = animals
+
+life + magic = monster
+
+nature + magic = faeries
+
+=== Human ===
+
+Life + Order = Humans
+
+Humans + Animals = Demihumans

@@ -53,6 +53,7 @@ public class ElementSelecter : MonoBehaviour
 	{
 		ElementDisplay ed = Instantiate(sampeElement, content.transform);
 		ed.Element = e;
+		ed.name = "Display: [" + ed.name + "]";
 		ed.gameObject.SetActive(true);
 	}
 

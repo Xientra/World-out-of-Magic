@@ -11,4 +11,13 @@ public class Recipe : ScriptableObject
 	[Header("Result:")]
 
 	public Element result;
+
+	private void OnValidate()
+	{
+		string i1 = ingredient1 != null ? ingredient1.name : "[i1]";
+		string i2 = ingredient2 != null ? ingredient2.name : "[i2]";
+		string r = result != null ? result.name : "[result]";
+
+		name = i1 + " + " + i2 + " = " + r;
+	}
 }

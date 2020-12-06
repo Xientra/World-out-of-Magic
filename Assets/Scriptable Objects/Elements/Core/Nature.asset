@@ -10,7 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Magic
+  m_Name: Nature
   m_EditorClassIdentifier: 
-  image: {fileID: 2800000, guid: 8481a70a9d307354ea19d40e006c4415, type: 3}
-  description: This is magic, the origin of this world.
+  importance: 0
+  image: {fileID: 0}
+  image22: {fileID: 21300000, guid: a9f21af979fbff54a9b8672328bd3d79, type: 3}
+  category: Core
+  description: This is a new Element

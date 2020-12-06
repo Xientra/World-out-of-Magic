@@ -16,6 +16,6 @@ public class ElementPreview : ObjectPreview
         Element e = (Element)target;
 
         //GUI.Label(r, target.name + " is being previewed");
-        GUI.Label(r, e.image);
+        GUI.Label(r, e.texture);
     }
 }

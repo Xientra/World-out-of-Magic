@@ -22,7 +22,11 @@ public class ElementDisplay : MonoBehaviour
 	public TMP_Text nameLabel = null;
 	public TMP_Text categoryLabel = null;
 	public TMP_Text descriptionLabel = null;
-	public RawImage image = null;
+	[Space(5)]
+	public RawImage rawImage = null;
+	public Image image = null;
+	[Space(5)]
+	public TMP_Text noImgLabel = null;
 
 	public void UpdateUI()
 	{
@@ -41,10 +45,21 @@ public class ElementDisplay : MonoBehaviour
 		if (descriptionLabel != null)
 			descriptionLabel.text = element.description;
 
-		if (image != null)
+		if (element.image != null)
 		{
-			image.enabled = true;
-			image.texture = element.image;
+			if (image != null)
+			{
+				image.enabled = true;
+				image.sprite = element.image;
+			}
+
+			if (noImgLabel != null)
+				noImgLabel.gameObject.SetActive(false);
+		}
+		else if (noImgLabel != null)
+		{
+			noImgLabel.gameObject.SetActive(true);
+			noImgLabel.text = element.name;
 		}
 	}
 
@@ -65,10 +80,16 @@ public class ElementDisplay : MonoBehaviour
 		if (descriptionLabel != null)
 			descriptionLabel.text = "";
 
+
 		if (image != null)
 		{
 			image.enabled = false;
-			image.texture = null;
+			image.sprite = null;
+		}
+		if (noImgLabel != null)
+		{
+			noImgLabel.text = "";
+			noImgLabel.gameObject.SetActive(false);
 		}
 	}
 
