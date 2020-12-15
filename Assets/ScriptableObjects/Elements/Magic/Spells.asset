@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Spells
   m_EditorClassIdentifier: 
   importance: 0
-  texture: {fileID: 0}
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 05b97546bf9e61649aa140149eeef8b7, type: 3}
   category: Core
   description: 'The Wirzards of the humans were the ones that brought logic into
     magic and with that Spells were created.
@@ -25,3 +24,6 @@ MonoBehaviour:
     requires immense knowledge and precision.
 
 '
+  id: 12e5d6d49e6d66840af63d7695e89b27
+  hasID: 1
+  id_inspection: 12e5d6d49e6d66840af63d7695e89b27

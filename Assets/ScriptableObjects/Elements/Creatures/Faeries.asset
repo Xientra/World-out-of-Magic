@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Faeries
   m_EditorClassIdentifier: 
   importance: 0
-  texture: {fileID: 0}
   image: {fileID: 0}
   category: Creature
   description: Magic has allways been a big part of nature...
+  id: 4966def68def21944a49983414efeac8
+  hasID: 1
+  id_inspection: 4966def68def21944a49983414efeac8

@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Life
   m_EditorClassIdentifier: 
   importance: 0
-  texture: {fileID: 0}
   image: {fileID: 21300000, guid: 4797749898bddab4ab154a818eb1d048, type: 3}
   category: Core
   description: This is a new Element
+  id: ba381b218d2815c4285c7a0c1338c76c
+  hasID: 1
+  id_inspection: ba381b218d2815c4285c7a0c1338c76c

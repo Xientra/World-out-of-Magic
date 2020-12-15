@@ -85,7 +85,11 @@ public class GameData : MonoBehaviour
 	{
 		singelton = this;
 
-		Load();
+		bool loadSuccess = Load();
+		if (loadSuccess == false)
+			LoadNoSave();
+
+		OnElementDiscovered(null);
 	}
 
 	private void OnDestroy()
@@ -93,6 +97,12 @@ public class GameData : MonoBehaviour
 		Save();
 	}
 
+	private void LoadNoSave()
+	{
+		unlockedElements.Clear();
+		unlockedElements.Add(originElement);
+		OnElementDiscovered(originElement);
+	}
 
 	private void Save()
 	{
@@ -104,14 +114,18 @@ public class GameData : MonoBehaviour
 		// get all IDs from the unlocked elements
 		int i = 0;
 		string[] toSaveIDs = new string[unlockedElements.Count];
+		string[] toSaveNamess = new string[unlockedElements.Count];
 		foreach (Element e in unlockedElements)
 		{
 			if (e != null)
+			{
+				toSaveNamess[i] = e.name;
 				toSaveIDs[i] = e.ID;
+			}
 			i++;
 		}
 
-		SaveData charData = new SaveData(toSaveIDs);
+		SaveData charData = new SaveData(toSaveIDs, toSaveNamess);
 
 		BinaryFormatter formatter = new BinaryFormatter();
 		FileStream stream = new FileStream(path, FileMode.Create);
@@ -119,7 +133,7 @@ public class GameData : MonoBehaviour
 		stream.Close();
 	}
 
-	private void Load()
+	private bool Load()
 	{
 		//string path = Application.dataPath + Path.DirectorySeparatorChar + saveFileFolder + Path.DirectorySeparatorChar + saveFileName + saveFileExtension;
 		//string path = Application.dataPath + "/" + saveFileFolder + "/" + saveFileName + saveFileExtension;
@@ -135,17 +149,22 @@ public class GameData : MonoBehaviour
 			stream.Close();
 
 
-			string[] loadedIDs = data.unlockedElementIDs;
-
 			unlockedElements.Clear();
 
-			for (int i = 0; i < loadedIDs.Length; i++)
-				unlockedElements.Add(Array.FindLast<Element>(allElements, e => e.ID == loadedIDs[i]));
+			for (int i = 0; i < data.unlockedElementIDs.Length; i++)
+			{
+				Element e = Array.FindLast<Element>(allElements, el => el.ID == data.unlockedElementIDs[i]);
+				unlockedElements.Add(e);
+				Debug.Log("Load: " + data.unlockedElementNames[i] + " with ID: " + data.unlockedElementIDs[i]);
+			}
 		}
 		else
 		{
-			Debug.LogWarning("No Save file found in: " + path);
+			Debug.LogWarning("No Save file found in: " + path + "\nLoading default start.");
+			return false;
 		}
+
+		return true;
 	}
 }
 
@@ -153,8 +172,10 @@ public class GameData : MonoBehaviour
 public class SaveData
 {
 	public string[] unlockedElementIDs;
-	public SaveData(string[] unlockedElementIDs)
+	public string[] unlockedElementNames;
+	public SaveData(string[] unlockedElementIDs, string[] unlockedElementNames)
 	{
 		this.unlockedElementIDs = unlockedElementIDs;
+		this.unlockedElementNames = unlockedElementNames;
 	}
 }

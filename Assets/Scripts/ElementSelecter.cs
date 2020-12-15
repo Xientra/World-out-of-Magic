@@ -18,8 +18,7 @@ public class ElementSelecter : MonoBehaviour
 
 	void Start()
 	{
-		ClearContent();
-		CreateElementDisplays();
+		UpdateUI();
 
 		GameData.singelton.ElementDiscovered += GameData_ElementDiscovered;
 	}
@@ -29,9 +28,19 @@ public class ElementSelecter : MonoBehaviour
 		GameData.singelton.ElementDiscovered -= GameData_ElementDiscovered;
 	}
 
+	private void UpdateUI()
+	{
+		ClearContent();
+		CreateElementDisplays();
+	}
+
 	private void GameData_ElementDiscovered(object sender, Element e)
 	{
-		CreateElementDisplay(e);
+		if (e != null)
+			CreateElementDisplay(e);
+		else
+			UpdateUI();
+
 	}
 
 	private void ClearContent()
@@ -46,14 +55,15 @@ public class ElementSelecter : MonoBehaviour
 		List<Element> uElements = GameData.singelton.UnlockedElements;
 
 		foreach (Element e in uElements)
-			CreateElementDisplay(e);
+			if (e != null)
+				CreateElementDisplay(e);
 	}
 
 	private void CreateElementDisplay(Element e)
 	{
-		ElementDisplay ed = Instantiate(sampeElement, content.transform);
+		ElementDisplay ed = Instantiate(sampeElement.gameObject, content.transform).GetComponent<ElementDisplay>();
 		ed.Element = e;
-		ed.name = "Display: [" + ed.name + "]";
+		ed.name = "Display: [" + ed.Element.name + "]";
 		ed.gameObject.SetActive(true);
 	}
 

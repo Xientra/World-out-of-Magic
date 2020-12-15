@@ -9,7 +9,7 @@ public class Element : ScriptableObject
 
 	public int importance = 0;
 
-	public Texture2D texture;
+	//public Texture2D texture;
 	public Sprite image;
 
 	public string category = "Core";
@@ -17,17 +17,31 @@ public class Element : ScriptableObject
 	[TextArea(1, 20)]
 	public string description = "This is a new Element";
 
-	public string ID { get; private set; }
+	[HideInInspector]
+	[SerializeField]
+	private string id;
+	public string ID { get => id; }
+	[HideInInspector]
+	[SerializeField]
+	private bool hasID = false;
+
+
 
 #if UNITY_EDITOR
+	public string id_inspection;
+
 	private void OnValidate()
 	{
+		id_inspection = id;
+
 		// creates unique id if there is not one allready
-		if (string.IsNullOrEmpty(ID))
-			ID = GUID.Generate().ToString();
+		if (string.IsNullOrWhiteSpace(id) || string.IsNullOrEmpty(id))
+		{
+			id = GUID.Generate().ToString();
+			hasID = true;
+		}
 
 		UnityEditor.EditorUtility.SetDirty(this);
 	}
 #endif
-
 }

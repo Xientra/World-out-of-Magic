@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Humans
   m_EditorClassIdentifier: 
   importance: 1000
-  texture: {fileID: 0}
   image: {fileID: 21300000, guid: f5513b30afbbde045b817e459a43b2dc, type: 3}
   category: Human
   description: 'In contrast to animals or mosnters the humans strength comes from
@@ -23,3 +22,6 @@ MonoBehaviour:
     forming villages, cities, kingdoms and even countries.
 
 '
+  id: edb7c7a8b65c5d344921eef43132a14e
+  hasID: 1
+  id_inspection: edb7c7a8b65c5d344921eef43132a14e

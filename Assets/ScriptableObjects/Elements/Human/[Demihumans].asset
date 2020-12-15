@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: '[Demihumans]'
   m_EditorClassIdentifier: 
   importance: 0
-  texture: {fileID: 0}
   image: {fileID: 0}
   category: Human
   description: This is a new Element
+  id: 38d6557bd825df44d902b2c8421b493b
+  hasID: 1
+  id_inspection: 38d6557bd825df44d902b2c8421b493b

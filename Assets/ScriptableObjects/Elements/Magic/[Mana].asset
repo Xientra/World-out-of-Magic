@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: '[Mana]'
   m_EditorClassIdentifier: 
   importance: 0
-  texture: {fileID: 0}
   image: {fileID: 0}
   category: Core
   description: 'Every thing in existance has it. Some call it life energy some call
@@ -25,3 +24,6 @@ MonoBehaviour:
 
     Wizards use
     it...'
+  id: 7f3468f64eca48f41be90c8ee7724dd5
+  hasID: 1
+  id_inspection: 7f3468f64eca48f41be90c8ee7724dd5
