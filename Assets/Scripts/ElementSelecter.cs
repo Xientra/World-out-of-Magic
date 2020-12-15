@@ -11,14 +11,19 @@ public class ElementSelecter : MonoBehaviour
 
 	public event EventHandler<Element> ElementPressed;
 
+	// there should allways be the same number of ElementDisplays exist as there are unlocked elements
+	private List<ElementDisplay> elementDisplays;
+
 	private void Awake()
 	{
 		sampeElement.gameObject.SetActive(false);
+
+		elementDisplays = new List<ElementDisplay>();
 	}
 
 	void Start()
 	{
-		UpdateUI();
+		SetElementDisplays();
 
 		GameData.singelton.ElementDiscovered += GameData_ElementDiscovered;
 	}
@@ -28,44 +33,48 @@ public class ElementSelecter : MonoBehaviour
 		GameData.singelton.ElementDiscovered -= GameData_ElementDiscovered;
 	}
 
-	private void UpdateUI()
-	{
-		ClearContent();
-		CreateElementDisplays();
-	}
-
 	private void GameData_ElementDiscovered(object sender, Element e)
 	{
-		if (e != null)
-			CreateElementDisplay(e);
-		else
-			UpdateUI();
-
+		SetElementDisplays();
 	}
 
-	private void ClearContent()
+	private void UpdateUI()
 	{
-		foreach (Transform child in content.transform)
-			if (child.gameObject.activeSelf == true)
-				Destroy(child.gameObject);
+		SetElementDisplays();
 	}
 
-	private void CreateElementDisplays()
+	private void SetElementDisplays()
 	{
 		List<Element> uElements = GameData.singelton.UnlockedElements;
 
-		foreach (Element e in uElements)
-			if (e != null)
-				CreateElementDisplay(e);
+		// create more Element Displays if some are missing
+		for (int i = elementDisplays.Count; i < uElements.Count; i++)
+		{
+			ElementDisplay ed = Instantiate(sampeElement.gameObject, content.transform).GetComponent<ElementDisplay>();
+			ed.gameObject.SetActive(false);
+			elementDisplays.Add(ed);
+		}
+
+		// set all Element Displays. If some are not needed turn them off
+		for (int i = 0; i < elementDisplays.Count; i++)
+		{
+			ElementDisplay ed = elementDisplays[i];
+
+			if (i < uElements.Count)
+			{
+				ed.Element = uElements[i];
+				ed.gameObject.SetActive(true);
+			}
+			else
+			{
+				ed.Element = null;
+				ed.SetActive(false);
+			}
+		}
 	}
 
-	private void CreateElementDisplay(Element e)
-	{
-		ElementDisplay ed = Instantiate(sampeElement.gameObject, content.transform).GetComponent<ElementDisplay>();
-		ed.Element = e;
-		ed.name = "Display: [" + ed.Element.name + "]";
-		ed.gameObject.SetActive(true);
-	}
+
+	// -========== UI Methods ==========- //
 
 	public void Btn_ElementPressed(ElementDisplay source)
 	{

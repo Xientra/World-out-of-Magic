@@ -17,6 +17,9 @@ public class ElementDisplay : MonoBehaviour
 		}
 	}
 
+	[SerializeField]
+	private bool updateName = true;
+
 	[Header("UI:")]
 
 	public TMP_Text nameLabel = null;
@@ -61,6 +64,9 @@ public class ElementDisplay : MonoBehaviour
 			noImgLabel.gameObject.SetActive(true);
 			noImgLabel.text = element.name;
 		}
+
+		if (updateName == true)
+			gameObject.name = (element.name != null ? element.name : "Empty") + " Display";
 	}
 
 	public void Clear()
@@ -91,6 +97,13 @@ public class ElementDisplay : MonoBehaviour
 			noImgLabel.text = "";
 			noImgLabel.gameObject.SetActive(false);
 		}
+	}
+
+	public void SetActive(bool value)
+	{
+		if (value == true)
+			UpdateUI();
+		this.gameObject.SetActive(value);
 	}
 
 	// Update the UI everytime there is a change in the inspector

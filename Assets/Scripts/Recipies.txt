@@ -36,6 +36,7 @@ life + magic = monster
 
 nature + magic = faeries
 
+
 === Human ===
 
 Life + Order = Humans
