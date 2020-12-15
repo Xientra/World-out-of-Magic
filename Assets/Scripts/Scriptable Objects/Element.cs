@@ -21,10 +21,10 @@ public class Element : ScriptableObject
 	[SerializeField]
 	private string id;
 	public string ID { get => id; }
-	[HideInInspector]
 
 
 #if UNITY_EDITOR
+	[HideInInspector]
 	public string id_inspection;
 
 	private void OnValidate()
