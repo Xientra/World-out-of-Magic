@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   importance: 0
   image: {fileID: 21300000, guid: 7bc0ba9864c86b14da62d769ff7ac129, type: 3}
-  category: Creature
+  category: Creatures
   description: 'Monsters are different from animals in the way, that they posses
     magic in them.
 
@@ -24,5 +24,4 @@ MonoBehaviour:
     Humans fear
     and kill them for that.'
   id: 730213e9d2082724890646391eab8bde
-  hasID: 1
   id_inspection: 730213e9d2082724890646391eab8bde

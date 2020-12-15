@@ -9,6 +9,11 @@ public class GameData : MonoBehaviour
 {
 	public static GameData singelton;
 
+	//public static readonly string saveFileFolder = "Data";
+	public static readonly string saveFileName = "SaveData";
+	public static readonly string saveFileExtension = ".woom";
+
+
 	[Header("General:")]
 
 	public Element originElement;
@@ -16,6 +21,8 @@ public class GameData : MonoBehaviour
 	public Recipe[] recipes;
 
 	public Element[] allElements;
+
+	public string[] categories;
 
 	[Header("Progress:")]
 
@@ -25,13 +32,41 @@ public class GameData : MonoBehaviour
 
 	public event EventHandler<Element> ElementDiscovered;
 
-	public static readonly string saveFileFolder = "Data";
-	public static readonly string saveFileName = "SaveData";
-	public static readonly string saveFileExtension = ".woom";
+
+	private void Awake()
+	{
+		singelton = this;
+
+		bool loadSuccess = Load();
+		if (loadSuccess == false)
+			LoadNoSave();
+
+		OnElementDiscovered(null);
+
+
+		// create an array of all categories
+		List<string> categories = new List<string>();
+		for (int i = 0; i < allElements.Length; i++)
+			if (!categories.Contains(allElements[i].category))
+				categories.Add(allElements[i].category);
+		this.categories = categories.ToArray();
+	}
+
+	private void OnDestroy()
+	{
+		Save();
+	}
+
 
 	public List<Element> GetCategory(string category)
 	{
 		return unlockedElements.FindAll(e => e.category == category);
+	}
+
+	public HashSet<string> GetCurrentCategories()
+	{
+		HashSet<string> categories = new HashSet<string>(unlockedElements.ConvertAll<string>(e => e.category));
+		return categories;
 	}
 
 
@@ -79,23 +114,9 @@ public class GameData : MonoBehaviour
 		ElementDiscovered?.Invoke(this, e);
 	}
 
+
 	// -========== Save and Load ==========- //
-
-	private void Awake()
-	{
-		singelton = this;
-
-		bool loadSuccess = Load();
-		if (loadSuccess == false)
-			LoadNoSave();
-
-		OnElementDiscovered(null);
-	}
-
-	private void OnDestroy()
-	{
-		Save();
-	}
+	#region Save and Load
 
 	private void LoadNoSave()
 	{
@@ -155,7 +176,7 @@ public class GameData : MonoBehaviour
 			{
 				Element e = Array.FindLast<Element>(allElements, el => el.ID == data.unlockedElementIDs[i]);
 				unlockedElements.Add(e);
-				Debug.Log("Load: " + data.unlockedElementNames[i] + " with ID: " + data.unlockedElementIDs[i]);
+				//Debug.Log("Load: " + data.unlockedElementNames[i] + " with ID: " + data.unlockedElementIDs[i]);
 			}
 		}
 		else
@@ -179,3 +200,5 @@ public class SaveData
 		this.unlockedElementNames = unlockedElementNames;
 	}
 }
+
+#endregion

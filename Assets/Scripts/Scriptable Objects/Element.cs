@@ -22,9 +22,6 @@ public class Element : ScriptableObject
 	private string id;
 	public string ID { get => id; }
 	[HideInInspector]
-	[SerializeField]
-	private bool hasID = false;
-
 
 
 #if UNITY_EDITOR
@@ -36,10 +33,7 @@ public class Element : ScriptableObject
 
 		// creates unique id if there is not one allready
 		if (string.IsNullOrWhiteSpace(id) || string.IsNullOrEmpty(id))
-		{
 			id = GUID.Generate().ToString();
-			hasID = true;
-		}
 
 		UnityEditor.EditorUtility.SetDirty(this);
 	}

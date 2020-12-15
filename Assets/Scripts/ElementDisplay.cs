@@ -63,6 +63,9 @@ public class ElementDisplay : MonoBehaviour
 		{
 			noImgLabel.gameObject.SetActive(true);
 			noImgLabel.text = element.name;
+
+			if (image != null)
+				image.enabled = false;
 		}
 
 		if (updateName == true)
