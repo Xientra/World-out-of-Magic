@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Demihumans
+  m_EditorClassIdentifier: 
+  importance: 10
+  image: {fileID: 0}
+  category: Human
+  description: 'Failed attempts in Polymorphy lead to humans having limbs or traits
+    of animals, some of which were capable of having children.
+
+    For the parents
+    these animal parts where more often than not a buren as they were mostly just
+    results from experiements.
+
+    Supprisingly though when a child inherited an
+    animal limb or trait that part was often well fused with the human body and most
+    of the time all the negaitves that came with the failed experiement were gone.'
+  id: 38d6557bd825df44d902b2c8421b493b
+  id_inspection: 38d6557bd825df44d902b2c8421b493b

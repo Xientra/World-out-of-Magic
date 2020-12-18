@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Polymorph
+  m_EditorClassIdentifier: 
+  importance: 999
+  image: {fileID: 0}
+  category: Magic
+  description: 'This form of magic focuses on transmuting flesh, plants and live
+    itself.
+
+    It formed out of the attempts at creating magic capable of healing.
+    Although its main purpose Polymorth magic can only do minor things, like closing
+    wounds or curing headache.
+
+    The other applications discovered are the ability
+    to change onces body or parts of it into animals or have body stimulating effects,
+    like numbing pain.'
+  id: 756f0fa42c432a949b7f1d2cb2c3e608
+  id_inspection: 756f0fa42c432a949b7f1d2cb2c3e608

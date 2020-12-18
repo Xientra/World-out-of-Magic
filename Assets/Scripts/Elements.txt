@@ -2,31 +2,36 @@
 
 Magic
 
-Chaos
+Chaos (Magic + Magic)
 
-Order
+Order (Chaos + Chaos) (Order + Order)
 
-Life
+Life (Magic + Chaos)
 
-Nature
+Nature (Chaos + Life)
 
 
 === Human === 
 
-Human
+Human (Life + Order)
 
-[Demihuman]
+Soul
 
+Kingdom (Human + Human)
+
+Continent of [FUCK, NAMES] (Kingdom + Kingdom)
+
+Demihuman (Human + Animal) (Human + Polymorph)
+
+King ?
 
 === Magic ===
 
-Spells
+Spells (Magic + Order)
 
-[Mana]
+Mutants (Humans + Magic)
 
-Mutants
-
-Wizards
+Wizards (Humans + Spells)
 
 Mage
 Magician
@@ -34,10 +39,21 @@ Wizard
 Sorcorer
 Witch
 
+==> Spell + 
+	Chaos = Elemental Magic
+	
+	Life = Polymorph (mutations, growing animal limbs and healing in form of closing wounds)
+	
+	Order = Runes (the art of weaving magic into writing. takes a lot of time and )
+
+	Soul Magic (real healing magic and the ability to touch the soul)
+
+	Necromancy
+
 === Creatures ===
 
-animals
+Animals (Nature + Life)
 
-monster
+Monster (Magic + Life)
 
-faeries
+Faeries (Nature + Magic)

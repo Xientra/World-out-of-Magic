@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
   m_Name: Faeries
   m_EditorClassIdentifier: 
-  importance: 0
+  importance: 50
   image: {fileID: 0}
   category: Creatures
   description: Magic has allways been a big part of nature...

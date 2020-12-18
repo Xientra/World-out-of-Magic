@@ -14,15 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   importance: 0
   image: {fileID: 21300000, guid: 05b97546bf9e61649aa140149eeef8b7, type: 3}
-  category: Core
+  category: Magic
   description: 'The Wirzards of the humans were the ones that brought logic into
     magic and with that Spells were created.
 
 
     A spell is a carfull crafted to
     manipulate magic into a desired effect. It does not need a lot of mana but it
-    requires immense knowledge and precision.
-
-'
+    requires immense knowledge and precision.'
   id: 12e5d6d49e6d66840af63d7695e89b27
   id_inspection: 12e5d6d49e6d66840af63d7695e89b27

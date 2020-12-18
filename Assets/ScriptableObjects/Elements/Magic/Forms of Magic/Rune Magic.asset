@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Rune Magic
+  m_EditorClassIdentifier: 
+  importance: 999
+  image: {fileID: 0}
+  category: Magic
+  description: 'Rune magic is most complicated form of magic, as it includes weaving
+    magic into words and symbols.
+
+    These runes can have very complicated and
+    long term effects and the best runes never cese function.
+
+    As such good rune
+    smithes are very sought after by everyone that wishes for a proection circle
+    around his house or even city and similar effects.'
+  id: 5af54ca5d0792be4daa79e5c2ba79936
+  id_inspection: 5af54ca5d0792be4daa79e5c2ba79936

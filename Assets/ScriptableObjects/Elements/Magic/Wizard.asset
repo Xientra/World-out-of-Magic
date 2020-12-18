@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   importance: 1
   image: {fileID: 21300000, guid: ad4693235e2b6324a9240dae72eb3099, type: 3}
-  category: Core
+  category: Magic
   description: 'Humans that study, explore and try to understand magic are called
     wizards.
 

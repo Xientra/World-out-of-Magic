@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
   m_Name: Order
   m_EditorClassIdentifier: 
-  importance: 0
+  importance: 2
   image: {fileID: 21300000, guid: 249c25bb3aeb8c945858f290c63099ed, type: 3}
   category: Core
   description: This is a new Element

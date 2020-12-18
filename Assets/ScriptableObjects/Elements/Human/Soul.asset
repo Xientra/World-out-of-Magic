@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Soul
+  m_EditorClassIdentifier: 
+  importance: 9999
+  image: {fileID: 0}
+  category: Human
+  description: 'Was eventual discovered by the attempts at healing and ressurecting
+    humans. It was also found out that animals and monsters also posses a soul but
+    the soul of humans was almost always a lot greater.
+
+    It is speculated that
+    a soul becomes greater by knowledge and emotions that the body experiances as
+    childs of humans, animals and monsters all have a very fickle soul.'
+  id: 41a6d2dea6e477c479b340ff6d4e9795
+  id_inspection: 41a6d2dea6e477c479b340ff6d4e9795
