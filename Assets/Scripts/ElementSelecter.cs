@@ -21,14 +21,14 @@ public class ElementSelecter : MonoBehaviour
 
 	public Button returnButton;
 
-	private bool elementView = false;
+	private string currentCategory = "";
 
 
 	public event EventHandler<Element> ElementPressed;
 
 	// there should allways be the same number of ElementDisplays exist as there are unlocked elements
 	private List<ElementDisplay> elementDisplays;
-	private List<TMP_Text> categoryButtons;
+	private List<CategoryDisplay> categoryDisplay;
 
 
 	private void Awake()
@@ -37,17 +37,14 @@ public class ElementSelecter : MonoBehaviour
 		sampleCategory.gameObject.SetActive(false);
 
 		elementDisplays = new List<ElementDisplay>();
-		categoryButtons = new List<TMP_Text>();
+		categoryDisplay = new List<CategoryDisplay>();
 	}
 
 	void Start()
 	{
 		GameData.singelton.ElementDiscovered += GameData_ElementDiscovered;
 
-		//DisplayElements();
-
-		SetElementView(false);
-		DisplayCategories();
+		UpdateUI();
 	}
 
 	private void OnDestroy()
@@ -57,69 +54,66 @@ public class ElementSelecter : MonoBehaviour
 
 	private void GameData_ElementDiscovered(object sender, Element e)
 	{
-		DisplayElements();
+		UpdateUI();
 	}
 
 	private void UpdateUI()
 	{
-		DisplayElements();
+		if (string.IsNullOrEmpty(currentCategory))
+			SetCategoryView();
+		else
+			SetElementView(currentCategory);
 	}
 
-	private void SetElementView(bool value)
+	private void SetElementView(string category)
 	{
-		categoryContent.SetActive(!value);
-		elementContent.SetActive(value);
+		categoryContent.SetActive(false);
+		elementContent.SetActive(true);
 
-		returnButton.gameObject.SetActive(value);
+		returnButton.gameObject.SetActive(true);
 
-		elementView = value;
+		currentCategory = category;
+
+		DisplayElements(category);
+	}
+	private void SetCategoryView()
+	{
+		categoryContent.SetActive(true);
+		elementContent.SetActive(false);
+
+		returnButton.gameObject.SetActive(false);
+
+		currentCategory = "";
+
+		DisplayCategories();
 	}
 
 	private void DisplayCategories()
 	{
 		HashSet<string> categories = GameData.singelton.GetCurrentCategories();
 
-		foreach (TMP_Text c in categoryButtons)
-			Destroy(c.gameObject);
+		foreach (CategoryDisplay cd in categoryDisplay)
+			Destroy(cd.gameObject);
+
+		categoryDisplay.Clear();
 
 		foreach (string c in categories)
 		{
-			TMP_Text ct = Instantiate(sampleCategory, categoryContent.transform).GetComponentInChildren<TMP_Text>();
-			ct.text = c;
-			ct.transform.parent.gameObject.name = c + " Category";
-			categoryButtons.Add(ct);
-			ct.transform.parent.gameObject.SetActive(true);
+			CategoryDisplay cd = Instantiate(sampleCategory, categoryContent.transform).GetComponentInChildren<CategoryDisplay>();
+			cd.Text = c;
+			categoryDisplay.Add(cd);
+			cd.gameObject.SetActive(true);
 		}
-
-		/*
-		// create more category objects if there are not enought
-		for (int i = categoryButtons.Count; i < categories.Count; i++)
-		{
-			TMP_Text ct = Instantiate(sampleCategory.gameObject, elementContent.transform).GetComponent<TMP_Text>();
-			ct.gameObject.SetActive(false);
-			categoryButtons.Add(ct);
-		}
-
-		
-		int j = 0;
-		// display categories
-		foreach (string c in categories)
-		{
-			if (j < categories.Count) ;
-			else ;
-
-			j++;
-		}
-		*/
 	}
 
 	private void DisplayElements()
 	{
-		DisplayElements(GameData.singelton.UnlockedElements);
+		DisplayElements("");
 	}
-	private void DisplayElements(List<Element> elementsToDisplay)
+	private void DisplayElements(string category)
 	{
-		SetElementView(true);
+		List<Element> elementsToDisplay = GameData.singelton.GetCategory(category);
+
 
 		// create more Element Displays if some are missing
 		for (int i = elementDisplays.Count; i < elementsToDisplay.Count; i++)
@@ -160,13 +154,13 @@ public class ElementSelecter : MonoBehaviour
 		ElementPressed?.Invoke(this, e);
 	}
 
-	public void Btn_CategoryPressed(TMP_Text source)
+	public void Btn_CategoryPressed(CategoryDisplay source)
 	{
-		DisplayElements(GameData.singelton.GetCategory(source.text));
+		SetElementView(source.Text);
 	}
 
 	public void Btn_Return()
 	{
-		SetElementView(false);
+		SetCategoryView();
 	}
 }

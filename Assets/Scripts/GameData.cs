@@ -60,7 +60,12 @@ public class GameData : MonoBehaviour
 
 	public List<Element> GetCategory(string category)
 	{
-		return unlockedElements.FindAll(e => e.category == category);
+		if (string.IsNullOrEmpty(category))
+			return UnlockedElements;
+
+		List<Element> r = unlockedElements.FindAll(e => e.category == category);
+		r.Sort((e1, e2) => e1.importance - e2.importance);
+		return r;
 	}
 
 	public HashSet<string> GetCurrentCategories()

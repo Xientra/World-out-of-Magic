@@ -7,7 +7,8 @@ public class Element : ScriptableObject
 {
 	//public string name; // allready exists
 
-	public int importance = 0;
+	[Tooltip("The elements in the selector will be sorted from low to high.")]
+	public int importance = 999;
 
 	//public Texture2D texture;
 	public Sprite image;
@@ -16,6 +17,11 @@ public class Element : ScriptableObject
 
 	[TextArea(1, 20)]
 	public string description = "This is a new Element";
+
+
+	//[Tooltip("A final element is not part of any recipe.")]
+	//public bool final;
+
 
 	[HideInInspector]
 	[SerializeField]

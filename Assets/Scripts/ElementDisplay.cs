@@ -26,7 +26,6 @@ public class ElementDisplay : MonoBehaviour
 	public TMP_Text categoryLabel = null;
 	public TMP_Text descriptionLabel = null;
 	[Space(5)]
-	public RawImage rawImage = null;
 	public Image image = null;
 	[Space(5)]
 	public TMP_Text noImgLabel = null;
@@ -41,10 +40,8 @@ public class ElementDisplay : MonoBehaviour
 
 		if (nameLabel != null)
 			nameLabel.text = element.name;
-
 		if (categoryLabel != null)
 			categoryLabel.text = "(" + element.category + ")";
-
 		if (descriptionLabel != null)
 			descriptionLabel.text = element.description;
 
@@ -67,9 +64,17 @@ public class ElementDisplay : MonoBehaviour
 			if (image != null)
 				image.enabled = false;
 		}
+		else
+		{
+			if (image != null)
+			{
+				image.enabled = false;
+				image.sprite = null;
+			}
+		}
 
 		if (updateName == true)
-			gameObject.name = (element.name != null ? element.name : "Empty") + " Display";
+			gameObject.name = (element != null ? element.name : "Empty") + " Display";
 	}
 
 	public void Clear()
