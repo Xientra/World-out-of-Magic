@@ -25,5 +25,12 @@ MonoBehaviour:
     Supprisingly though when a child inherited an
     animal limb or trait that part was often well fused with the human body and most
     of the time all the negaitves that came with the failed experiement were gone.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+    ingredient2: {fileID: 11400000, guid: aa5ece70715e8cf4aabb447a2fd7ff51, type: 2}
+    explanation: 
+  - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+    ingredient2: {fileID: 11400000, guid: cbbb5aa9b5d5a6743aa8ce47fdd5c737, type: 2}
+    explanation: 
   id: 38d6557bd825df44d902b2c8421b493b
   id_inspection: 38d6557bd825df44d902b2c8421b493b

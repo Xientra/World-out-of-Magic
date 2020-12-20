@@ -17,5 +17,9 @@ MonoBehaviour:
   category: Core
   description: Chaos. It is not what shaped and created the world but what it is
     what brought forth development.
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
+    ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
+    explanation: 
   id: dd20c2335fd84ce4c89a39718d8ace64
   id_inspection: dd20c2335fd84ce4c89a39718d8ace64

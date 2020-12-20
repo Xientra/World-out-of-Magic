@@ -19,5 +19,9 @@ MonoBehaviour:
 
     [List
     of the Kingdoms and where they are]'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
+    ingredient2: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
+    explanation: 
   id: df9a2746b0dc9024b92e4b4c29170799
   id_inspection: df9a2746b0dc9024b92e4b4c29170799

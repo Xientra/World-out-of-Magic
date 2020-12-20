@@ -28,22 +28,5 @@ public class ElementAssetLoader : Editor
 				gd.allElements = loadInto.ToArray();
 			}
 		}
-
-		EditorGUILayout.Space();
-
-
-		if (GUILayout.Button("Load Recipes from Assetbase"))
-		{
-			string[] assetsGUID = AssetDatabase.FindAssets("t:Recipe", new[] { "Assets/ScriptableObjects/Recipes" });
-
-			if (assetsGUID.Length != 0)
-			{
-				List<Recipe> loadInto = new List<Recipe>();
-				foreach (string guid in assetsGUID)
-					loadInto.Add(AssetDatabase.LoadAssetAtPath<Recipe>(AssetDatabase.GUIDToAssetPath(guid)));
-
-				gd.recipes = loadInto.ToArray();
-			}
-		}
 	}
 }

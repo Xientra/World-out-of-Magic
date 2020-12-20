@@ -16,5 +16,9 @@ MonoBehaviour:
   image: {fileID: 21300000, guid: 4797749898bddab4ab154a818eb1d048, type: 3}
   category: Core
   description: This is a new Element
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
+    ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
+    explanation: 
   id: ba381b218d2815c4285c7a0c1338c76c
   id_inspection: ba381b218d2815c4285c7a0c1338c76c

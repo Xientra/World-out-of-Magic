@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 
-[CreateAssetMenu(fileName = "New Element", menuName = "ScriptableObjects/Element")]
+[CreateAssetMenu(fileName = "New Element", menuName = "Element")]
 public class Element : ScriptableObject
 {
 	//public string name; // allready exists
@@ -21,6 +21,8 @@ public class Element : ScriptableObject
 
 	//[Tooltip("A final element is not part of any recipe.")]
 	//public bool final;
+
+	public Recipe[] recipes;
 
 
 	[HideInInspector]

@@ -10,6 +10,7 @@ Life (Magic + Chaos)
 
 Nature (Chaos + Life)
 
+Death (Human + Monster) (...)
 
 === Human === 
 
@@ -18,6 +19,10 @@ Human (Life + Order)
 Soul
 
 Kingdom (Human + Human)
+
+Farmer (Human + Nature)
+
+Scholar? (Human + Order) to get the Wizard with Scholar + Magic
 
 Continent of [FUCK, NAMES] (Kingdom + Kingdom)
 

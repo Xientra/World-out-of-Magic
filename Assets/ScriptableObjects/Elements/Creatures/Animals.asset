@@ -17,5 +17,9 @@ MonoBehaviour:
   category: Creatures
   description: Creature, which are roaming the world. Rarely with any intelligence
     to speak of.
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
+    ingredient2: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
+    explanation: 
   id: 681df13cd8c087f4ba4d947595e854db
   id_inspection: 681df13cd8c087f4ba4d947595e854db

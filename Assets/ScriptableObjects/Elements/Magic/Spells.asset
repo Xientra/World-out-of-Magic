@@ -22,5 +22,9 @@ MonoBehaviour:
     A spell is a carfull crafted to
     manipulate magic into a desired effect. It does not need a lot of mana but it
     requires immense knowledge and precision.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
+    ingredient2: {fileID: 11400000, guid: d3d0e4f3ac043624a965f33ec9ab4def, type: 2}
+    explanation: 
   id: 12e5d6d49e6d66840af63d7695e89b27
   id_inspection: 12e5d6d49e6d66840af63d7695e89b27

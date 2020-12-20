@@ -1995,6 +1995,7 @@ RectTransform:
   - {fileID: 101549618}
   - {fileID: 1712296919}
   - {fileID: 371455070}
+  - {fileID: 1318339835}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2291,12 +2292,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318339832}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -400.00003, y: -225.00002, z: 0}
+  m_LocalScale: {x: 1.1111112, y: 1.1111112, z: 1.1111112}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 1163426666}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1388940201
 GameObject:
@@ -3124,25 +3125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   originElement: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
-  recipes:
-  - {fileID: 11400000, guid: 5d288267436ffb04fa23ac061dbde4aa, type: 2}
-  - {fileID: 11400000, guid: c7e2f1540478e0c4cb2872bb179d6b7c, type: 2}
-  - {fileID: 11400000, guid: 0de035678b3c0ca4aac46caffda1ea51, type: 2}
-  - {fileID: 11400000, guid: d7de620698dd3e84fb45258ece036fa4, type: 2}
-  - {fileID: 11400000, guid: 7bd9f11fadfb065439287baed9ab59f8, type: 2}
-  - {fileID: 11400000, guid: 1391f85d7d019af458be192206dbed23, type: 2}
-  - {fileID: 11400000, guid: 55d273f7eeb8cdf41bc4799ddab3613b, type: 2}
-  - {fileID: 11400000, guid: 764d12c9c62474c479554051449e0266, type: 2}
-  - {fileID: 11400000, guid: c75aa91bdedd92c49a58434a294e6e7e, type: 2}
-  - {fileID: 11400000, guid: 495202c3ea0dd324fb7b4bde246cd2ef, type: 2}
-  - {fileID: 11400000, guid: 4efb6a9a9157533439fb06b903ba4e7c, type: 2}
-  - {fileID: 11400000, guid: 143f560d30009d84e9d98a645a59f56e, type: 2}
-  - {fileID: 11400000, guid: d3ad2b9f2793ddf4ca731ab3009ef741, type: 2}
-  - {fileID: 11400000, guid: 683f8cfde777e1346bc63041da874c4f, type: 2}
-  - {fileID: 11400000, guid: f6c8d207a10d47f4db5c91e993f91ec9, type: 2}
-  - {fileID: 11400000, guid: 79af4ac39b900554fb0ae868be5e18ff, type: 2}
-  - {fileID: 11400000, guid: 52bda5782bb1c1143b0bac52a1d74ddc, type: 2}
-  - {fileID: 11400000, guid: 2e33b7748a9d0424992a80b799c7b614, type: 2}
   allElements:
   - {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
   - {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
@@ -3178,7 +3160,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1902679830
 GameObject:
@@ -3467,7 +3449,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2056504174
 GameObject:

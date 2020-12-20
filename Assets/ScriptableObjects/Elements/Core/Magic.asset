@@ -16,5 +16,6 @@ MonoBehaviour:
   image: {fileID: 21300000, guid: 5ce88e8eca67e124ab59d523ff5b7501, type: 3}
   category: Core
   description: This is magic, the origin of this world.
+  recipes: []
   id: 10a75fb63015c724c9d72e61b3c148fb
   id_inspection: 10a75fb63015c724c9d72e61b3c148fb

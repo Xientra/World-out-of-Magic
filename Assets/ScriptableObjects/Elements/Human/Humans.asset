@@ -22,5 +22,9 @@ MonoBehaviour:
     forming villages, cities, kingdoms and even countries.
 
 '
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
+    ingredient2: {fileID: 11400000, guid: d3d0e4f3ac043624a965f33ec9ab4def, type: 2}
+    explanation: 
   id: edb7c7a8b65c5d344921eef43132a14e
   id_inspection: edb7c7a8b65c5d344921eef43132a14e

@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Kingdom
+  m_Name: Death
   m_EditorClassIdentifier: 
-  importance: 50
+  importance: 999
   image: {fileID: 0}
-  category: Human
-  description: Humans formed kingdoms often ruled by a singular figure or family.
+  category: Core
+  description: This is a new Element
   recipes:
   - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
-    ingredient2: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
-    explanation: 
-  id: b628039215c69e046a5a538005128a07
-  id_inspection: b628039215c69e046a5a538005128a07
+    ingredient2: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
+    explanation: Humans did not make few attempts at living or domesticaing monsters
+      but none of them ever succeeded.
+  id: 4a4e36bf9795ae04193de67fd5dbb14e
+  id_inspection: 4a4e36bf9795ae04193de67fd5dbb14e

@@ -23,5 +23,9 @@ MonoBehaviour:
 
     Humans fear
     and kill them for that.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
+    ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
+    explanation: 
   id: 730213e9d2082724890646391eab8bde
   id_inspection: 730213e9d2082724890646391eab8bde

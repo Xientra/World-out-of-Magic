@@ -24,5 +24,9 @@ MonoBehaviour:
     As such good rune
     smithes are very sought after by everyone that wishes for a proection circle
     around his house or even city and similar effects.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
+    ingredient2: {fileID: 11400000, guid: d3d0e4f3ac043624a965f33ec9ab4def, type: 2}
+    explanation: 
   id: 5af54ca5d0792be4daa79e5c2ba79936
   id_inspection: 5af54ca5d0792be4daa79e5c2ba79936

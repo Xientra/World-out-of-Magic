@@ -18,7 +18,7 @@ public class GameData : MonoBehaviour
 
 	public Element originElement;
 
-	public Recipe[] recipes;
+	//public Recipe[] recipes;
 
 	public Element[] allElements;
 
@@ -84,16 +84,17 @@ public class GameData : MonoBehaviour
 
 	public Element CombineElements(Element e1, Element e2)
 	{
-		for (int i = 0; i < recipes.Length; i++)
+		for (int i = 0; i < allElements.Length; i++)
 		{
-			Recipe r = recipes[i];
-			if (r != null)
+			for (int j = 0; j < allElements[i].recipes.Length; j++)
 			{
+				Recipe r = allElements[i].recipes[j];
+
 				if (r.ingredient1 == e1 && r.ingredient2 == e2 || r.ingredient1 == e2 && r.ingredient2 == e1)
 				{
-					if (!unlockedElements.Contains(r.result))
-						DiscoverElement(r.result);
-					return r.result;
+					if (!unlockedElements.Contains(allElements[i]))
+						DiscoverElement(allElements[i]);
+					return allElements[i];
 				}
 			}
 		}

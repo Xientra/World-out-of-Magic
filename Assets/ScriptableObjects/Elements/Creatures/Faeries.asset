@@ -16,5 +16,9 @@ MonoBehaviour:
   image: {fileID: 0}
   category: Creatures
   description: Magic has allways been a big part of nature...
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
+    ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
+    explanation: 
   id: 4966def68def21944a49983414efeac8
   id_inspection: 4966def68def21944a49983414efeac8
