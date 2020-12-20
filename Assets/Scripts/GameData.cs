@@ -35,6 +35,7 @@ public class GameData : MonoBehaviour
 
 	private void Awake()
 	{
+		unlockedElements = unlockedElements ?? new List<Element>();
 		singelton = this;
 
 		bool loadSuccess = Load();
@@ -180,7 +181,8 @@ public class GameData : MonoBehaviour
 			for (int i = 0; i < data.unlockedElementIDs.Length; i++)
 			{
 				Element e = Array.FindLast<Element>(allElements, el => el.ID == data.unlockedElementIDs[i]);
-				unlockedElements.Add(e);
+				if (e != null)
+					unlockedElements.Add(e);
 				//Debug.Log("Load: " + data.unlockedElementNames[i] + " with ID: " + data.unlockedElementIDs[i]);
 			}
 		}
