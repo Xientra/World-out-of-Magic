@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Druids
+  m_EditorClassIdentifier: 
+  importance: 999
+  image: {fileID: 0}
+  category: Human
+  description: 'The name druid is often given to individual people that cut themselfs
+    off from other humans and that life together with nature and its animals
+
+    They
+    are often highly regarded for their knowledge over diffrent kinds of herbs and
+    other medical skills.
+
+
+    By living long enought in peace with nature some
+    Druids find that they have controll over the magic in the surrounding environment.
+
+
+    Druid
+    like that often show visibly change in their apperances. Similar to demihumans
+    they develop simple animal features like deer horns or fur.
+
+    Their apperance
+    also changes to plants and so their skin might start looking like bark or they
+    grow leaves and other plants on their bodies.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+    ingredient2: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
+    explanation: 
+  id: abd2ccfc09f7d974abd92e0577a936a5
+  approved: 1
+  id_inspection: abd2ccfc09f7d974abd92e0577a936a5

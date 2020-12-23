@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Merchant
+  m_EditorClassIdentifier: 
+  importance: 999
+  image: {fileID: 0}
+  category: Human
+  description: Only in a few port cities are merchants even more important than wizards
+    and kings but merchnts have their place everywhere, especially in the great cities.
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+    ingredient2: {fileID: 11400000, guid: 550ce6dfadea58647b92ca49869b33ca, type: 2}
+    explanation: 
+  id: a08c6daff3037164580145bbc6a07a21
+  approved: 0
+  id_inspection: a08c6daff3037164580145bbc6a07a21

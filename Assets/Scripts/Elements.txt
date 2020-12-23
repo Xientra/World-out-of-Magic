@@ -55,6 +55,10 @@ Witch
 
 	Necromancy
 
+??????? (Nature + Poly)
+
+??????? (Nature  + Nature)
+
 === Creatures ===
 
 Animals (Nature + Life)
@@ -62,3 +66,5 @@ Animals (Nature + Life)
 Monster (Magic + Life)
 
 Faeries (Nature + Magic)
+
+Druid 

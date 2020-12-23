@@ -16,6 +16,10 @@ MonoBehaviour:
   image: {fileID: 0}
   category: Magic
   description: '[No Description Yet]'
-  recipes: []
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
+    ingredient2: {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
+    explanation: 
   id: d413702b5d4ac5e46b0a49eb319e13b6
+  approved: 0
   id_inspection: d413702b5d4ac5e46b0a49eb319e13b6

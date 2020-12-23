@@ -28,4 +28,5 @@ MonoBehaviour:
     ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
     explanation: 
   id: 730213e9d2082724890646391eab8bde
+  approved: 1
   id_inspection: 730213e9d2082724890646391eab8bde

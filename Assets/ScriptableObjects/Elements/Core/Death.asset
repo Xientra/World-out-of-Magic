@@ -15,11 +15,11 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 0}
   category: Core
-  description: This is a new Element
+  description: The end of all life.
   recipes:
-  - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
-    ingredient2: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
-    explanation: Humans did not make few attempts at living or domesticaing monsters
-      but none of them ever succeeded.
+  - ingredient1: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
+    ingredient2: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
+    explanation: 
   id: 4a4e36bf9795ae04193de67fd5dbb14e
+  approved: 0
   id_inspection: 4a4e36bf9795ae04193de67fd5dbb14e

@@ -116,10 +116,31 @@ public class GameData : MonoBehaviour
 		Debug.Log("Created " + e);
 	}
 
+	public void SendUIUpdateSignal()
+	{
+		OnElementDiscovered(null);
+	}
 	private void OnElementDiscovered(Element e)
 	{
 		ElementDiscovered?.Invoke(this, e);
 	}
+
+
+	#region static stuff
+
+	/// <summary> DO NOT USE THIS METHOD AT RUNTIME </summary>
+	public static bool ElementInRecipe(Element e)
+	{
+		GameData gd = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameData>();
+
+		for (int i = 0; i < gd.allElements.Length; i++)
+			for (int j = 0; j < gd.allElements[i].recipes.Length; j++)
+				if (gd.allElements[i].recipes[j].ingredient1 == e || gd.allElements[i].recipes[j].ingredient2 == e)
+					return true;
+		return false;
+	}
+
+	#endregion
 
 
 	// -========== Save and Load ==========- //

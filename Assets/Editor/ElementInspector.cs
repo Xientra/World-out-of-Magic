@@ -22,12 +22,15 @@ public class ElementInspector : Editor
 		// create description text box
 		//GUILayout.Label("Description:");
 		//e.description = GUILayout.TextArea(e.description, new[] { GUILayout.MaxHeight(48), GUILayout.ExpandHeight(true) });
+
+		if (GUILayout.Button("I this in a recipe?"))
+			Debug.Log(GameData.ElementInRecipe(e) ? ("Yes \"" + e.name + "\" is in a recipe.") : ("No \"" + e.name + "\" is not in a recipe."));
 	}
 
 	// shows the image in the object preview
 	public override Texture2D RenderStaticPreview(string assetPath, UnityEngine.Object[] subAssets, int width, int height)
 	{
-		
+
 		Element e = (Element)target;
 		if (e.image == null || e.image.texture == null)
 			return base.RenderStaticPreview(assetPath, subAssets, width, height);

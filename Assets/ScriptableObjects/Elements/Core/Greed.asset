@@ -10,23 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Elemental Magic
+  m_Name: Greed
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
-  category: Magic
-  description: 'Spells that focus on applying real world effect immidiatly and visibly
-    most of the time by utelizing the elements.
+  category: Core
+  description: 'Coming from the humans selfishness and the greates reason for conflict
+    between humans.
 
-    Examples are things like Air
-    Slash, Flame Wall or Earthquake.
-
-    This form of magic is the most common among
-    all of the Wizards, as it has the best combat applicability.'
+    It is also the reason for the humans progression though.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
+  - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
     ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
     explanation: 
-  id: c021da69b0548784eab4f8c7c8786cfc
+  id: b97e753ae6ea6324d8f907ba4c8c9b2c
   approved: 1
-  id_inspection: c021da69b0548784eab4f8c7c8786cfc
+  id_inspection: b97e753ae6ea6324d8f907ba4c8c9b2c

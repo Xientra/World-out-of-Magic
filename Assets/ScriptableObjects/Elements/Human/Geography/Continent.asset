@@ -10,15 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Kingdom
+  m_Name: Continent
   m_EditorClassIdentifier: 
-  importance: 50
+  importance: 999
   image: {fileID: 0}
   category: Human
-  description: Humans formed kingdoms often ruled by a singular figure or family.
+  description: 'On the Contient [Name] there are [number (5?)] Kingdoms.
+
+    [List
+    of the Kingdoms and where they are]'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
-    ingredient2: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+  - ingredient1: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
+    ingredient2: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
     explanation: 
-  id: b628039215c69e046a5a538005128a07
-  id_inspection: b628039215c69e046a5a538005128a07
+  id: df9a2746b0dc9024b92e4b4c29170799
+  approved: 0
+  id_inspection: df9a2746b0dc9024b92e4b4c29170799

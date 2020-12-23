@@ -15,11 +15,13 @@ MonoBehaviour:
   importance: 1
   image: {fileID: 21300000, guid: 70c76c237d871464989e1ec4a195f1a0, type: 3}
   category: Core
-  description: Chaos. It is not what shaped and created the world but what it is
-    what brought forth development.
+  description: Not what is shaping and creating the world but what continuously bringing
+    change.
   recipes:
   - ingredient1: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
     ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
-    explanation: 
+    explanation: Magic is by itself very chaotic and only with vast knowledge can
+      you begin to understand the logic behind it.
   id: dd20c2335fd84ce4c89a39718d8ace64
+  approved: 1
   id_inspection: dd20c2335fd84ce4c89a39718d8ace64

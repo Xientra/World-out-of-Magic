@@ -13,10 +13,10 @@ public class Element : ScriptableObject
 	//public Texture2D texture;
 	public Sprite image;
 
-	public string category = "Core";
+	public string category = "[No Category Yet]";
 
 	[TextArea(1, 20)]
-	public string description = "This is a new Element";
+	public string description = "[No Description Yet]";
 
 
 	//[Tooltip("A final element is not part of any recipe.")]
@@ -32,6 +32,9 @@ public class Element : ScriptableObject
 
 
 #if UNITY_EDITOR
+	[Space(15)]
+	public bool approved = false;
+
 	[HideInInspector]
 	public string id_inspection;
 

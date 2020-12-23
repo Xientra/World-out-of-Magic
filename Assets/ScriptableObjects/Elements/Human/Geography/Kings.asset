@@ -10,18 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Continent
+  m_Name: Kings
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
   category: Human
-  description: 'On the Contient [Name] there are [number (5?)] Kingdoms.
+  description: 'Kings are humans ruling over a Kingdom inhabited by other humans.
 
-    [List
-    of the Kingdoms and where they are]'
+    They
+    seem to be decided by random and whether or not they treat their subordinates
+    or not varies widely.
+
+
+    In some cities Kings take the second roll behind
+    Wizards Unions or Merchant Guilds.'
   recipes:
   - ingredient1: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
-    ingredient2: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
+    ingredient2: {fileID: 11400000, guid: 0192b712d48312743b01192b9af3125a, type: 2}
     explanation: 
-  id: df9a2746b0dc9024b92e4b4c29170799
-  id_inspection: df9a2746b0dc9024b92e4b4c29170799
+  id: ebc3ece52c9ae484e9368a125062808f
+  approved: 1
+  id_inspection: ebc3ece52c9ae484e9368a125062808f
