@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   importance: 2
   image: {fileID: 0}
-  category: Creatures
+  category: Monster
   description: 'Demons are the offspring of humans and humanoid monsters.
 
     Just

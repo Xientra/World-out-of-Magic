@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Golems
+  m_EditorClassIdentifier: 
+  importance: 800
+  image: {fileID: 0}
+  category: Magic
+  description: 'Golems are inorganic materials infused with magic and then given
+    concept by rune magic.
+
+    They are also controlled by rune magic or rather
+    they are programmed with it. The whole concious of a golem is constructed by
+    rune magic and only very rarely do golems fall into chaos and still remain whole.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
+    ingredient2: {fileID: 11400000, guid: d3d0e4f3ac043624a965f33ec9ab4def, type: 2}
+    explanation: 
+  - ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
+    ingredient2: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
+    explanation: 
+  - ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
+    ingredient2: {fileID: 11400000, guid: a4163f0df76852342a6d5e4fd9d3d6e1, type: 2}
+    explanation: 
+  id: d3e2a774d5cd84c4e9abe929ed7bb45e
+  approved: 1
+  id_inspection: d3e2a774d5cd84c4e9abe929ed7bb45e

@@ -10,22 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Greed
+  m_Name: Chaos Golem
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
-  category: Core
-  description: 'Coming from the humans selfishness and the greates reason for conflict
-    between humans.
+  category: '[No Category Yet]'
+  description: 'A lose formation of inorganic material hold together by violent magic.
 
-    It is also the reason for the humans progression though.
 
-    The
-    only other lifeform that has greed are dragons.'
+    [Do
+    they have sentient? I want them to]'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+  - ingredient1: {fileID: 11400000, guid: 7942e3d09b2015b46892c34a2bf2215f, type: 2}
     ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
     explanation: 
-  id: b97e753ae6ea6324d8f907ba4c8c9b2c
-  approved: 1
-  id_inspection: b97e753ae6ea6324d8f907ba4c8c9b2c
+  id: f0a4966093b8df14998d32c67b2cf911
+  approved: 0
+  id_inspection: f0a4966093b8df14998d32c67b2cf911

@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Dragons
+  m_EditorClassIdentifier: 
+  importance: 1
+  image: {fileID: 0}
+  category: Monster
+  description: 'Dragons are one of the most feared monsters even though dragons are
+    not actualy much different to other monsters.
+
+    The one things that is special
+    about dragons is that they are the only othere creature on this world other than
+    humans, which is greedy. And dragons are immensly greedy. The word greed was
+    originaly invented for dragons and only later used for humans as well even though
+    it suits them really good as well.
+
+    Any monster would be as feared and as
+    stong as dragons are if it would life as long but a lot of them don''t or at
+    least not nearly in the same amount as dragons do.
+
+
+    Most die because of
+    other monsters, because of humans or because they can''t find enougth food anymore.
+
+    Dragons
+    have the same problems but dragons are greedy. They will amass terretory, land,
+    gold and tresure as soon as they can, giving them not only their own physical
+    strength but also material strength.
+
+    With this they can overcome the filter
+    that stops most monsters from becoming incredible powerfull a lot more easily.
+
+    That
+    filter is a time in most monsters life, where they become incredible hungry and
+    need a lot more food. The problem is at that point they are not strong enought
+    to also obtain that.
+
+
+    Because of this there are a lot more ancient dragons
+    than there are other ancient monsters but most ancient dragons hide in their
+    lairs on their pile of treasure so they are not that of a threat.
+
+    What make
+    dragons so scary is again their greed. Especially younger ones, which just emerged
+    from the weaker average monsters do everything they can think of in their cunning
+    mind to acquire gold and other tresure. Often also conversing with humans and
+    just as often betraying them.
+
+
+    [Idk bring the fact that people have to bring
+    tribute to them in here as well]
+
+'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
+    ingredient2: {fileID: 11400000, guid: 550ce6dfadea58647b92ca49869b33ca, type: 2}
+    explanation: 
+  id: d4a106db1cdbfee44a5b7b2d55108e82
+  approved: 1
+  id_inspection: d4a106db1cdbfee44a5b7b2d55108e82

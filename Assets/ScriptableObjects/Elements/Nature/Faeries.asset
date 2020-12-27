@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   importance: 50
   image: {fileID: 0}
-  category: Creatures
+  category: Nature
   description: 'Faeries are tiny humanoids with wings that often look like butterfly
     wings but in reality can be whatever the wants.
 

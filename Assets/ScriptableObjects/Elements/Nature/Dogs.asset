@@ -10,16 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Death
+  m_Name: Dogs
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
-  category: Core
-  description: The end of all life.
-  recipes:
-  - ingredient1: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
-    ingredient2: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
-    explanation: 
-  id: 4a4e36bf9795ae04193de67fd5dbb14e
-  approved: 1
-  id_inspection: 4a4e36bf9795ae04193de67fd5dbb14e
+  category: Nature
+  description: '[No Description Yet]'
+  recipes: []
+  id: 904fc982fe6fdc44986cefc277ad5255
+  approved: 0
+  id_inspection: 904fc982fe6fdc44986cefc277ad5255

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   importance: 1
   image: {fileID: 21300000, guid: 69d5b435b75ffff47bfad83775e9fbd1, type: 3}
-  category: Creatures
+  category: Nature
   description: Creatures, that are roaming the world. Rarely with any intelligence
     to speak of.
   recipes:

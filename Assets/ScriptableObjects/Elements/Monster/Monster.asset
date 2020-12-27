@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   importance: 0
   image: {fileID: 21300000, guid: 7bc0ba9864c86b14da62d769ff7ac129, type: 3}
-  category: Creatures
+  category: Monster
   description: 'Monsters are different from animals in the way, that they posses
     magic in them.
 
@@ -22,7 +22,14 @@ MonoBehaviour:
     animals but every monster has unlimited potential for growth.
 
     Humans fear
-    and kill them for that.'
+    and kill them for that.
+
+
+    [Put the Filter from dragons in here]
+
+    A monster
+    that has surpassed this filter is called ancient because at that time it has
+    lived for few centuries.'
   recipes:
   - ingredient1: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
     ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
