@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
-  category: '[No Category Yet]'
-  description: '[No Description Yet]'
+  category: Monster
+  description: Lich, Vampires and other monsters
   recipes: []
-  id: 
+  id: b154534794e78ee429ed863c2edf468c
   approved: 0
-  id_inspection: 
+  id_inspection: b154534794e78ee429ed863c2edf468c

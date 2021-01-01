@@ -22,9 +22,17 @@ MonoBehaviour:
     them.
 
 
+    What youkai are doing is completely unkown. They either run away
+    if they notice someone can see them or they become hostile and attack the medium.
 
-    Somtimes at dawn youkai become visible for a brief moment, which
-    creates a lot of rumors and stories.'
+
+    They
+    have no influence on their surroundings if not provoked by something.
+
+
+    Somtimes
+    at dawn youkai become visible for a brief moment, which creates a lot of rumors
+    and stories.'
   recipes:
   - ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
     ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}

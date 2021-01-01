@@ -14,9 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
-  category: '[No Category Yet]'
-  description: '[No Description Yet]'
-  recipes: []
-  id: 
+  category: Monster
+  description: Beings from fire, earth, water, lighting and air and other elements,
+    creating a whirl of that element hold together and forming a entity through magic.
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
+    ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
+    explanation: 
+  id: ae8cba19fe7f81c48af9b1296c393db0
   approved: 0
-  id_inspection: 
+  id_inspection: ae8cba19fe7f81c48af9b1296c393db0

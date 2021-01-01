@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
-public class ElementDisplay : MonoBehaviour
+public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
 	[Space(10)]
 	[SerializeField]
@@ -20,6 +21,11 @@ public class ElementDisplay : MonoBehaviour
 	[SerializeField]
 	private bool updateName = true;
 
+	[Space(5)]
+
+	[SerializeField]
+	private bool onlyShowNameOnHover = false;
+
 	[Header("UI:")]
 
 	public TMP_Text nameLabel = null;
@@ -29,6 +35,8 @@ public class ElementDisplay : MonoBehaviour
 	public Image image = null;
 	[Space(5)]
 	public TMP_Text noImgLabel = null;
+	[Space(5)]
+	public Button infoButton;
 
 	public void UpdateUI()
 	{
@@ -39,7 +47,10 @@ public class ElementDisplay : MonoBehaviour
 		}
 
 		if (nameLabel != null)
+		{
 			nameLabel.text = element.name;
+			nameLabel.gameObject.SetActive(!onlyShowNameOnHover);
+		}
 		if (categoryLabel != null)
 			categoryLabel.text = "(" + element.category + ")";
 		if (descriptionLabel != null)
@@ -118,5 +129,30 @@ public class ElementDisplay : MonoBehaviour
 	private void OnValidate()
 	{
 		UpdateUI();
+	}
+
+	public void OnPointerEnter(PointerEventData eventData)
+	{
+		OnHover(true);
+	}
+
+	public void OnPointerExit(PointerEventData eventData)
+	{
+		OnHover(false);
+	}
+
+	private void OnHover(bool value)
+	{
+		if (onlyShowNameOnHover == true)
+			if (nameLabel != null)
+				nameLabel.gameObject.SetActive(value);
+
+		if (infoButton != null)
+			infoButton.gameObject.SetActive(value);
+	}
+
+	public void Btn_InfoButton()
+	{
+		FullScreenElementDisplay.singelton.Display(element);
 	}
 }

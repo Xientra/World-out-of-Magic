@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
-  category: '[No Category Yet]'
+  category: Monster
   description: '[No Description Yet]'
   recipes: []
-  id: 
+  id: dc88ff070b785b344864d72508e2ef03
   approved: 0
-  id_inspection: 
+  id_inspection: dc88ff070b785b344864d72508e2ef03

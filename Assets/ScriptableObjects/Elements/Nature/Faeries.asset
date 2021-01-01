@@ -16,7 +16,7 @@ MonoBehaviour:
   image: {fileID: 0}
   category: Nature
   description: 'Faeries are tiny humanoids with wings that often look like butterfly
-    wings but in reality can be whatever the wants.
+    wings but in reality can be whatever they want.
 
     That is due to them being
     manifestations of the combined magic that nature holds in it. Once they manifest
@@ -26,7 +26,7 @@ MonoBehaviour:
 
     Faeries
     are very chaotic in nature and love to play around and do tricks on humans. But
-    they feel no empathy sometimes they have fun on the cost of human lifes.
+    they feel no empathy, so sometimes they have fun at the cost of human lifes.
 
 
     They
@@ -35,7 +35,7 @@ MonoBehaviour:
 
     That
     means they are technically immortal but that is contrasted by the fact that faeries
-    almost not learn at all and then stay the same for all eternity.'
+    almost don''t learn at all and then stay the same for all eternity.'
   recipes:
   - ingredient1: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
     ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
