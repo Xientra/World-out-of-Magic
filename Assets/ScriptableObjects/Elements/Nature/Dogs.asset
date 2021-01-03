@@ -18,23 +18,22 @@ MonoBehaviour:
   description: 'Dogs are together with cats and horses one of the closest companions
     to humans.
 
-    Dogs are the partners of humans.
 
-    With their great tracking
-    skills and high speed they are invaluable for hunting and with their paralyzing
-    bark and high resilience they are incredible helpfull in the fight against monsters.
-
-
-    Every
-    dog has these abilities and develops them on their own but with the help of humans
-    dogs can become stronger than common monsters.
+    With their great tracking skills and high speed they are invaluable
+    for hunting and with their paralyzing bark and high resilience they are incredible
+    helpfull in the fight against monsters.
 
 
-    For unknown the paralizing
-    bark reasons only works on monsters. It can intimidate and confuse animals and
-    humans but for monsters the effect quite literally freezes them in place for
-    up to a few seconds. This of course can intimidate and confuse the monsters as
-    well and is quite a strong ability.'
+    Every dog has these abilities and
+    develops them on their own but with the help of humans dogs can become stronger
+    than common monsters.
+
+
+    For unknown the paralizing bark reasons only works
+    on monsters. It can intimidate and confuse animals and humans but for monsters
+    the effect quite literally freezes them in place for up to a few seconds. This
+    of course can intimidate and confuse the monsters as well and is quite a strong
+    ability.'
   recipes:
   - ingredient1: {fileID: 11400000, guid: aa5ece70715e8cf4aabb447a2fd7ff51, type: 2}
     ingredient2: {fileID: 11400000, guid: d3d0e4f3ac043624a965f33ec9ab4def, type: 2}
