@@ -15,27 +15,35 @@ MonoBehaviour:
   importance: 50
   image: {fileID: 0}
   category: Nature
-  description: 'Faeries are tiny humanoids with wings that often look like butterfly
-    wings but in reality can be whatever they want.
-
-    That is due to them being
-    manifestations of the combined magic that nature holds in it. Once they manifest
-    they are theoretically indipendent from the place that happened but places where
-    that can happen are rare any a lot of faeries stay and protect them.
-
-
-    Faeries
-    are very chaotic in nature and love to play around and do tricks on humans. But
-    they feel no empathy, so sometimes they have fun at the cost of human lifes.
-
+  description: 'Faeries are tiny humanoids with wings that look like butterfly wings.
 
     They
-    only die if their magic runs out and that can only happen if their spend it all
-    at once or they don''t visit a place of sufficient nature in multiple years.
+    are a manifestations of the all magic that nature holds, centered in one being.
+    As such they theoretically have compleate controll over their aperance but little
+    change theirs drasically.
 
-    That
-    means they are technically immortal but that is contrasted by the fact that faeries
-    almost don''t learn at all and then stay the same for all eternity.'
+    They manifest in places, where a lot of natura
+    magic is very strong close together but such places are rare.
+
+    Once they
+    manifest they are theoretically indipendent from the place that happen but a
+    lot of faeries stay there and protect them.
+
+
+    Faeries are very chaotic in
+    nature and love to play around and do tricks on humans. But they feel no empathy,
+    so sometimes they have fun at the cost of human lifes.
+
+
+    They only die if
+    their magic runs out and that can only happen if their spend it all at once or
+    they don''t visit a place of sufficient nature in multiple years.
+
+    That means
+    they are technically immortal but faeries have a contrasting big downfall: they
+    don''t learn. They stay the way they are when they are born for all of eternity
+    not learning and not developing allways having the same childish attitude they
+    had at the beninning.'
   recipes:
   - ingredient1: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
     ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}

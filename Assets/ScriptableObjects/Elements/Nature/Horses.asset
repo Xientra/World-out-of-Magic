@@ -15,8 +15,18 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 0}
   category: Nature
-  description: '[No Description Yet]'
-  recipes: []
+  description: "Horses are together with cats and dogs one of the closest companions
+    to humans.\n\nHumans do not have giant kingdom but even what they have now would
+    have been impossible to achieve without horses.\nHorses are the most imporant
+    in two areas.\nThe first is everywhere, where the human strength reaches its
+    limits, for example in plowing a field or pulling a carriage.\nThe second of
+    course is transport. \n\nAllthough the magical abilites of horses are not as
+    important to th humans as those of cats and dogs it still has them and they are
+    still specifically trained."
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: aa5ece70715e8cf4aabb447a2fd7ff51, type: 2}
+    ingredient2: {fileID: 0}
+    explanation: 
   id: 19cb298aee426f142a5086c26a81cc29
   approved: 0
   id_inspection: 19cb298aee426f142a5086c26a81cc29

@@ -15,8 +15,34 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 0}
   category: Nature
-  description: '[No Description Yet]'
-  recipes: []
+  description: 'Cats are together with dogs and horses one of the closest companions
+    to humans.
+
+    Cats take the role of the guardians.
+
+
+    They are of course
+    far less obidient than dogs or horses but cats have a unique affinity to magic.
+    They seem to see things that humans can''t, like when a person is sick or afflicted
+    with corruption and many humans belive they keep evil spirits away.
+
+    Cats
+    are also very perceptive to magical energy even very far away. Not only that
+    but they can also sense intention of monsters. This mean they can warn humans,
+    when a dangerous monster is in the area or about to attack and that makes cats
+    play a very important role in the humans defence against monsters.
+
+    Generally
+    speaking a place with a cat is a save place.
+
+
+    Wizards are also very fond
+    of cats and the other way around. Cats are attracted to everything magical and
+    their reactions help wizards get a grasp on certian magical effects.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: aa5ece70715e8cf4aabb447a2fd7ff51, type: 2}
+    ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
+    explanation: 
   id: 960b3baec7e1ff240b52233a42f13537
-  approved: 0
+  approved: 1
   id_inspection: 960b3baec7e1ff240b52233a42f13537
