@@ -3,7 +3,7 @@ using UnityEditor;
 using System;
 using System.Reflection;
 
-[CustomEditor(typeof(Element))]
+[CustomEditor(typeof(Element)), CanEditMultipleObjects]
 public class ElementInspector : Editor
 {
 	public override void OnInspectorGUI()

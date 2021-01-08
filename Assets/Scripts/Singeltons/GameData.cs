@@ -113,6 +113,7 @@ public class GameData : MonoBehaviour
 		Save();
 
 		// some animation
+		AudioManager.singelton.PlayElementDiscoveredSound();
 		Debug.Log("Created " + e);
 	}
 
