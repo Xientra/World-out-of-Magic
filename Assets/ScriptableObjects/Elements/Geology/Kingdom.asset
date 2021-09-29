@@ -20,9 +20,6 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
     ingredient2: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
     explanation: 
-  - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
-    ingredient2: {fileID: 11400000, guid: 0192b712d48312743b01192b9af3125a, type: 2}
-    explanation: 
   id: b628039215c69e046a5a538005128a07
   approved: 1
   id_inspection: b628039215c69e046a5a538005128a07

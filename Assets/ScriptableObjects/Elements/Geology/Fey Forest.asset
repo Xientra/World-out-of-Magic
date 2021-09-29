@@ -10,13 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Giant Forest
+  m_Name: Fey Forest
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
-  category: '[No Category Yet]'
-  description: '[No Description Yet]'
-  recipes: []
+  category: Geology
+  description: 'Fey Forests or also just called Giant Forests are enourmous forests
+    with trees and plantlife that reaches enourmous sizes.
+
+    They mark the edges
+    or human civilazation and little tales are told about what lies beyond them.
+
+    When
+    faries have not claimed them already monsters will be numerous here.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
+    ingredient2: {fileID: 11400000, guid: 88868aae9f84d194bac521e02ae9309e, type: 2}
+    explanation: 
   id: dcc175dc81b25714fbb581983cb6c7ea
-  approved: 0
+  approved: 1
   id_inspection: dcc175dc81b25714fbb581983cb6c7ea
