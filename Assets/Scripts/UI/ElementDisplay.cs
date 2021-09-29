@@ -34,6 +34,8 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	[Space(5)]
 	public Image image = null;
 	[Space(5)]
+	public Image frame = null;
+	[Space(5)]
 	public TMP_Text noImgLabel = null;
 	[Space(5)]
 	public Button infoButton;
@@ -84,6 +86,12 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 			}
 		}
 
+		if (frame != null)
+		{
+			Debug.LogError("Do not use GameData.ElementInRecipe at runtime as you did here!");
+			frame.enabled = !GameData.ElementInRecipe(element); // PAST PAUL SAID DON'T USE THIS METHOD SO YEAH FUTURE PAUL DO SOME WORK
+		}
+
 		if (updateName == true)
 			gameObject.name = (element != null ? element.name : "Empty") + " Display";
 	}
@@ -116,6 +124,9 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 			noImgLabel.text = "";
 			noImgLabel.gameObject.SetActive(false);
 		}
+
+		if (frame != null)
+			frame.enabled = false;
 	}
 
 	public void SetActive(bool value)

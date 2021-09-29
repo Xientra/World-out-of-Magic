@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Chaos Golem
   m_EditorClassIdentifier: 
   importance: 999
-  image: {fileID: 0}
-  category: '[No Category Yet]'
+  image: {fileID: 21300000, guid: 1fccacfa4927eaf4bb0ed5a8bb7fdb3c, type: 3}
+  category: Monster
   description: 'A lose formation of inorganic material hold together by violent magic.
 
 

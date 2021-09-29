@@ -5801,6 +5801,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elements View
       objectReference: {fileID: 0}
+    - target: {fileID: 5031035849461391732, guid: 7f7d35e652a58c74e921044abfce5550,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5031035849461391735, guid: 7f7d35e652a58c74e921044abfce5550,
         type: 3}
       propertyPath: m_Pivot.x

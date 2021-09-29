@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Golems
   m_EditorClassIdentifier: 
   importance: 800
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 97e69b04fd8bd7447aa007afe091d70d, type: 3}
   category: Magic
   description: 'Golems are inorganic materials infused with magic and then given
     concept by rune magic.
