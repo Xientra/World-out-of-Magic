@@ -10,19 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Continent
+  m_Name: Plants
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
-  category: Human
-  description: 'On the Contient [Name] there are [number (5?)] Kingdoms.
-
-    [List
-    of the Kingdoms and where they are]'
+  category: Nature
+  description: Grass, Trees, Flowers and so on.
   recipes:
-  - ingredient1: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
-    ingredient2: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
+  - ingredient1: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
+    ingredient2: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
     explanation: 
-  id: df9a2746b0dc9024b92e4b4c29170799
-  approved: 0
-  id_inspection: df9a2746b0dc9024b92e4b4c29170799
+  id: c7bd4195ac8f7df48a45f7c7016beaf6
+  approved: 1
+  id_inspection: c7bd4195ac8f7df48a45f7c7016beaf6

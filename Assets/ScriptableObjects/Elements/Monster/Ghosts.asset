@@ -19,9 +19,9 @@ MonoBehaviour:
     like a shared emotion or though between a lot of people or from the thoughs of
     a dead person, sometimes even from an animal or another monster.
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
-    ingredient2: {fileID: 0}
+  - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+    ingredient2: {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
     explanation: 
   id: 2635366f46fd58c4389b327d32bb805d
-  approved: 0
+  approved: 1
   id_inspection: 2635366f46fd58c4389b327d32bb805d

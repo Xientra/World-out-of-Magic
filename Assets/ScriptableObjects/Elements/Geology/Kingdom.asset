@@ -10,24 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Kings
+  m_Name: Kingdom
   m_EditorClassIdentifier: 
-  importance: 999
+  importance: 50
   image: {fileID: 0}
-  category: Human
-  description: 'Kings are humans ruling over a Kingdom inhabited by other humans.
-
-    They
-    seem to be decided by random and whether or not they treat their subordinates
-    or not varies widely.
-
-
-    In some cities Kings take the second roll behind
-    Wizards Unions or Merchant Guilds.'
+  category: Geology
+  description: Humans formed kingdoms often ruled by a singular figure or family.
   recipes:
-  - ingredient1: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
+  - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+    ingredient2: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+    explanation: 
+  - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
     ingredient2: {fileID: 11400000, guid: 0192b712d48312743b01192b9af3125a, type: 2}
     explanation: 
-  id: ebc3ece52c9ae484e9368a125062808f
+  id: b628039215c69e046a5a538005128a07
   approved: 1
-  id_inspection: ebc3ece52c9ae484e9368a125062808f
+  id_inspection: b628039215c69e046a5a538005128a07

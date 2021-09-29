@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mutants
   m_EditorClassIdentifier: 
   importance: 50
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: d6a146d7adbf6ac4eb2d82ab0c7815c5, type: 3}
   category: Magic
   description: 'Some humans innately posses more magic in them than others.
 

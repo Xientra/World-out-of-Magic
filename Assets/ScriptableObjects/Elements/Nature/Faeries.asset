@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Faeries
   m_EditorClassIdentifier: 
   importance: 50
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: cb9115a6718e92747ab56c615b93302f, type: 3}
   category: Nature
   description: 'Faeries are tiny humanoids with wings that look like butterfly wings.
 

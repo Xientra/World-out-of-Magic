@@ -10,21 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Cities
+  m_Name: Continent
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
-  category: Human
-  description: 'In some kingdoms cities developed.
+  category: Geology
+  description: 'On the Contient [Name] there are [number (5?)] Kingdoms.
 
-    As centeres of trade merchants
-    are especially infuencial here often to the dislike of the king of the land.
-    But some kings allow cities in their land and they are often bustling metropoles
-    with their own rulers.'
+    [List
+    of the Kingdoms and where they are]'
   recipes:
   - ingredient1: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
-    ingredient2: {fileID: 11400000, guid: 78632573fee173f48b6ec24760a3dbc7, type: 2}
+    ingredient2: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
     explanation: 
-  id: 9780d8e9281c68549ac1b2756e7f30a4
-  approved: 1
-  id_inspection: 9780d8e9281c68549ac1b2756e7f30a4
+  id: df9a2746b0dc9024b92e4b4c29170799
+  approved: 0
+  id_inspection: df9a2746b0dc9024b92e4b4c29170799

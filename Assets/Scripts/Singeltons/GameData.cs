@@ -32,14 +32,17 @@ public class GameData : MonoBehaviour
 
 	public event EventHandler<Element> ElementDiscovered;
 
+	public bool loadSaveData = true;
+
 
 	private void Awake()
 	{
 		unlockedElements = unlockedElements ?? new List<Element>();
 		singelton = this;
 
+
 		bool loadSuccess = Load();
-		if (loadSuccess == false)
+		if (loadSuccess == false || loadSaveData == false)
 			LoadNoSave();
 
 		OnElementDiscovered(null);

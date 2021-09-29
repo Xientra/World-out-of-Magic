@@ -10,16 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Undead
+  m_Name: Giant Forest
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
   category: '[No Category Yet]'
   description: '[No Description Yet]'
-  recipes:
-  - ingredient1: {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
-    ingredient2: {fileID: 0}
-    explanation: 
-  id: 87ebc582f2c2a0c489aa2f222ac3ed2a
+  recipes: []
+  id: dcc175dc81b25714fbb581983cb6c7ea
   approved: 0
-  id_inspection: 87ebc582f2c2a0c489aa2f222ac3ed2a
+  id_inspection: dcc175dc81b25714fbb581983cb6c7ea

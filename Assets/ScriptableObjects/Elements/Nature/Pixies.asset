@@ -10,18 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Titans
+  m_Name: Pixies
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
-  category: Monster
-  description: The incarnation of utter destruction. Thankfully they have long since
-    gone extinct and only their remains and their destruction can be widnised in
-    this day and age.
+  category: '[No Category Yet]'
+  description: 'Also somtimes Called Will O''Wisp is a mischievous fairy that loves
+    to play pranks on humans and also animals. More often than not these "pranks"
+    end with leathal or injuring results.
+
+
+    [This is kinda a duplicate of Fairies]'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
+  - ingredient1: {fileID: 11400000, guid: 7e8cd74f7986397449a61e0fff840423, type: 2}
     ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
     explanation: 
-  id: 884ea16ece032584494418dd5e555cb6
-  approved: 1
-  id_inspection: 884ea16ece032584494418dd5e555cb6
+  id: e92ddad732f8c58439f7ac088dc0fb6d
+  approved: 0
+  id_inspection: e92ddad732f8c58439f7ac088dc0fb6d

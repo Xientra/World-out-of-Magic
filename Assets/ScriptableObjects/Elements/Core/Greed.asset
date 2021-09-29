@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Greed
   m_EditorClassIdentifier: 
   importance: 999
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 816a6c94403823a4a8558931b2edb4cc, type: 3}
   category: Core
   description: 'Coming from the humans selfishness and the greates reason for conflict
     between humans.
@@ -25,6 +25,9 @@ MonoBehaviour:
   recipes:
   - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
     ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
+    explanation: 
+  - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+    ingredient2: {fileID: 11400000, guid: 78632573fee173f48b6ec24760a3dbc7, type: 2}
     explanation: 
   id: b97e753ae6ea6324d8f907ba4c8c9b2c
   approved: 1
