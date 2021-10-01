@@ -13,6 +13,14 @@ public class ElementAssetLoader : Editor
 		if (GUILayout.Button("Send UI Update Signal"))
 			gd.SendUIUpdateSignal();
 
+
+		if (GUILayout.Button("Unlock Everthing"))
+		{
+			gd.UnlockAllElements();
+			gd.SendUIUpdateSignal();
+		}
+
+
 		if (GUILayout.Button("Load Elements from Assetbase"))
 		{
 			string[] assetsGUID = AssetDatabase.FindAssets("t:Element", new[] { "Assets/ScriptableObjects/Elements" });

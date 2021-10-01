@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Titans
   m_EditorClassIdentifier: 
   importance: 999
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: c1e356a0c34bc2c438e460f8fe80b3ae, type: 3}
   category: Monster
   description: The incarnation of utter destruction. Thankfully they have long since
     gone extinct and only their remains and their destruction can be widnised in
@@ -21,6 +21,9 @@ MonoBehaviour:
   recipes:
   - ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
     ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
+    explanation: 
+  - ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
+    ingredient2: {fileID: 11400000, guid: 8558394a57adc6e4f9a83c29da368504, type: 2}
     explanation: 
   id: 884ea16ece032584494418dd5e555cb6
   approved: 1

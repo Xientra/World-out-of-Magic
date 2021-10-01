@@ -120,6 +120,16 @@ public class GameData : MonoBehaviour
 		Debug.Log("Created " + e);
 	}
 
+	public void UnlockAllElements()
+	{
+		Debug.LogWarning("All Elements have been unlocked.");
+
+		unlockedElements.Clear();
+		unlockedElements.AddRange(allElements);
+		OnElementDiscovered(null);
+		Save();
+	}
+
 	public void SendUIUpdateSignal()
 	{
 		OnElementDiscovered(null);
@@ -142,6 +152,21 @@ public class GameData : MonoBehaviour
 				if (gd.allElements[i].recipes[j].ingredient1 == e || gd.allElements[i].recipes[j].ingredient2 == e)
 					return true;
 		return false;
+	}
+
+	/// <summary> DO NOT USE THIS METHOD AT RUNTIME </summary>
+	public static List<Recipe> RecipiesWithElement(Element e)
+	{
+		GameData gd = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameData>();
+
+		List<Recipe> result = new List<Recipe>();
+
+		for (int i = 0; i < gd.allElements.Length; i++)
+			for (int j = 0; j < gd.allElements[i].recipes.Length; j++)
+				if (gd.allElements[i].recipes[j].ingredient1 == e || gd.allElements[i].recipes[j].ingredient2 == e)
+					result.Add(gd.allElements[i].recipes[j]);
+
+		return result;
 	}
 
 	#endregion

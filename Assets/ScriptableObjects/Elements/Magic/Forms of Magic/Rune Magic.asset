@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Rune Magic
   m_EditorClassIdentifier: 
   importance: 999
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: c38b5e09d0db5c2478ac8e9ba77caef1, type: 3}
   category: Magic
   description: 'Rune magic is most complicated form of magic, as it includes weaving
     magic into words and symbols.

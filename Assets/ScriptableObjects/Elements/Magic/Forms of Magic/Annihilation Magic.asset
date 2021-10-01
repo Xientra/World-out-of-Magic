@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Annihilation Magic
+  m_EditorClassIdentifier: 
+  importance: 999
+  image: {fileID: 21300000, guid: 6508c3dd712322f4f8e8789416140426, type: 3}
+  category: Magic
+  description: 'The most destructive and most dangerous kind of magic to ever exist.
+
+    This
+    magic uses the destruction of a soul as a startingpoint creating immense magical
+    power. But that is not what makes it so dangerous. When a liing being is killed
+    by this magic its soul is destroyed and turned into more magic energy fueling
+    the Annihilaiton Magic even further, creating a possible infinite feedbackloop.
+
+    Thankfully
+    this kind of magic is so complicated that any attempts of humans to use it have
+    failed in the past only the titans that roamed the earth aeons ago are said to
+    have used this kind of magic.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 6d541093eb4ae484782f3447bd381b5e, type: 2}
+    ingredient2: {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
+    explanation: 
+  id: f2cd5443598426549be8d7d060db2fc7
+  approved: 1
+  id_inspection: f2cd5443598426549be8d7d060db2fc7

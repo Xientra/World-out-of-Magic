@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Soul Art
+  m_EditorClassIdentifier: 
+  importance: 999
+  image: {fileID: 21300000, guid: fc26c9c08ba461e42ba3bf91640efbbe, type: 3}
+  category: Magic
+  description: 'The art of touching souls with magic, ones own or those of others.
+
+    It
+    enables to strengthen others by making them able to acces their souls magic more
+    or applying powerful healing or buffing magic to numerous people by using their
+    own mana.
+
+
+    Of course however that is only the most practiced form of soul
+    arts. As it was discovered a soul can be destroyed creating insane amounts of
+    magic in the process making it a field of interrest in all kinds of applications.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 2e8679f9f4025ee46a55ad446b02b411, type: 2}
+    ingredient2: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
+    explanation: 
+  id: 41c909ce57e27a14b9e242deaaac1da6
+  approved: 1
+  id_inspection: 41c909ce57e27a14b9e242deaaac1da6

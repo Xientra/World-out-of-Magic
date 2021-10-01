@@ -13,16 +13,22 @@ MonoBehaviour:
   m_Name: Soul
   m_EditorClassIdentifier: 
   importance: 9999
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: f587eea9947b44e4f84fc4241a4215b4, type: 3}
   category: Human
   description: 'Was eventual discovered by the attempts at healing and ressurecting
     humans. It was also found out that animals and monsters also posses a soul but
     the soul of humans was almost always a lot greater.
 
-    It is speculated that
-    a soul becomes greater by knowledge and emotions that the body experiances as
-    childs of humans, animals and monsters all have a very fickle soul.'
-  recipes: []
+    Experiments found that
+    children of both humans and other species have a lot weaker souls and that they
+    grow over time.
+
+    It is speculated that knowledge and emotions a human experiences
+    are the things that make their soul stronger.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 41698e7b1811be641bf7fece7b1a4077, type: 2}
+    ingredient2: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+    explanation: 
   id: 41a6d2dea6e477c479b340ff6d4e9795
   approved: 1
   id_inspection: 41a6d2dea6e477c479b340ff6d4e9795

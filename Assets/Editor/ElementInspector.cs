@@ -2,6 +2,7 @@
 using UnityEditor;
 using System;
 using System.Reflection;
+using System.Collections.Generic;
 
 [CustomEditor(typeof(Element)), CanEditMultipleObjects]
 public class ElementInspector : Editor
@@ -24,7 +25,12 @@ public class ElementInspector : Editor
 		//e.description = GUILayout.TextArea(e.description, new[] { GUILayout.MaxHeight(48), GUILayout.ExpandHeight(true) });
 
 		if (GUILayout.Button("I this in a recipe?"))
-			Debug.Log(GameData.ElementInRecipe(e) ? ("Yes \"" + e.name + "\" is in a recipe.") : ("No \"" + e.name + "\" is not in a recipe."));
+		{
+			List<Recipe> rs = GameData.RecipiesWithElement(e);
+			Debug.Log(rs.Count == 0 ? ("No \"" + e.name + "\" is not in a recipe.") : ("Yes \"" + e.name + "\" is in a recipe."));
+			foreach (Recipe r in rs)
+				Debug.Log(r.ingredient1.name + " + " + r.ingredient2.name + " give something.");
+		}
 	}
 
 	// shows the image in the object preview

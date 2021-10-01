@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Miracle Magic
+  m_EditorClassIdentifier: 
+  importance: 999
+  image: {fileID: 0}
+  category: Magic
+  description: "The highest form of Soul Arts: Miracle \nMagic. Also the highest
+    and most powerful form of healing magic, including the ability of resurrection.\nMiracle
+    Magic also includes powerful healing spells that are able to recover lost limbs,
+    cure all illness or heal everyone in an entire city (or battlefield).\n"
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 6d541093eb4ae484782f3447bd381b5e, type: 2}
+    ingredient2: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
+    explanation: 
+  - ingredient1: {fileID: 11400000, guid: 2e8679f9f4025ee46a55ad446b02b411, type: 2}
+    ingredient2: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+    explanation: 
+  - ingredient1: {fileID: 11400000, guid: 6d541093eb4ae484782f3447bd381b5e, type: 2}
+    ingredient2: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+    explanation: 
+  - ingredient1: {fileID: 11400000, guid: 6d541093eb4ae484782f3447bd381b5e, type: 2}
+    ingredient2: {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
+    explanation: 
+  id: e37d06104a4e458489b6e39f2c7a278a
+  approved: 0
+  id_inspection: e37d06104a4e458489b6e39f2c7a278a
