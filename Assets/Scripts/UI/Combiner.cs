@@ -62,6 +62,7 @@ public class Combiner : MonoBehaviour
 		if (ingredientDisplay1.Element != null && ingredientDisplay2.Element != null)
 		{
 			Element e = GameData.singelton.CombineElements(ingredientDisplay1.Element, ingredientDisplay2.Element);
+
 			if (e != null)
 			{
 				outputDisplay.Element = e;
