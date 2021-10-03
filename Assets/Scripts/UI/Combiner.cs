@@ -16,10 +16,13 @@ public class Combiner : MonoBehaviour
 	public ElementDisplay ingredientDisplay1;
 	public ElementDisplay ingredientDisplay2;
 
-	[Space(5)]
+	[Header("Output:")]
 
 	public ElementDisplay outputDisplay;
 
+	[Space(5)]
+
+	public GameObject discoverEffect;
 
 	private void Start()
 	{
@@ -66,6 +69,7 @@ public class Combiner : MonoBehaviour
 			if (e != null)
 			{
 				outputDisplay.Element = e;
+				outputDisplay.SetActive(true);
 				ingredientDisplay1.Clear();
 				ingredientDisplay2.Clear();
 			}
@@ -75,5 +79,10 @@ public class Combiner : MonoBehaviour
 	public void Btn_ClearIngredientDisplay(ElementDisplay source)
 	{
 		source.Clear();
+	}
+
+	public void Btn_CloseOutputDisplay()
+	{
+		outputDisplay.SetActive(false);
 	}
 }

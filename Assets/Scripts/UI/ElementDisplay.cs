@@ -19,6 +19,7 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	}
 
 	[SerializeField]
+	[Tooltip("Update the name of the GameObject with the name of the held element.")]
 	private bool updateName = true;
 
 	[Space(5)]
