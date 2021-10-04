@@ -64,14 +64,31 @@ public class Combiner : MonoBehaviour
 	{
 		if (ingredientDisplay1.Element != null && ingredientDisplay2.Element != null)
 		{
-			Element e = GameData.singelton.CombineElements(ingredientDisplay1.Element, ingredientDisplay2.Element);
+			bool newDiscovery = false;
+			Element e = GameData.singelton.CombineElements(ingredientDisplay1.Element, ingredientDisplay2.Element, out newDiscovery);
 
 			if (e != null)
 			{
-				outputDisplay.Element = e;
-				outputDisplay.SetActive(true);
-				ingredientDisplay1.Clear();
-				ingredientDisplay2.Clear();
+				if (newDiscovery == true)
+				{
+					// some animation
+					AudioManager.singelton.PlayElementDiscoveredSound();
+
+					outputDisplay.Element = e;
+					outputDisplay.SetActive(true);
+
+					ingredientDisplay1.Clear();
+					ingredientDisplay2.Clear();
+
+				}
+				else
+				{
+					outputDisplay.Element = e;
+					outputDisplay.SetActive(true);
+
+					ingredientDisplay1.Clear();
+					ingredientDisplay2.Clear();
+				}
 			}
 		}
 	}

@@ -84,8 +84,15 @@ public class GameData : MonoBehaviour
 		unlockedElements.Sort((e1, e2) => e1.importance - e2.importance);
 	}
 
-
-	public Element CombineElements(Element e1, Element e2)
+	/// <summary>
+	/// Returns the element that is created by the combination of e1 and e2. Returns null if no such combination exists.
+	/// newCombination will be set to true if the resulting combination has been done for the first time
+	/// </summary>
+	/// <param name="e1"></param>
+	/// <param name="e2"></param>
+	/// <param name="newCombination"> will be set to true if the resulting combination has been done for the first time</param>
+	/// <returns></returns>
+	public Element CombineElements(Element e1, Element e2, out bool newCombination)
 	{
 		for (int i = 0; i < allElements.Length; i++)
 		{
@@ -96,13 +103,20 @@ public class GameData : MonoBehaviour
 				if (r.ingredient1 == e1 && r.ingredient2 == e2 || r.ingredient1 == e2 && r.ingredient2 == e1)
 				{
 					if (!unlockedElements.Contains(allElements[i]))
+					{
 						DiscoverElement(allElements[i]);
+						newCombination = true;
+					}
+					else
+						newCombination = false;
+
 					return allElements[i];
 				}
 			}
 		}
 
 		Debug.Log("No Combination");
+		newCombination = false;
 		return null;
 	}
 
@@ -115,8 +129,6 @@ public class GameData : MonoBehaviour
 
 		Save();
 
-		// some animation
-		AudioManager.singelton.PlayElementDiscoveredSound();
 		Debug.Log("Created " + e);
 	}
 
