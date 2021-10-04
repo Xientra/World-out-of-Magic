@@ -22,7 +22,9 @@ public class Combiner : MonoBehaviour
 
 	[Space(5)]
 
-	public GameObject discoverEffect;
+	public Image outputBackground;
+	public TMP_Text outputElementNameText;
+	public TMP_Text outputHeader;
 
 	private void Start()
 	{
@@ -59,14 +61,13 @@ public class Combiner : MonoBehaviour
 	}
 
 
-
 	public void Btn_Combine()
 	{
 		if (ingredientDisplay1.Element != null && ingredientDisplay2.Element != null)
 		{
 			bool newDiscovery = false;
 			Element e = GameData.singelton.CombineElements(ingredientDisplay1.Element, ingredientDisplay2.Element, out newDiscovery);
-
+			
 			if (e != null)
 			{
 				if (newDiscovery == true)
@@ -83,6 +84,9 @@ public class Combiner : MonoBehaviour
 				}
 				else
 				{
+					// some animation
+					AudioManager.singelton.PlayElementDiscoveredSound();
+
 					outputDisplay.Element = e;
 					outputDisplay.SetActive(true);
 
@@ -92,6 +96,7 @@ public class Combiner : MonoBehaviour
 			}
 		}
 	}
+
 
 	public void Btn_ClearIngredientDisplay(ElementDisplay source)
 	{
