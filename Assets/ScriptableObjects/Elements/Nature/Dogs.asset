@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dogs
   m_EditorClassIdentifier: 
   importance: 999
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 0cbf606781b60b04292025ffe48c12ca, type: 3}
   category: Nature
   description: 'Dogs are together with cats and horses one of the closest companions
     to humans.

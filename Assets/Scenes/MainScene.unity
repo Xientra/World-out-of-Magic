@@ -49134,7 +49134,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: db4a1fd942edd6a41a34fe03863b5836, type: 2}
   categories: []
   unlockedElements: []
-  loadSaveData: 0
+  loadSaveData: 1
 --- !u!4 &1872000857
 Transform:
   m_ObjectHideFlags: 0

@@ -38,6 +38,9 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
     ingredient2: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
     explanation: 
+  - ingredient1: {fileID: 11400000, guid: ec90d4955c85dea4cac9f670a2bfab6a, type: 2}
+    ingredient2: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
+    explanation: 
   id: abd2ccfc09f7d974abd92e0577a936a5
   approved: 0
   id_inspection: abd2ccfc09f7d974abd92e0577a936a5

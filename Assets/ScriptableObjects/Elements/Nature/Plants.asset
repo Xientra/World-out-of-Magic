@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Plants
   m_EditorClassIdentifier: 
   importance: 999
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: e68d101392a249d4882bfd7c33abee00, type: 3}
   category: Nature
   description: Grass, Trees, Flowers and so on.
   recipes:
