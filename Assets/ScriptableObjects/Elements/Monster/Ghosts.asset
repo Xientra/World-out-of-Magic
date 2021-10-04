@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ghosts
   m_EditorClassIdentifier: 
   importance: 999
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: d5c21d3d274e1e44eb90c2933512ad88, type: 3}
   category: Monster
   description: Ghosts are probably the most humanlike monsters. They form things
     like a shared emotion or though between a lot of people or from the thoughs of

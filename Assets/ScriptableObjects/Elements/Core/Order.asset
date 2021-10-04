@@ -24,6 +24,9 @@ MonoBehaviour:
     ingredient2: {fileID: 11400000}
     explanation: Continuing to bring more order into ordered things is a pointless
       task many wizards are doing their entire lifes.
+  - ingredient1: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
+    ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
+    explanation: 
   id: a8fd732fc63744c4bb57c287bb305e0e
   approved: 1
   id_inspection: a8fd732fc63744c4bb57c287bb305e0e

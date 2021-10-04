@@ -23,6 +23,12 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: 7e8cd74f7986397449a61e0fff840423, type: 2}
     ingredient2: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
     explanation: 
+  - ingredient1: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
+    ingredient2: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
+    explanation: 
+  - ingredient1: {fileID: 11400000, guid: 7e8cd74f7986397449a61e0fff840423, type: 2}
+    ingredient2: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
+    explanation: 
   id: f0d39961d50d75b45a7cd2133835bd82
   approved: 1
   id_inspection: f0d39961d50d75b45a7cd2133835bd82
