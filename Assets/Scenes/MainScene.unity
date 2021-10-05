@@ -5047,6 +5047,9 @@ MonoBehaviour:
   element: {fileID: 0}
   updateName: 0
   onlyShowNameOnHover: 0
+  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  finalElement: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  elementDone: {r: 0, g: 1, b: 1, a: 1}
   nameLabel: {fileID: 696004880}
   categoryLabel: {fileID: 418916052}
   descriptionLabel: {fileID: 1490785476}
@@ -21480,6 +21483,9 @@ MonoBehaviour:
   element: {fileID: 0}
   updateName: 0
   onlyShowNameOnHover: 0
+  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  finalElement: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  elementDone: {r: 0, g: 1, b: 1, a: 1}
   nameLabel: {fileID: 852331169}
   categoryLabel: {fileID: 803866441}
   descriptionLabel: {fileID: 1056446373}
@@ -26917,9 +26923,6 @@ MonoBehaviour:
   ingredientDisplay1: {fileID: 2076342186}
   ingredientDisplay2: {fileID: 563471886}
   outputDisplay: {fileID: 1043781341}
-  outputBackground: {fileID: 0}
-  outputElementNameText: {fileID: 1186750945}
-  outputHeader: {fileID: 0}
 --- !u!114 &937856435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27080,6 +27083,9 @@ MonoBehaviour:
   element: {fileID: 0}
   updateName: 0
   onlyShowNameOnHover: 0
+  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  finalElement: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  elementDone: {r: 0, g: 1, b: 1, a: 1}
   nameLabel: {fileID: 1186750945}
   categoryLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
@@ -38604,6 +38610,9 @@ MonoBehaviour:
   element: {fileID: 0}
   updateName: 1
   onlyShowNameOnHover: 0
+  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  finalElement: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  elementDone: {r: 0, g: 1, b: 1, a: 1}
   nameLabel: {fileID: 0}
   categoryLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
@@ -49094,18 +49103,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 65263f2932939b1448b1ce39ea9b632a, type: 2}
   - {fileID: 11400000, guid: 572fbb0d704b1dc4790db2ff1869853a, type: 2}
   - {fileID: 11400000, guid: 7a40e084be73cad4bbe6c4680e16efa5, type: 2}
+  - {fileID: 11400000, guid: 5a50ab11602dd324a8e08a47ee7e0e57, type: 2}
   - {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
   - {fileID: 11400000, guid: 980d80228da5f2742b257e6cfc0692f9, type: 2}
   - {fileID: 11400000, guid: 78632573fee173f48b6ec24760a3dbc7, type: 2}
   - {fileID: 11400000, guid: 2e8679f9f4025ee46a55ad446b02b411, type: 2}
   - {fileID: 11400000, guid: a30ebfb2201342e48b9fd7d46f93f41c, type: 2}
+  - {fileID: 11400000, guid: 8558394a57adc6e4f9a83c29da368504, type: 2}
   - {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
+  - {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
   - {fileID: 11400000, guid: 7e3765da29c9cd8449ecb69d36170909, type: 2}
   - {fileID: 11400000, guid: cbbb5aa9b5d5a6743aa8ce47fdd5c737, type: 2}
   - {fileID: 11400000, guid: a4163f0df76852342a6d5e4fd9d3d6e1, type: 2}
   - {fileID: 11400000, guid: 0bc6929799feaf346893da6dab448989, type: 2}
   - {fileID: 11400000, guid: 7942e3d09b2015b46892c34a2bf2215f, type: 2}
   - {fileID: 11400000, guid: d9370a8083916784ba8985fb0c98d1a3, type: 2}
+  - {fileID: 11400000, guid: 6d541093eb4ae484782f3447bd381b5e, type: 2}
   - {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
   - {fileID: 11400000, guid: ec90d4955c85dea4cac9f670a2bfab6a, type: 2}
   - {fileID: 11400000, guid: efe534d287996df41abd2d2e925ae3da, type: 2}
@@ -49119,6 +49132,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d0bf89a097d93884883e42bde14dd2c6, type: 2}
   - {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
   - {fileID: 11400000, guid: ca0ac0a2b7f62df4aa2bb5fe0cee0559, type: 2}
+  - {fileID: 11400000, guid: 41698e7b1811be641bf7fece7b1a4077, type: 2}
   - {fileID: 11400000, guid: 64fd6f7c4dd57c944a209a9c9e0c3924, type: 2}
   - {fileID: 11400000, guid: dc87649e49da97148b338911a9000ea2, type: 2}
   - {fileID: 11400000, guid: 0d18af515a5a712469b7d9b98683616d, type: 2}
@@ -49134,7 +49148,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: db4a1fd942edd6a41a34fe03863b5836, type: 2}
   categories: []
   unlockedElements: []
-  loadSaveData: 1
+  loadSaveData: 0
 --- !u!4 &1872000857
 Transform:
   m_ObjectHideFlags: 0

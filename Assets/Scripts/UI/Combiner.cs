@@ -20,12 +20,6 @@ public class Combiner : MonoBehaviour
 
 	public ElementDisplay outputDisplay;
 
-	[Space(5)]
-
-	public Image outputBackground;
-	public TMP_Text outputElementNameText;
-	public TMP_Text outputHeader;
-
 	private void Start()
 	{
 		selecter1.ElementPressed += Selecter_ElementPressed;

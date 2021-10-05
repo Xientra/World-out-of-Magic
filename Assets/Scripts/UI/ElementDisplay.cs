@@ -27,6 +27,12 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	[SerializeField]
 	private bool onlyShowNameOnHover = false;
 
+	[Header("Frame Colors:")]
+
+	public Color defaultColor = new Color(0, 0, 0, 0);
+	public Color finalElement = Color.yellow;
+	public Color elementDone = Color.cyan;
+
 	[Header("UI:")]
 
 	public TMP_Text nameLabel = null;
@@ -87,10 +93,21 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 			}
 		}
 
+
 		if (frame != null)
 		{
-			Debug.LogError("Do not use GameData.ElementInRecipe at runtime as you did here!");
-			frame.enabled = !GameData.ElementInRecipe(element); // PAST PAUL SAID DON'T USE THIS METHOD SO YEAH FUTURE PAUL DO SOME WORK
+			switch (GameData.ElementCombinationStatus(element))
+			{
+				case 1:
+					frame.color = elementDone;
+					break;
+				case 2:
+					frame.color = finalElement;
+					break;
+				default:
+					frame.color = defaultColor;
+					break;
+			}
 		}
 
 		if (updateName == true)
@@ -127,7 +144,7 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 		}
 
 		if (frame != null)
-			frame.enabled = false;
+			frame.color = defaultColor;
 	}
 
 	public void SetActive(bool value)

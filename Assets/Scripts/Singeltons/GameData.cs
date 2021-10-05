@@ -13,7 +13,6 @@ public class GameData : MonoBehaviour
 	public static readonly string saveFileName = "SaveData";
 	public static readonly string saveFileExtension = ".woom";
 
-
 	[Header("General:")]
 
 	public Element originElement;
@@ -88,10 +87,7 @@ public class GameData : MonoBehaviour
 	/// Returns the element that is created by the combination of e1 and e2. Returns null if no such combination exists.
 	/// newCombination will be set to true if the resulting combination has been done for the first time
 	/// </summary>
-	/// <param name="e1"></param>
-	/// <param name="e2"></param>
-	/// <param name="newCombination"> will be set to true if the resulting combination has been done for the first time</param>
-	/// <returns></returns>
+	/// <param name="newCombination"> Will be set to true if the resulting combination has been done for the first time</param>
 	public Element CombineElements(Element e1, Element e2, out bool newCombination)
 	{
 		for (int i = 0; i < allElements.Length; i++)
@@ -146,15 +142,15 @@ public class GameData : MonoBehaviour
 	{
 		OnElementDiscovered(null);
 	}
+	/// <summary> A Observable. UI subscribes to this to update themselfs once new stuff exists. </summary>
 	private void OnElementDiscovered(Element e)
 	{
 		ElementDiscovered?.Invoke(this, e);
 	}
 
-
 	#region static stuff
 
-	/// <summary> DO NOT USE THIS METHOD AT RUNTIME </summary>
+	/// <summary> O(#combinations) </summary>
 	public static bool ElementInRecipe(Element e)
 	{
 		GameData gd = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameData>();
@@ -166,7 +162,7 @@ public class GameData : MonoBehaviour
 		return false;
 	}
 
-	/// <summary> DO NOT USE THIS METHOD AT RUNTIME </summary>
+	/// <summary> O(#combinations) </summary>
 	public static List<Recipe> RecipiesWithElement(Element e)
 	{
 		GameData gd = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameData>();
@@ -179,6 +175,33 @@ public class GameData : MonoBehaviour
 					result.Add(gd.allElements[i].recipes[j]);
 
 		return result;
+	}
+
+	/// <summary>
+	/// Checks the status of combinations based on the unlocked elements. O(#combinations * #unlockedElements)
+	/// </summary>
+	/// <returns>
+	/// 0: There are still undiscovered elements with this element in the recipe. <br/>
+	/// 1: Every combination with this element has been found (opposite of 0). <br/>
+	/// 2: This element is not part of any combination to begin with. <br/>
+	/// </returns>
+	public static int ElementCombinationStatus(Element e)
+	{
+		bool two = true;
+		bool zeroOrOne = true;
+
+		GameData gd = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameData>();
+
+		for (int i = 0; i < gd.allElements.Length; i++)
+			for (int j = 0; j < gd.allElements[i].recipes.Length; j++)
+				if (gd.allElements[i].recipes[j].ingredient1 == e || gd.allElements[i].recipes[j].ingredient2 == e)
+				{
+					if (singelton.unlockedElements.Contains(gd.allElements[i]) == false)
+						zeroOrOne = false;
+					two = false;
+				}
+
+		return two ? 2 : (zeroOrOne ? 1 : 0);
 	}
 
 	#endregion

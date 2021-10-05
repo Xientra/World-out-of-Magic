@@ -771,6 +771,9 @@ MonoBehaviour:
   element: {fileID: 0}
   updateName: 1
   onlyShowNameOnHover: 1
+  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  finalElement: {r: 1, g: 0.8744645, b: 0.18396229, a: 1}
+  elementDone: {r: 0, g: 0.90836334, b: 1, a: 1}
   nameLabel: {fileID: 8150048884063050214}
   categoryLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
@@ -830,19 +833,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9143884562312872549}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 469ce0f38d81e8544b68f3ffd4d781b2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 14f4b9ed9a862dc44b8d80c1b0b429de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

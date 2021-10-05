@@ -31,6 +31,14 @@ public class Element : ScriptableObject
 	public string ID { get => id; }
 
 
+	/// <summary> A colleciton of varaibles that are set at runtime. </summary>
+	public class RuntimeFlags
+	{
+		public bool allCombinationsExhausted = false;
+		public bool notPartOfAnyCombination = false;
+	}
+
+
 #if UNITY_EDITOR
 	[Space(15)]
 	public bool approved = false;
