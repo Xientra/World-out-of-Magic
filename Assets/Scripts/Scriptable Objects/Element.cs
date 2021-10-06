@@ -13,6 +13,7 @@ public class Element : ScriptableObject
 	//public Texture2D texture;
 	public Sprite image;
 
+	[Tooltip("The category of this element. \nShould the category simply be \"_\" (an underscore) it is regarded as a sub element of the first ingridient in its first recipe.")]
 	public string category = "[No Category Yet]";
 
 	[TextArea(1, 20)]

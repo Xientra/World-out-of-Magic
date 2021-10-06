@@ -13,6 +13,12 @@ public class GameData : MonoBehaviour
 	public static readonly string saveFileName = "SaveData";
 	public static readonly string saveFileExtension = ".woom";
 
+	/// <summary>
+	/// If a Element has this string as it's category it is regarded as a Sub Element.
+	/// This category is also not returned in GetCurrentCategories.
+	/// </summary>
+	public static readonly string subElementCategoryFlagName = "_";
+
 	[Header("General:")]
 
 	public Element originElement;
@@ -73,7 +79,7 @@ public class GameData : MonoBehaviour
 
 	public HashSet<string> GetCurrentCategories()
 	{
-		HashSet<string> categories = new HashSet<string>(unlockedElements.ConvertAll<string>(e => e.category));
+		HashSet<string> categories = new HashSet<string>(unlockedElements.ConvertAll<string>(e => e.category).FindAll(s => s != subElementCategoryFlagName));
 		return categories;
 	}
 

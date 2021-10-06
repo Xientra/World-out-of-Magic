@@ -29,7 +29,14 @@ public class ElementAssetLoader : Editor
 			{
 				List<Element> loadInto = new List<Element>();
 				foreach (string guid in assetsGUID)
-					loadInto.Add(AssetDatabase.LoadAssetAtPath<Element>(AssetDatabase.GUIDToAssetPath(guid)));
+				{
+					Element e = AssetDatabase.LoadAssetAtPath<Element>(AssetDatabase.GUIDToAssetPath(guid));
+					if (e.recipes.Length != 0)
+						if (e.recipes[0].ingredient1 != null && e.recipes[0].ingredient2 != null)
+							loadInto.Add(e);
+					if (e.name == "Magic")
+						loadInto.Add(e);
+				}
 
 				gd.allElements = loadInto.ToArray();
 			}

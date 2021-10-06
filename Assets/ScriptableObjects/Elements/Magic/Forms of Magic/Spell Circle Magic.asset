@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Spell Circle Magic
+  m_EditorClassIdentifier: 
+  importance: 999
+  image: {fileID: 21300000, guid: 29f3b1c81a8b8b14dbbb7160898dc209, type: 3}
+  category: Magic
+  description: 'Through the controll and finetuning that rune magic brought, combined
+    with the destructive nature of Elemental Magic Spell Circle Magic was created.
+
+    It
+    focuses on creating big and elaborate magic circles that takes mutiple minutes
+    to complete but has incredibly powerfull effects at the end like causing earthquakes
+    or shooting a gigantic Lightning spear from the sky.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: a4163f0df76852342a6d5e4fd9d3d6e1, type: 2}
+    ingredient2: {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
+    explanation: 
+  id: 7acdfb1ae1814d94db67c305ec242b3c
+  approved: 0
+  id_inspection: 7acdfb1ae1814d94db67c305ec242b3c

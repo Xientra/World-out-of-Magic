@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 21300000, guid: 101546d211e9a904b984939d5db2939b, type: 3}
-  category: '[No Category Yet]'
+  category: Monster
   description: 'The Reaper, a skelletal figure in a black hood wielding a scythe.
 
     Due

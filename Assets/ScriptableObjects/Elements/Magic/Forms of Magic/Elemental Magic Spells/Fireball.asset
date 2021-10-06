@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Space Manipulation Magic
+  m_Name: Fireball
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
-  category: Magic
-  description: '[Teleportation Magic]'
-  recipes: []
-  id: a12d3fdad4e97bb4d996b1bd8732c3ce
+  category: _
+  description: The most fundamental Elemental Magic spell.
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
+    ingredient2: {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
+    explanation: 
+  id: 88e106edd5042d949bd742ed87e4c546
   approved: 0
-  id_inspection: a12d3fdad4e97bb4d996b1bd8732c3ce
+  id_inspection: 88e106edd5042d949bd742ed87e4c546

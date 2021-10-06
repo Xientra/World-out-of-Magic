@@ -19,17 +19,20 @@ MonoBehaviour:
 
     This
     magic uses the destruction of a soul as a startingpoint creating immense magical
-    power. But that is not what makes it so dangerous. When a liing being is killed
+    power. But that is not what makes it so dangerous. When a living being is killed
     by this magic its soul is destroyed and turned into more magic energy fueling
-    the Annihilaiton Magic even further, creating a possible infinite feedbackloop.
+    the Annihilaiton Magic even further, creating a possible infinite feedbackloop
+    with monsterous capabilities.
 
-    Thankfully
-    this kind of magic is so complicated that any attempts of humans to use it have
-    failed in the past only the titans that roamed the earth aeons ago are said to
-    have used this kind of magic.'
+    Thankfully this kind of magic is so complicated
+    that any attempts of humans to use it have failed in the past only the titans
+    that roamed the earth aeons ago are said to have used this kind of magic.'
   recipes:
   - ingredient1: {fileID: 11400000, guid: 6d541093eb4ae484782f3447bd381b5e, type: 2}
     ingredient2: {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
+    explanation: 
+  - ingredient1: {fileID: 11400000, guid: 64fd6f7c4dd57c944a209a9c9e0c3924, type: 2}
+    ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
     explanation: 
   id: f2cd5443598426549be8d7d060db2fc7
   approved: 1

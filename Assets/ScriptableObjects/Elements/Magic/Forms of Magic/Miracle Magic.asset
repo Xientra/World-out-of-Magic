@@ -15,7 +15,7 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 0}
   category: Magic
-  description: "The highest form of Soul Arts: Miracle \nMagic. Also the highest
+  description: "The highest form of Soul Arts: Miracle \nMagic.\nAlso the highest
     and most powerful form of healing magic, including the ability of resurrection.\nMiracle
     Magic also includes powerful healing spells that are able to recover lost limbs,
     cure all illness or heal everyone in an entire city (or battlefield).\n"
@@ -28,6 +28,9 @@ MonoBehaviour:
     explanation: 
   - ingredient1: {fileID: 11400000, guid: 6d541093eb4ae484782f3447bd381b5e, type: 2}
     ingredient2: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+    explanation: 
+  - ingredient1: {fileID: 11400000, guid: 6d541093eb4ae484782f3447bd381b5e, type: 2}
+    ingredient2: {fileID: 11400000, guid: cbbb5aa9b5d5a6743aa8ce47fdd5c737, type: 2}
     explanation: 
   - ingredient1: {fileID: 11400000, guid: 6d541093eb4ae484782f3447bd381b5e, type: 2}
     ingredient2: {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
