@@ -15,6 +15,7 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 21300000, guid: fc26c9c08ba461e42ba3bf91640efbbe, type: 3}
   category: Magic
+  parentElement: {fileID: 0}
   description: 'The art of touching souls with magic, ones own or those of others.
 
     It
@@ -30,6 +31,7 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: 2e8679f9f4025ee46a55ad446b02b411, type: 2}
     ingredient2: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
     explanation: 
+  subElements: []
   id: 41c909ce57e27a14b9e242deaaac1da6
   approved: 1
   id_inspection: 41c909ce57e27a14b9e242deaaac1da6

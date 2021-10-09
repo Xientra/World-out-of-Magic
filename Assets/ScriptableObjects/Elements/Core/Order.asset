@@ -15,6 +15,7 @@ MonoBehaviour:
   importance: 2
   image: {fileID: 21300000, guid: 249c25bb3aeb8c945858f290c63099ed, type: 3}
   category: Core
+  parentElement: {fileID: 0}
   description: Order and Logic, the thing humans made their strongest tool.
   recipes:
   - ingredient1: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
@@ -24,6 +25,7 @@ MonoBehaviour:
     ingredient2: {fileID: 11400000}
     explanation: Continuing to bring more order into ordered things is a pointless
       task many wizards are doing their entire lifes.
+  subElements: []
   id: a8fd732fc63744c4bb57c287bb305e0e
   approved: 1
   id_inspection: a8fd732fc63744c4bb57c287bb305e0e

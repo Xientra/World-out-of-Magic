@@ -15,11 +15,13 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 21300000, guid: 565fae4957293634290140a46554d3a2, type: 3}
   category: Core
+  parentElement: {fileID: 0}
   description: The end of all life.
   recipes:
   - ingredient1: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
     ingredient2: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
     explanation: 
+  subElements: []
   id: 4a4e36bf9795ae04193de67fd5dbb14e
   approved: 1
   id_inspection: 4a4e36bf9795ae04193de67fd5dbb14e

@@ -15,6 +15,7 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 21300000, guid: 463c26bf8048d0f42a191d400570ddbe, type: 3}
   category: Human
+  parentElement: {fileID: 0}
   description: 'Putting a human soul in a Golem is highly shunned by the magic community
     as it requires, like many soul art, the painfull extraction of a human soul leading
     to death.
@@ -33,6 +34,7 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: 2e8679f9f4025ee46a55ad446b02b411, type: 2}
     ingredient2: {fileID: 11400000, guid: 7942e3d09b2015b46892c34a2bf2215f, type: 2}
     explanation: 
+  subElements: []
   id: 8eeb8f41a88961b4d80bfc2dc1fe9dea
   approved: 0
   id_inspection: 8eeb8f41a88961b4d80bfc2dc1fe9dea

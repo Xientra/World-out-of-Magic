@@ -15,16 +15,18 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 0}
   category: Human
+  parentElement: {fileID: 0}
   description: 'Heros are humanities frontline against the dangers of nature and
     the monsters that roam the wilderness.
 
     Armies and guards can protect a city
-    from a few Fenris but ancient monsters can only be beaten by the monst legendary
+    from a few Fenris but ancient monsters can only be beaten by the most legendary
     of heroes.'
   recipes:
   - ingredient1: {fileID: 11400000, guid: 7b1e6a61b9ebc98438e670beffb19e14, type: 2}
     ingredient2: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
     explanation: 
+  subElements: []
   id: 967013bcb9b1ab340b5e072152f5f6dd
   approved: 0
   id_inspection: 967013bcb9b1ab340b5e072152f5f6dd

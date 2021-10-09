@@ -15,6 +15,7 @@ MonoBehaviour:
   importance: 10
   image: {fileID: 0}
   category: Human
+  parentElement: {fileID: 0}
   description: 'Failed attempts in Polymorphy lead to humans having limbs or traits
     of animals, some of which were capable of having children.
 
@@ -32,6 +33,7 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
     ingredient2: {fileID: 11400000, guid: cbbb5aa9b5d5a6743aa8ce47fdd5c737, type: 2}
     explanation: 
+  subElements: []
   id: 38d6557bd825df44d902b2c8421b493b
   approved: 1
   id_inspection: 38d6557bd825df44d902b2c8421b493b

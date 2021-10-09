@@ -15,6 +15,7 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 21300000, guid: 1fccacfa4927eaf4bb0ed5a8bb7fdb3c, type: 3}
   category: Monster
+  parentElement: {fileID: 0}
   description: 'A lose formation of inorganic material hold together by violent magic.
 
 
@@ -24,6 +25,7 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: 7942e3d09b2015b46892c34a2bf2215f, type: 2}
     ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
     explanation: 
+  subElements: []
   id: f0a4966093b8df14998d32c67b2cf911
   approved: 1
   id_inspection: f0a4966093b8df14998d32c67b2cf911

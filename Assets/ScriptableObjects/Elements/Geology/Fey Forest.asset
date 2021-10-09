@@ -15,6 +15,7 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 0}
   category: Geology
+  parentElement: {fileID: 0}
   description: 'Fey Forests or also just called Giant Forests are enourmous forests
     with trees and plantlife that reaches enourmous sizes.
 
@@ -27,6 +28,7 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
     ingredient2: {fileID: 11400000, guid: 88868aae9f84d194bac521e02ae9309e, type: 2}
     explanation: 
+  subElements: []
   id: dcc175dc81b25714fbb581983cb6c7ea
   approved: 1
   id_inspection: dcc175dc81b25714fbb581983cb6c7ea

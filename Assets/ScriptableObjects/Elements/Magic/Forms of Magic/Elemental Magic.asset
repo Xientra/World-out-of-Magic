@@ -15,6 +15,7 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 0}
   category: Magic
+  parentElement: {fileID: 0}
   description: 'Spells that focus on applying real world effect immidiatly and visibly
     most of the time by utelizing the elements.
 
@@ -27,6 +28,7 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
     ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
     explanation: 
+  subElements: []
   id: c021da69b0548784eab4f8c7c8786cfc
   approved: 1
   id_inspection: c021da69b0548784eab4f8c7c8786cfc

@@ -15,6 +15,7 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 0}
   category: Magic
+  parentElement: {fileID: 0}
   description: 'This form of magic focuses on transmuting flesh, plants and live
     itself.
 
@@ -29,6 +30,7 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
     ingredient2: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
     explanation: 
+  subElements: []
   id: 756f0fa42c432a949b7f1d2cb2c3e608
   approved: 1
   id_inspection: 756f0fa42c432a949b7f1d2cb2c3e608

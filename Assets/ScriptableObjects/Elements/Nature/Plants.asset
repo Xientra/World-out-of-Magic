@@ -15,11 +15,13 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 21300000, guid: e68d101392a249d4882bfd7c33abee00, type: 3}
   category: Nature
+  parentElement: {fileID: 0}
   description: Grass, Trees, Flowers and so on.
   recipes:
   - ingredient1: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
     ingredient2: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
     explanation: 
+  subElements: []
   id: c7bd4195ac8f7df48a45f7c7016beaf6
   approved: 1
   id_inspection: c7bd4195ac8f7df48a45f7c7016beaf6

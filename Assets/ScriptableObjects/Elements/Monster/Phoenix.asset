@@ -15,8 +15,13 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 0}
   category: Monster
+  parentElement: {fileID: 0}
   description: '[No Description Yet]'
-  recipes: []
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
+    ingredient2: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
+    explanation: 
+  subElements: []
   id: dc88ff070b785b344864d72508e2ef03
   approved: 0
   id_inspection: dc88ff070b785b344864d72508e2ef03

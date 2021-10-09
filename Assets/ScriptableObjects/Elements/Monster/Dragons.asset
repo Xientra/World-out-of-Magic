@@ -15,6 +15,7 @@ MonoBehaviour:
   importance: 1
   image: {fileID: 0}
   category: Monster
+  parentElement: {fileID: 0}
   description: 'Dragons are one of the most feared monsters even though dragons are
     not actualy much different to other monsters.
 
@@ -65,6 +66,7 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
     ingredient2: {fileID: 11400000, guid: 550ce6dfadea58647b92ca49869b33ca, type: 2}
     explanation: 
+  subElements: []
   id: d4a106db1cdbfee44a5b7b2d55108e82
   approved: 1
   id_inspection: d4a106db1cdbfee44a5b7b2d55108e82

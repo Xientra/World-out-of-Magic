@@ -15,6 +15,7 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 21300000, guid: 05187ed23d0c41144b6579b8e04572d2, type: 3}
   category: Monster
+  parentElement: {fileID: 0}
   description: 'A Wizard that achieved immortality. They have been corrupted by the
     magic they used and the power they sought to achieve.
 
@@ -24,6 +25,7 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: ec90d4955c85dea4cac9f670a2bfab6a, type: 2}
     ingredient2: {fileID: 11400000, guid: 550ce6dfadea58647b92ca49869b33ca, type: 2}
     explanation: 
+  subElements: []
   id: 53c64a4a2e607664cbea333d1d16ed1d
   approved: 1
   id_inspection: 53c64a4a2e607664cbea333d1d16ed1d

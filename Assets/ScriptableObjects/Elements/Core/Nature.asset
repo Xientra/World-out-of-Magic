@@ -15,11 +15,13 @@ MonoBehaviour:
   importance: 4
   image: {fileID: 21300000, guid: a9f21af979fbff54a9b8672328bd3d79, type: 3}
   category: Core
+  parentElement: {fileID: 0}
   description: The ground and landscape of the world.
   recipes:
   - ingredient1: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
     ingredient2: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
     explanation: 
+  subElements: []
   id: 865affd8b0e742d4aab88892fd7cfb03
   approved: 1
   id_inspection: 865affd8b0e742d4aab88892fd7cfb03

@@ -15,6 +15,7 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 0}
   category: '[No Category Yet]'
+  parentElement: {fileID: 0}
   description: 'Also somtimes Called Will O''Wisp is a mischievous fairy that loves
     to play pranks on humans and also animals. More often than not these "pranks"
     end with leathal or injuring results.
@@ -25,6 +26,7 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: 7e8cd74f7986397449a61e0fff840423, type: 2}
     ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
     explanation: 
+  subElements: []
   id: e92ddad732f8c58439f7ac088dc0fb6d
   approved: 0
   id_inspection: e92ddad732f8c58439f7ac088dc0fb6d

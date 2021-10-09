@@ -15,6 +15,7 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 0}
   category: Nature
+  parentElement: {fileID: 0}
   description: 'A fairy deeply connected to nature.
 
     Some call them guardians
@@ -29,6 +30,7 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: 7e8cd74f7986397449a61e0fff840423, type: 2}
     ingredient2: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
     explanation: 
+  subElements: []
   id: f0d39961d50d75b45a7cd2133835bd82
   approved: 1
   id_inspection: f0d39961d50d75b45a7cd2133835bd82

@@ -15,11 +15,13 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 21300000, guid: eb564dbfb7e1cbb4099030bb7f831d82, type: 3}
   category: Magic
+  parentElement: {fileID: 0}
   description: '[No Description Yet]'
   recipes:
   - ingredient1: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
     ingredient2: {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
     explanation: 
+  subElements: []
   id: d413702b5d4ac5e46b0a49eb319e13b6
   approved: 1
   id_inspection: d413702b5d4ac5e46b0a49eb319e13b6

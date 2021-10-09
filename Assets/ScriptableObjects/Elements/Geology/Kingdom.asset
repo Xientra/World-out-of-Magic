@@ -15,11 +15,13 @@ MonoBehaviour:
   importance: 50
   image: {fileID: 0}
   category: Geology
+  parentElement: {fileID: 0}
   description: Humans formed kingdoms often ruled by a singular figure or family.
   recipes:
   - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
     ingredient2: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
     explanation: 
+  subElements: []
   id: b628039215c69e046a5a538005128a07
   approved: 1
   id_inspection: b628039215c69e046a5a538005128a07

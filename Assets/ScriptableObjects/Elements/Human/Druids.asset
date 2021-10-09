@@ -15,6 +15,7 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 0}
   category: Human
+  parentElement: {fileID: 0}
   description: 'The name druid is often given to individual people that cut themselfs
     off from other humans and that life together with nature and its animals
 
@@ -41,6 +42,7 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: ec90d4955c85dea4cac9f670a2bfab6a, type: 2}
     ingredient2: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
     explanation: 
+  subElements: []
   id: abd2ccfc09f7d974abd92e0577a936a5
   approved: 0
   id_inspection: abd2ccfc09f7d974abd92e0577a936a5

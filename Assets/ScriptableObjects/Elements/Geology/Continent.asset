@@ -15,6 +15,7 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 0}
   category: Geology
+  parentElement: {fileID: 0}
   description: 'On the Contient [Name] there are [number (5?)] Kingdoms.
 
     [List
@@ -23,6 +24,7 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
     ingredient2: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
     explanation: 
+  subElements: []
   id: df9a2746b0dc9024b92e4b4c29170799
   approved: 0
   id_inspection: df9a2746b0dc9024b92e4b4c29170799

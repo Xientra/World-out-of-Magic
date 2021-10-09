@@ -15,6 +15,7 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 0}
   category: Monster
+  parentElement: {fileID: 0}
   description: 'Youkai invisible to most humans. Only mediums can see them reliable
     and even then there are better and worse mediums.
 
@@ -37,6 +38,7 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
     ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
     explanation: 
+  subElements: []
   id: 3f58ded4b18dca743bdf215332fae460
   approved: 0
   id_inspection: 3f58ded4b18dca743bdf215332fae460

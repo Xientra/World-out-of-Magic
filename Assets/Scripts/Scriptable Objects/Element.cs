@@ -13,31 +13,28 @@ public class Element : ScriptableObject
 	//public Texture2D texture;
 	public Sprite image;
 
+	[Space(5)]
 	[Tooltip("The category of this element. \nShould the category simply be \"_\" (an underscore) it is regarded as a sub element of the first ingridient in its first recipe.")]
 	public string category = "[No Category Yet]";
+
+	[Tooltip("If this element is a subElement, parent element is set to the element this element is the subElement of.\n Category will be set to \"_\" is this is not null.")]
+	public Element parentElement = null;
 
 	[TextArea(1, 20)]
 	public string description = "[No Description Yet]";
 
-
-	//[Tooltip("A final element is not part of any recipe.")]
-	//public bool final;
-
+	[Space(5)]
 	public Recipe[] recipes;
+
+	[Space(10)]
+	[Tooltip("If there are subElements to this element they are referenced here.\nGameData should have a button to automatically assign all sub elements to all elements.")]
+	public Element[] subElements = new Element[0];
 
 
 	[HideInInspector]
 	[SerializeField]
 	private string id;
 	public string ID { get => id; }
-
-
-	/// <summary> A colleciton of varaibles that are set at runtime. </summary>
-	public class RuntimeFlags
-	{
-		public bool allCombinationsExhausted = false;
-		public bool notPartOfAnyCombination = false;
-	}
 
 
 #if UNITY_EDITOR
@@ -49,6 +46,7 @@ public class Element : ScriptableObject
 
 	private void OnValidate()
 	{
+		// ----- ID stuff ----- //
 		id_inspection = id;
 
 		// creates unique id if there is not one allready
@@ -56,6 +54,10 @@ public class Element : ScriptableObject
 			id = GUID.Generate().ToString();
 
 		UnityEditor.EditorUtility.SetDirty(this);
+
+		// ----- parent/sub elements ----- //
+		if (parentElement != null)
+			category = "_";
 	}
 #endif
 }

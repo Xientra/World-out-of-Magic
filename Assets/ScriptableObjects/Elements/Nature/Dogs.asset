@@ -15,6 +15,7 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 21300000, guid: 0cbf606781b60b04292025ffe48c12ca, type: 3}
   category: Nature
+  parentElement: {fileID: 0}
   description: 'Dogs are together with cats and horses one of the closest companions
     to humans.
 
@@ -38,6 +39,7 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: aa5ece70715e8cf4aabb447a2fd7ff51, type: 2}
     ingredient2: {fileID: 11400000, guid: d3d0e4f3ac043624a965f33ec9ab4def, type: 2}
     explanation: 
+  subElements: []
   id: 904fc982fe6fdc44986cefc277ad5255
   approved: 1
   id_inspection: 904fc982fe6fdc44986cefc277ad5255

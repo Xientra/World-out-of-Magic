@@ -15,6 +15,7 @@ MonoBehaviour:
   importance: 999
   image: {fileID: 21300000, guid: c38b5e09d0db5c2478ac8e9ba77caef1, type: 3}
   category: Magic
+  parentElement: {fileID: 0}
   description: 'Rune magic is most complicated form of magic, as it includes weaving
     magic into words and symbols.
 
@@ -28,6 +29,7 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
     ingredient2: {fileID: 11400000, guid: d3d0e4f3ac043624a965f33ec9ab4def, type: 2}
     explanation: 
+  subElements: []
   id: 5af54ca5d0792be4daa79e5c2ba79936
   approved: 1
   id_inspection: 5af54ca5d0792be4daa79e5c2ba79936

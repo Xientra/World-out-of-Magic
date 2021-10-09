@@ -10,15 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Humans
+  m_Name: Love
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
-  category: Monster
+  category: Human
   parentElement: {fileID: 0}
-  description: Lich, Vampires and other monsters
-  recipes: []
+  description: Idk what this is
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+    ingredient2: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
+    explanation: 
   subElements: []
-  id: b154534794e78ee429ed863c2edf468c
+  id: abf677155f802b54cbc2ae91fdeb3746
   approved: 0
-  id_inspection: b154534794e78ee429ed863c2edf468c
+  id_inspection: abf677155f802b54cbc2ae91fdeb3746
