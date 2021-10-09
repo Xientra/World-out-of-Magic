@@ -5044,9 +5044,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f3ab74fec52674791fec2e1030dce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  elementContainer:
+    element: {fileID: 0}
+    isFinal: 0
+    isDone: 0
+    unlockedSubElements: []
   element: {fileID: 0}
   updateName: 0
   onlyShowNameOnHover: 0
+  useElementStateFallback: 1
   defaultColor: {r: 0, g: 0, b: 0, a: 0}
   finalElement: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   elementDone: {r: 0, g: 1, b: 1, a: 1}
@@ -21480,9 +21486,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f3ab74fec52674791fec2e1030dce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  elementContainer:
+    element: {fileID: 0}
+    isFinal: 0
+    isDone: 0
+    unlockedSubElements: []
   element: {fileID: 0}
   updateName: 0
   onlyShowNameOnHover: 0
+  useElementStateFallback: 1
   defaultColor: {r: 0, g: 0, b: 0, a: 0}
   finalElement: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   elementDone: {r: 0, g: 1, b: 1, a: 1}
@@ -27080,9 +27092,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f3ab74fec52674791fec2e1030dce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  elementContainer:
+    element: {fileID: 0}
+    isFinal: 0
+    isDone: 0
+    unlockedSubElements: []
   element: {fileID: 0}
   updateName: 0
   onlyShowNameOnHover: 0
+  useElementStateFallback: 1
   defaultColor: {r: 0, g: 0, b: 0, a: 0}
   finalElement: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   elementDone: {r: 0, g: 1, b: 1, a: 1}
@@ -38607,9 +38625,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f3ab74fec52674791fec2e1030dce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  elementContainer:
+    element: {fileID: 0}
+    isFinal: 0
+    isDone: 0
+    unlockedSubElements: []
   element: {fileID: 0}
   updateName: 1
   onlyShowNameOnHover: 0
+  useElementStateFallback: 1
   defaultColor: {r: 0, g: 0, b: 0, a: 0}
   finalElement: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   elementDone: {r: 0, g: 1, b: 1, a: 1}
@@ -49088,26 +49112,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11324e8484a693943838f76670460756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadSaveData: 1
   originElement: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
   allElements:
   - {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
   - {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
   - {fileID: 11400000, guid: 550ce6dfadea58647b92ca49869b33ca, type: 2}
   - {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
+  - {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
   - {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
   - {fileID: 11400000, guid: d3d0e4f3ac043624a965f33ec9ab4def, type: 2}
   - {fileID: 11400000, guid: a86e39616077d4b4f91fcdfdb3a2d4cf, type: 2}
   - {fileID: 11400000, guid: 57298e8151563124081a61cc3cefa011, type: 2}
   - {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
+  - {fileID: 11400000, guid: 7216cd8e114b7394eb6f516aab6ecdbe, type: 2}
   - {fileID: 11400000, guid: 65263f2932939b1448b1ce39ea9b632a, type: 2}
   - {fileID: 11400000, guid: 572fbb0d704b1dc4790db2ff1869853a, type: 2}
   - {fileID: 11400000, guid: 7a40e084be73cad4bbe6c4680e16efa5, type: 2}
   - {fileID: 11400000, guid: 5a50ab11602dd324a8e08a47ee7e0e57, type: 2}
   - {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
   - {fileID: 11400000, guid: 980d80228da5f2742b257e6cfc0692f9, type: 2}
+  - {fileID: 11400000, guid: 27ca8b95ce472ca40943a4f8023361a8, type: 2}
   - {fileID: 11400000, guid: 78632573fee173f48b6ec24760a3dbc7, type: 2}
   - {fileID: 11400000, guid: 2e8679f9f4025ee46a55ad446b02b411, type: 2}
   - {fileID: 11400000, guid: 8558394a57adc6e4f9a83c29da368504, type: 2}
+  - {fileID: 11400000, guid: e46d00f00793b784da3c4c668ded9a7d, type: 2}
   - {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
   - {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
   - {fileID: 11400000, guid: 7e3765da29c9cd8449ecb69d36170909, type: 2}
@@ -49131,7 +49160,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
   - {fileID: 11400000, guid: 41698e7b1811be641bf7fece7b1a4077, type: 2}
   - {fileID: 11400000, guid: 64fd6f7c4dd57c944a209a9c9e0c3924, type: 2}
-  - {fileID: 11400000, guid: dc87649e49da97148b338911a9000ea2, type: 2}
   - {fileID: 11400000, guid: 0d18af515a5a712469b7d9b98683616d, type: 2}
   - {fileID: 11400000, guid: aa5ece70715e8cf4aabb447a2fd7ff51, type: 2}
   - {fileID: 11400000, guid: 1e819639cc4821a4987c9adf5c48fe40, type: 2}
@@ -49145,7 +49173,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: db4a1fd942edd6a41a34fe03863b5836, type: 2}
   categories: []
   unlockedElements: []
-  loadSaveData: 1
+  unlockedElementContainer:
+  - element: {fileID: 0}
+    isFinal: 0
+    isDone: 0
+    unlockedSubElements: []
 --- !u!4 &1872000857
 Transform:
   m_ObjectHideFlags: 0

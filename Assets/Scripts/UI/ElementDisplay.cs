@@ -5,7 +5,20 @@ using UnityEngine.EventSystems;
 
 public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-	[Space(10)]
+	[Header("Element")]
+	[SerializeField]
+	private ElementContainer elementContainer;
+	public ElementContainer ElementContainer
+	{
+		get => elementContainer;
+		set
+		{
+			elementContainer = value;
+			element = elementContainer.e;
+			UpdateUI();
+		}
+	}
+
 	[SerializeField]
 	private Element element;
 	public Element Element
@@ -14,18 +27,23 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 		set
 		{
 			element = value;
+			if (element == null)
+				elementContainer = null;
 			UpdateUI();
 		}
 	}
+
+	[Header("Settings:")]
 
 	[SerializeField]
 	[Tooltip("Update the name of the GameObject with the name of the held element.")]
 	private bool updateName = true;
 
-	[Space(5)]
-
 	[SerializeField]
 	private bool onlyShowNameOnHover = false;
+	[SerializeField]
+	[Tooltip("If elementContainer is not set should the ElementDisplay fallback onto the expensive calculation of those informations.")]
+	private bool useElementStateFallback = true;
 
 	[Header("Frame Colors:")]
 
@@ -93,21 +111,30 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 			}
 		}
 
-
 		if (frame != null)
 		{
-			switch (GameData.ElementCombinationStatus(element))
+			int elementState = -1;
+			if (elementContainer.element != null)
+				elementState = elementContainer.State;
+			else if (useElementStateFallback)
 			{
-				case 1:
-					frame.color = elementDone;
-					break;
-				case 2:
-					frame.color = finalElement;
-					break;
-				default:
-					frame.color = defaultColor;
-					break;
+				elementState = GameData.ElementCombinationStatus(element);
+				Debug.LogWarning("Used Fallback to GameData.ElementCombinationStatus for element display with element: " + element.name);
 			}
+
+			if (elementState != -1)
+				switch (elementState)
+				{
+					case 1:
+						frame.color = elementDone;
+						break;
+					case 2:
+						frame.color = finalElement;
+						break;
+					default:
+						frame.color = defaultColor;
+						break;
+				}
 		}
 
 		if (updateName == true)

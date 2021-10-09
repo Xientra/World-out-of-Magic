@@ -34,7 +34,7 @@ public class ElementAssetLoader : Editor
 					if (e.recipes.Length != 0)
 						if (e.recipes[0].ingredient1 != null && e.recipes[0].ingredient2 != null)
 							loadInto.Add(e);
-					if (e.name == "Magic")
+					if (e == gd.originElement)
 						loadInto.Add(e);
 				}
 

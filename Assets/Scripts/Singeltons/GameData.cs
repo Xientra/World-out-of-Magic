@@ -19,6 +19,8 @@ public class GameData : MonoBehaviour
 	/// </summary>
 	public static readonly string subElementCategoryFlagName = "_";
 
+	public bool loadSaveData = true;
+
 	[Header("General:")]
 
 	public Element originElement;
@@ -37,8 +39,7 @@ public class GameData : MonoBehaviour
 
 	public event EventHandler<Element> ElementDiscovered;
 
-	public bool loadSaveData = true;
-
+	public List<ElementContainer> unlockedElementContainer;
 
 	private void Awake()
 	{
@@ -50,15 +51,20 @@ public class GameData : MonoBehaviour
 		if (loadSuccess == false || loadSaveData == false)
 			LoadNoSave();
 
-		OnElementDiscovered(null);
-
-
 		// create an array of all categories
 		List<string> categories = new List<string>();
 		for (int i = 0; i < allElements.Length; i++)
 			if (!categories.Contains(allElements[i].category))
 				categories.Add(allElements[i].category);
 		this.categories = categories.ToArray();
+
+		unlockedElementContainer = SetElementFlags(unlockedElements);
+	}
+
+	private void Start()
+	{
+		// updates ui
+		OnElementDiscovered(null);
 	}
 
 	private void OnDestroy()
@@ -66,28 +72,52 @@ public class GameData : MonoBehaviour
 		Save();
 	}
 
+	public List<ElementContainer> SetElementFlags(List<Element> elements)
+	{
+		List<ElementContainer> result = new List<ElementContainer>();
+		for (int i = 0; i < elements.Count; i++)
+		{
+			ElementContainer ec = new ElementContainer(elements[i]);
 
-	public List<Element> GetCategory(string category)
+			int elementStatus = ElementCombinationStatus(elements[i]);
+
+			ec.isDone = elementStatus == 1;
+			ec.isFinal = elementStatus == 2;
+			result.Add(ec);
+		}
+
+		return result;
+	}
+
+	/// <summary> Use GetUnlockedElementContainerOfCategory instead </summary>
+	[Obsolete()]
+	public List<Element> GetUnlockedElementsOfCategory(string category)
 	{
 		if (string.IsNullOrEmpty(category))
-			return UnlockedElements;
+			return unlockedElements;
 
 		List<Element> r = unlockedElements.FindAll(e => e.category == category);
 		r.Sort((e1, e2) => e1.importance - e2.importance);
 		return r;
 	}
 
+	public List<ElementContainer> GetUnlockedElementContainerOfCategory(string category)
+	{
+		if (string.IsNullOrEmpty(category))
+			return unlockedElementContainer;
+
+
+		List<ElementContainer> r = unlockedElementContainer.FindAll(ec => ec.e.category == category);
+		r.Sort((ec1, ec2) => ec1.e.importance - ec2.e.importance);
+		return r;
+	}
+
 	public HashSet<string> GetCurrentCategories()
 	{
-		HashSet<string> categories = new HashSet<string>(unlockedElements.ConvertAll<string>(e => e.category).FindAll(s => s != subElementCategoryFlagName));
+		HashSet<string> categories = new HashSet<string>(unlockedElementContainer.ConvertAll<string>(ec => ec.e.category).FindAll(s => s != subElementCategoryFlagName));
 		return categories;
 	}
 
-
-	public void Sort()
-	{
-		unlockedElements.Sort((e1, e2) => e1.importance - e2.importance);
-	}
 
 	/// <summary>
 	/// Returns the element that is created by the combination of e1 and e2. Returns null if no such combination exists.
@@ -97,7 +127,6 @@ public class GameData : MonoBehaviour
 	public Element CombineElements(Element e1, Element e2, out bool newCombination)
 	{
 		for (int i = 0; i < allElements.Length; i++)
-		{
 			for (int j = 0; j < allElements[i].recipes.Length; j++)
 			{
 				Recipe r = allElements[i].recipes[j];
@@ -115,7 +144,6 @@ public class GameData : MonoBehaviour
 					return allElements[i];
 				}
 			}
-		}
 
 		Debug.Log("No Combination");
 		newCombination = false;
@@ -126,20 +154,37 @@ public class GameData : MonoBehaviour
 	{
 		unlockedElements.Add(e);
 
+		ElementContainer newEc = new ElementContainer(e, ElementCombinationStatus(e));
+
+		// checks if isDone has to be set on any of the elements that make this element
+		for (int i = 0; i < e.recipes.Length; i++)
+		{
+			unlockedElementContainer.Find(ec => ec.e == e.recipes[i].ingredient1)?.UpdateState();
+			unlockedElementContainer.Find(ec => ec.e == e.recipes[i].ingredient2)?.UpdateState();
+		}
+
+		if (newEc.element == null)
+			Debug.LogError("hat2: " + e.name);
+
+		unlockedElementContainer.Add(newEc);
+
+
+		// TODO: update sub elements
+
+
 		// update ui
 		OnElementDiscovered(e);
 
 		Save();
-
-		Debug.Log("Created " + e);
 	}
 
 	public void UnlockAllElements()
 	{
-		Debug.LogWarning("All Elements have been unlocked.");
+		Debug.Log("All Elements have been unlocked.");
 
 		unlockedElements.Clear();
 		unlockedElements.AddRange(allElements);
+		unlockedElementContainer = SetElementFlags(unlockedElements);
 		OnElementDiscovered(null);
 		Save();
 	}
@@ -157,21 +202,9 @@ public class GameData : MonoBehaviour
 	#region static stuff
 
 	/// <summary> O(#combinations) </summary>
-	public static bool ElementInRecipe(Element e)
-	{
-		GameData gd = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameData>();
-
-		for (int i = 0; i < gd.allElements.Length; i++)
-			for (int j = 0; j < gd.allElements[i].recipes.Length; j++)
-				if (gd.allElements[i].recipes[j].ingredient1 == e || gd.allElements[i].recipes[j].ingredient2 == e)
-					return true;
-		return false;
-	}
-
-	/// <summary> O(#combinations) </summary>
 	public static List<Recipe> RecipiesWithElement(Element e)
 	{
-		GameData gd = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameData>();
+		GameData gd = GameData.singelton != null ? GameData.singelton : GameObject.FindGameObjectWithTag("GameController").GetComponent<GameData>();
 
 		List<Recipe> result = new List<Recipe>();
 
@@ -196,7 +229,7 @@ public class GameData : MonoBehaviour
 		bool two = true;
 		bool zeroOrOne = true;
 
-		GameData gd = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameData>();
+		GameData gd = GameData.singelton != null ? GameData.singelton : GameObject.FindGameObjectWithTag("GameController").GetComponent<GameData>();
 
 		for (int i = 0; i < gd.allElements.Length; i++)
 			for (int j = 0; j < gd.allElements[i].recipes.Length; j++)
@@ -220,6 +253,7 @@ public class GameData : MonoBehaviour
 	{
 		unlockedElements.Clear();
 		unlockedElements.Add(originElement);
+		unlockedElementContainer.Add(new ElementContainer(originElement, 0));
 		OnElementDiscovered(originElement);
 	}
 

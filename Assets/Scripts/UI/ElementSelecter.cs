@@ -112,7 +112,7 @@ public class ElementSelecter : MonoBehaviour
 	}
 	private void DisplayElements(string category)
 	{
-		List<Element> elementsToDisplay = GameData.singelton.GetCategory(category);
+		List<ElementContainer> elementsToDisplay = GameData.singelton.GetUnlockedElementContainerOfCategory(category);
 
 
 		// create more Element Displays if some are missing
@@ -130,7 +130,7 @@ public class ElementSelecter : MonoBehaviour
 
 			if (i < elementsToDisplay.Count)
 			{
-				ed.Element = elementsToDisplay[i];
+				ed.ElementContainer = elementsToDisplay[i];
 				ed.gameObject.SetActive(true);
 			}
 			else
