@@ -60,6 +60,41 @@ public class ElementAssetLoader : Editor
 			}
 		}
 
+		if (GUILayout.Button("Set Parent and Sub Elements"))
+		{
+			string[] assetsGUID = AssetDatabase.FindAssets("t:Element", new[] { "Assets/ScriptableObjects/Elements" });
+			if (assetsGUID.Length != 0)
+			{
+				// get all elements
+				List<Element> allElementAssets = new List<Element>();
+				foreach (string guid in assetsGUID)
+					allElementAssets.Add(AssetDatabase.LoadAssetAtPath<Element>(AssetDatabase.GUIDToAssetPath(guid)));
+
+
+				// set sub elements based on parents
+				List<Element> setSubElementBasedOnThis = allElementAssets.FindAll(e => e.parentElement != null);
+
+				foreach (Element e in allElementAssets)
+				{
+					List<Element> subElements = new List<Element>();
+					foreach (Element potentialSubElement in setSubElementBasedOnThis)
+						if (potentialSubElement.parentElement == e)
+							subElements.Add(potentialSubElement);
+
+					subElements.Sort((e1, e2) => e1.importance - e2.importance);
+					e.subElements = subElements.ToArray();
+				}
+
+
+				// set parent elements based on parent elements
+				List<Element> setParentElementBasedOnThis = allElementAssets.FindAll(e => e.subElements.Length > 0);
+
+				foreach (Element e in setParentElementBasedOnThis)
+					foreach (Element subE in e.subElements)
+						subE.parentElement = e;
+			}
+		}
+
 		EditorGUILayout.Space(15);
 
 		base.OnInspectorGUI(); // draws original inspector
