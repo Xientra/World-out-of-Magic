@@ -14,11 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
-  category: '[No Category Yet]'
-  parentElement: {fileID: 0}
-  description: '[No Description Yet]'
-  recipes: []
+  category: _
+  parentElement: {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
+  description: 'A highly learned spell for all elemental mages even though it has
+    very high magic consumption in relation to it''s actual strength.
+
+    Normally
+    using fireball has a much higher magic to effectiveness ratio.
+
+    However the
+    big strength of Lighting Strike is that if you do put enought magic in it it
+    will hit the opponent no matter what and is impossible to evade.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
+    ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
+    explanation: 
   subElements: []
-  id: 
+  id: 1d6ae0ac7a6ee6748a144e93b8cb6a24
   approved: 0
-  id_inspection: 
+  id_inspection: 1d6ae0ac7a6ee6748a144e93b8cb6a24

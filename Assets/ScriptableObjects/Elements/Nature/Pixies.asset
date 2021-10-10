@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
-  category: '[No Category Yet]'
+  category: Nature
   parentElement: {fileID: 0}
   description: 'Also somtimes Called Will O''Wisp is a mischievous fairy that loves
     to play pranks on humans and also animals. More often than not these "pranks"

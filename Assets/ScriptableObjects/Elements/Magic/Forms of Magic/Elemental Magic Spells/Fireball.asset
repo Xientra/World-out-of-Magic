@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
   m_Name: Fireball
   m_EditorClassIdentifier: 
-  importance: 999
+  importance: 1
   image: {fileID: 0}
   category: _
   parentElement: {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
