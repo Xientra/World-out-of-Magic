@@ -768,13 +768,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f3ab74fec52674791fec2e1030dce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  elementContainer:
+    element: {fileID: 0}
+    isFinal: 0
+    isDone: 0
+    unlockedSubElements: []
   element: {fileID: 0}
   updateName: 1
   onlyShowNameOnHover: 1
+  useElementStateFallback: 1
   defaultColor: {r: 0, g: 0, b: 0, a: 0}
   finalElement: {r: 1, g: 0.8744645, b: 0.18396229, a: 1}
   elementDone: {r: 0, g: 0.90836334, b: 1, a: 1}
-  nameLabel: {fileID: 8150048884063050214}
+  nameLabel: {fileID: 0}
   categoryLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
   image: {fileID: 7657188796691482422}

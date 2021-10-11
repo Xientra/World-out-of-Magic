@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
 
+[RequireComponent(typeof(RectTransform))]
 public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
 	[Header("Element")]
@@ -41,6 +42,9 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
 	[SerializeField]
 	private bool onlyShowNameOnHover = false;
+	[SerializeField]
+	private bool showHoverDisplay = true;
+
 	[SerializeField]
 	[Tooltip("If elementContainer is not set should the ElementDisplay fallback onto the expensive calculation of those informations.")]
 	private bool useElementStateFallback = true;
@@ -205,10 +209,17 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
 		if (infoButton != null)
 			infoButton.gameObject.SetActive(value);
+
+		if (showHoverDisplay && element != null)
+			if (value == true)
+				HoverDisplay.singelton.Display(element.name, (RectTransform)transform);
+			else
+				HoverDisplay.singelton.Hide();
 	}
 
 	public void Btn_InfoButton()
 	{
 		FullScreenElementDisplay.singelton.Display(element);
+		OnHover(false);
 	}
 }
