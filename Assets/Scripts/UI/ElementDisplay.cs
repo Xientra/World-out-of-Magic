@@ -54,6 +54,7 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	public Color defaultColor = new Color(0, 0, 0, 0);
 	public Color finalElement = Color.yellow;
 	public Color elementDone = Color.cyan;
+	public Color onlySubElementRemain = Color.green;
 
 	[Header("UI:")]
 
@@ -134,6 +135,9 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 						break;
 					case 2:
 						frame.color = finalElement;
+						break;
+					case 3:
+						frame.color = onlySubElementRemain;
 						break;
 					default:
 						frame.color = defaultColor;

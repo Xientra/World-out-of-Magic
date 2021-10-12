@@ -14,14 +14,17 @@ public class ElementContainer
 	public bool isFinal = false;
 	[Tooltip("True if all combination with this element have been exhausted.")]
 	public bool isDone = false;
+	[Tooltip("True if all remaining combinations with this element yield sub elements.")]
+	public bool onlySubElementCombinationsRemaining = false;
 
 	public int State
 	{
-		get => isFinal ? 2 : (isDone ? 1 : 0);
+		get => isFinal ? 2 : onlySubElementCombinationsRemaining ? 3 : (isDone ? 1 : 0);
 		set
 		{
 			isFinal = value == 2;
 			isDone = value == 1;
+			onlySubElementCombinationsRemaining = value == 3;
 		}
 	}
 
@@ -44,9 +47,11 @@ public class ElementContainer
 		State = GameData.ElementCombinationStatus(element);
 	}
 
-	public void Clear() {
+	public void Clear()
+	{
 		element = null;
 		isFinal = false;
 		isDone = false;
+		onlySubElementCombinationsRemaining = false;
 	}
 }

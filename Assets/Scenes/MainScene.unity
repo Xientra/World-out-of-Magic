@@ -27872,7 +27872,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 114.13, y: 0}
+  m_AnchoredPosition: {x: 99.595, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1200236206
@@ -27894,7 +27894,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Teleportation Magic
+  m_text: On Hover Tooltip
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 177c4abaaaa438e4fa81596d2b7d3f06, type: 2}
   m_sharedMaterial: {fileID: -3031900185845659933, guid: 177c4abaaaa438e4fa81596d2b7d3f06,

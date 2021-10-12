@@ -77,12 +77,7 @@ public class GameData : MonoBehaviour
 		List<ElementContainer> result = new List<ElementContainer>();
 		for (int i = 0; i < elements.Count; i++)
 		{
-			ElementContainer ec = new ElementContainer(elements[i]);
-
-			int elementStatus = ElementCombinationStatus(elements[i]);
-
-			ec.isDone = elementStatus == 1;
-			ec.isFinal = elementStatus == 2;
+			ElementContainer ec = new ElementContainer(elements[i], ElementCombinationStatus(elements[i]));
 			result.Add(ec);
 		}
 
@@ -223,11 +218,13 @@ public class GameData : MonoBehaviour
 	/// 0: There are still undiscovered elements with this element in the recipe. <br/>
 	/// 1: Every combination with this element has been found (opposite of 0). <br/>
 	/// 2: This element is not part of any combination to begin with. <br/>
+	/// 3: This element still has combination, but all those combinations only yield sub elements. <br/>
 	/// </returns>
 	public static int ElementCombinationStatus(Element e)
 	{
 		bool two = true;
-		bool zeroOrOne = true;
+		bool zeroOrOne = true; // true means 1
+		bool three = true;
 
 		GameData gd = GameData.singelton != null ? GameData.singelton : GameObject.FindGameObjectWithTag("GameController").GetComponent<GameData>();
 
@@ -236,11 +233,16 @@ public class GameData : MonoBehaviour
 				if (gd.allElements[i].recipes[j].ingredient1 == e || gd.allElements[i].recipes[j].ingredient2 == e)
 				{
 					if (singelton.unlockedElements.Contains(gd.allElements[i]) == false)
+					{
 						zeroOrOne = false;
+						if (gd.allElements[i].parentElement == null)
+							three = false;
+					}
+
 					two = false;
 				}
 
-		return two ? 2 : (zeroOrOne ? 1 : 0);
+		return two ? 2 : ((three && zeroOrOne == false ? 3 : (zeroOrOne ? 1 : 0)));
 	}
 
 	#endregion
