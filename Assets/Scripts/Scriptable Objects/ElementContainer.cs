@@ -28,8 +28,8 @@ public class ElementContainer
 		}
 	}
 
-	[Tooltip("If there are subElements to this element they are referenced here.")]
-	public Element[] unlockedSubElements = new Element[0];
+	//[Tooltip("If there are subElements to this element they are referenced here.")]
+	//public Element[] unlockedSubElements = new Element[0];
 
 	public ElementContainer(Element element)
 	{

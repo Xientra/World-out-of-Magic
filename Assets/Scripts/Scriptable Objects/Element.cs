@@ -1,6 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 using UnityEngine.Serialization;
+using System.Collections.Generic;
 
 [CreateAssetMenu(fileName = "New Element", menuName = "Element")]
 public class Element : ScriptableObject
@@ -17,7 +18,7 @@ public class Element : ScriptableObject
 	[Tooltip("The category of this element. \nShould the category simply be \"_\" (an underscore) it is regarded as a sub element of the first ingridient in its first recipe.")]
 	public string category = "[No Category Yet]";
 
-	[Tooltip("If this element is a subElement, parent element is set to the element this element is the subElement of.\n Category will be set to \"_\" is this is not null.")]
+	[Tooltip("If this element is a subElement, parent element is set to the element this element is the subElement of.\nSubElements cannot be combined with other elements.\n Category will be set to \"_\" is this is not null.")]
 	public Element parentElement = null;
 
 	[TextArea(1, 20)]
@@ -36,6 +37,17 @@ public class Element : ScriptableObject
 	private string id;
 	public string ID { get => id; }
 
+
+	public static Element[] FilterUnlockedSubElements(Element[] elements)
+	{
+		List<Element> result = new List<Element>();
+
+		for (int i = 0; i < elements.Length; i++)
+			if (GameData.singelton.UnlockedElements.Contains(elements[i]))
+				result.Add(elements[i]);
+
+		return result.ToArray();
+	}
 
 #if UNITY_EDITOR
 	[Space(15)]

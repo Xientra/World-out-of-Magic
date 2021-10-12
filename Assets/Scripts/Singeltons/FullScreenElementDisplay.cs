@@ -6,49 +6,36 @@ public class FullScreenElementDisplay : MonoBehaviour
 {
 	public static FullScreenElementDisplay singelton;
 
-	public bool darkmode = false;
+	public ElementDisplay elementDisplay;
 
-	public ElementDisplay lightmodeDisplay;
-	public ElementDisplay darkmodeDisplay;
+	private ElementContainer previousElementContainer = null;
 
 	private void Awake()
 	{
 		singelton = this;
 	}
 
+	public void Display(ElementContainer ec)
+	{
+		if (elementDisplay.isActiveAndEnabled)
+			previousElementContainer = elementDisplay.ElementContainer;
+
+		elementDisplay.ElementContainer = ec;
+		elementDisplay.SetActive(true);
+	}
+
 	public void Display(Element e)
 	{
-		if (darkmode)
-			darkmodeDisplay.Element = e;
-		else
-			lightmodeDisplay.Element = e;
-
-		UpdateUI();
-	}
-
-	private void UpdateUI()
-	{
-		if (darkmode)
-		{
-			darkmodeDisplay?.SetActive(true);
-			lightmodeDisplay?.SetActive(false);
-		}
-		else
-		{
-			lightmodeDisplay?.SetActive(true);
-			darkmodeDisplay?.SetActive(false);
-		}
-	}
-
-	public void SetDarkmode(bool value)
-	{
-		darkmode = value;
-		UpdateUI();
+		Display(new ElementContainer(e));
 	}
 
 	public void Btn_Close()
 	{
-		lightmodeDisplay?.SetActive(false);
-		darkmodeDisplay?.SetActive(false);
+		if (previousElementContainer != null && previousElementContainer.element != null)
+			elementDisplay.ElementContainer = previousElementContainer;
+		else
+			elementDisplay.SetActive(false);
+
+		previousElementContainer = null;
 	}
 }

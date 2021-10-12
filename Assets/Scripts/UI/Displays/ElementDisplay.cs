@@ -63,12 +63,13 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	public TMP_Text descriptionLabel = null;
 	[Space(5)]
 	public Image image = null;
-	[Space(5)]
 	public Image frame = null;
-	[Space(5)]
 	public TMP_Text noImgLabel = null;
 	[Space(5)]
 	public Button infoButton;
+	[Space(5)]
+	public RecipeListDisplay recipeListDisplay = null;
+	public SubElementListDisplay subElementListDisplay = null;
 
 	public void UpdateUI()
 	{
@@ -84,9 +85,13 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 			nameLabel.gameObject.SetActive(!onlyShowNameOnHover);
 		}
 		if (categoryLabel != null)
-			categoryLabel.text = "(" + element.category + ")";
+			categoryLabel.text = "(" + (element.parentElement == null ? element.category : element.parentElement.name) + ")";
 		if (descriptionLabel != null)
 			descriptionLabel.text = element.description;
+		if (recipeListDisplay != null)
+			recipeListDisplay.SetRecipes(Recipe.FilterUnlocked(element.recipes));
+		if (subElementListDisplay != null)
+			subElementListDisplay.SetRecipes(Element.FilterUnlockedSubElements(element.subElements));
 
 		if (element.image != null)
 		{
@@ -157,6 +162,8 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
 	private void ClearUI()
 	{
+		OnHover(false);
+
 		if (nameLabel != null)
 			nameLabel.text = "";
 
@@ -165,6 +172,9 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
 		if (descriptionLabel != null)
 			descriptionLabel.text = "";
+
+		if (recipeListDisplay != null)
+			recipeListDisplay.SetRecipes(null);
 
 
 		if (image != null)
@@ -223,7 +233,10 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
 	public void Btn_InfoButton()
 	{
-		FullScreenElementDisplay.singelton.Display(element);
+		if (elementContainer != null && elementContainer.element != null)
+			FullScreenElementDisplay.singelton.Display(elementContainer);
+		else
+			FullScreenElementDisplay.singelton.Display(element);
 		OnHover(false);
 	}
 }
