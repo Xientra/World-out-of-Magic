@@ -226,9 +226,9 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
 		if (showHoverDisplay && element != null)
 			if (value == true)
-				HoverDisplay.singelton.Display(element.name, (RectTransform)transform);
+				ElementNameTooltip.singelton.Display(element.name, (RectTransform)transform);
 			else
-				HoverDisplay.singelton.Hide();
+				ElementNameTooltip.singelton.Hide();
 	}
 
 	public void Btn_InfoButton()

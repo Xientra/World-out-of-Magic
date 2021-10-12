@@ -3,9 +3,9 @@ using UnityEngine.UI;
 using TMPro;
 
 [RequireComponent(typeof(RectTransform))]
-public class HoverDisplay : MonoBehaviour
+public class ElementNameTooltip : MonoBehaviour
 {
-	public static HoverDisplay singelton;
+	public static ElementNameTooltip singelton;
 
 	public TMP_Text label;
 
