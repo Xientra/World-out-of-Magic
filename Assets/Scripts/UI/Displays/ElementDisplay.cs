@@ -134,7 +134,7 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 		if (frame != null)
 		{
 			int elementState = -1;
-			if (elementContainer.element != null)
+			if (elementContainer != null && elementContainer.element != null)
 				elementState = elementContainer.State;
 			else if (useElementStateFallback)
 			{

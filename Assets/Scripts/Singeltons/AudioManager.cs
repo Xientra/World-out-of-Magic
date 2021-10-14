@@ -21,6 +21,8 @@ public class AudioManager : MonoBehaviour
 
 	[SerializeField]
 	private AudioClip elementDiscoveredSound;
+	[SerializeField]
+	private AudioClip oldElementDiscoveredSound;
 
 	[Space(5)]
 
@@ -33,6 +35,12 @@ public class AudioManager : MonoBehaviour
 	{
 		PlayAdditionalClip(elementDiscoveredSound, 1, 1);
 	}
+
+	public void PlayOldElementDiscoveredSound()
+	{
+		PlayAdditionalClip(oldElementDiscoveredSound, 1, 1);
+	}
+
 
 	public void PlayBtnClickSound()
 	{

@@ -20,6 +20,13 @@ public class Combiner : MonoBehaviour
 
 	public ElementDisplay outputDisplay;
 
+	[Space(5)]
+	[Tooltip("The one that usually says: \"nEW ELemenT DisCOVERED!\"")]
+	public TMP_Text outputText;
+	[Space(5)]
+	public GameObject newDiscoveryPartciles;
+	public GameObject pastDiscoveryParticles;
+
 	private void Start()
 	{
 		selecter1.ElementPressed += Selecter_ElementPressed;
@@ -70,17 +77,22 @@ public class Combiner : MonoBehaviour
 
 					outputDisplay.Element = e;
 					outputDisplay.SetActive(true);
+					newDiscoveryPartciles.SetActive(true);
+					pastDiscoveryParticles.SetActive(false);
+					outputText.gameObject.SetActive(true);
 
 					ingredientDisplay1.Clear();
 					ingredientDisplay2.Clear();
-
 				}
 				else
 				{
-					AudioManager.singelton.PlayElementDiscoveredSound();
+					AudioManager.singelton.PlayOldElementDiscoveredSound();
 
 					outputDisplay.Element = e;
 					outputDisplay.SetActive(true);
+					newDiscoveryPartciles.SetActive(false);
+					pastDiscoveryParticles.SetActive(true);
+					outputText.gameObject.SetActive(false);
 
 					ingredientDisplay1.Clear();
 					ingredientDisplay2.Clear();
