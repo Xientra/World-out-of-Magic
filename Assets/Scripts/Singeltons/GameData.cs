@@ -77,23 +77,11 @@ public class GameData : MonoBehaviour
 		List<ElementContainer> result = new List<ElementContainer>();
 		for (int i = 0; i < elements.Count; i++)
 		{
-			ElementContainer ec = new ElementContainer(elements[i], ElementCombinationStatus(elements[i]));
+			ElementContainer ec = new ElementContainer(elements[i], ElementContainer.ElementCombinationStatus(elements[i]));
 			result.Add(ec);
 		}
 
 		return result;
-	}
-
-	/// <summary> Use GetUnlockedElementContainerOfCategory instead </summary>
-	[Obsolete()]
-	public List<Element> GetUnlockedElementsOfCategory(string category)
-	{
-		if (string.IsNullOrEmpty(category))
-			return unlockedElements;
-
-		List<Element> r = unlockedElements.FindAll(e => e.category == category);
-		r.Sort((e1, e2) => e1.importance - e2.importance);
-		return r;
 	}
 
 	public List<ElementContainer> GetUnlockedElementContainerOfCategory(string category)
@@ -149,7 +137,7 @@ public class GameData : MonoBehaviour
 	{
 		unlockedElements.Add(e);
 
-		ElementContainer newEc = new ElementContainer(e, ElementCombinationStatus(e));
+		ElementContainer newEc = new ElementContainer(e, ElementContainer.ElementCombinationStatus(e));
 
 		// checks if isDone has to be set on any of the elements that make this element
 		for (int i = 0; i < e.recipes.Length; i++)
@@ -209,40 +197,6 @@ public class GameData : MonoBehaviour
 					result.Add(gd.allElements[i].recipes[j]);
 
 		return result;
-	}
-
-	/// <summary>
-	/// Checks the status of combinations based on the unlocked elements. O(#combinations * #unlockedElements)
-	/// </summary>
-	/// <returns>
-	/// 0: There are still undiscovered elements with this element in the recipe. <br/>
-	/// 1: Every combination with this element has been found (opposite of 0). <br/>
-	/// 2: This element is not part of any combination to begin with. <br/>
-	/// 3: This element still has combination, but all those combinations only yield sub elements. <br/>
-	/// </returns>
-	public static int ElementCombinationStatus(Element e)
-	{
-		bool two = true;
-		bool zeroOrOne = true; // true means 1
-		bool three = true;
-
-		GameData gd = GameData.singelton != null ? GameData.singelton : GameObject.FindGameObjectWithTag("GameController").GetComponent<GameData>();
-
-		for (int i = 0; i < gd.allElements.Length; i++)
-			for (int j = 0; j < gd.allElements[i].recipes.Length; j++)
-				if (gd.allElements[i].recipes[j].ingredient1 == e || gd.allElements[i].recipes[j].ingredient2 == e)
-				{
-					if (singelton.unlockedElements.Contains(gd.allElements[i]) == false)
-					{
-						zeroOrOne = false;
-						if (gd.allElements[i].parentElement == null)
-							three = false;
-					}
-
-					two = false;
-				}
-
-		return two ? 2 : ((three && zeroOrOne == false ? 3 : (zeroOrOne ? 1 : 0)));
 	}
 
 	#endregion

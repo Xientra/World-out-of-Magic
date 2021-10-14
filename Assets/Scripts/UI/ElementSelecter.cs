@@ -135,7 +135,7 @@ public class ElementSelecter : MonoBehaviour
 			}
 			else
 			{
-				ed.Element = null;
+				ed.ElementContainer = null;
 				ed.SetActive(false);
 			}
 		}

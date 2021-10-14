@@ -66,7 +66,6 @@ public class Combiner : MonoBehaviour
 			{
 				if (newDiscovery == true)
 				{
-					// some animation
 					AudioManager.singelton.PlayElementDiscoveredSound();
 
 					outputDisplay.Element = e;
@@ -78,7 +77,6 @@ public class Combiner : MonoBehaviour
 				}
 				else
 				{
-					// some animation
 					AudioManager.singelton.PlayElementDiscoveredSound();
 
 					outputDisplay.Element = e;

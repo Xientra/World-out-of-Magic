@@ -14,6 +14,12 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 		get => elementContainer;
 		set
 		{
+			if (value == null)
+			{
+				Clear();
+				return;
+			}
+
 			elementContainer = value;
 			element = elementContainer.e;
 			UpdateUI();
@@ -27,9 +33,13 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 		get => element;
 		set
 		{
+			if (value == null)
+			{
+				Clear();
+				return;
+			}
+
 			element = value;
-			if (element == null)
-				elementContainer = null;
 			UpdateUI();
 		}
 	}
@@ -128,7 +138,7 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 				elementState = elementContainer.State;
 			else if (useElementStateFallback)
 			{
-				elementState = GameData.ElementCombinationStatus(element);
+				elementState = ElementContainer.ElementCombinationStatus(element);
 				Debug.LogWarning("Used Fallback to GameData.ElementCombinationStatus for element display with element: " + element.name);
 			}
 
@@ -157,6 +167,7 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	public void Clear()
 	{
 		element = null;
+		elementContainer = null;
 		ClearUI();
 	}
 
@@ -199,12 +210,6 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 		this.gameObject.SetActive(value);
 	}
 
-	// Update the UI everytime there is a change in the inspector
-	private void OnValidate()
-	{
-		UpdateUI();
-	}
-
 	public void OnPointerEnter(PointerEventData eventData)
 	{
 		OnHover(true);
@@ -224,9 +229,12 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 		if (infoButton != null)
 			infoButton.gameObject.SetActive(value);
 
-		if (showHoverDisplay && element != null)
+		if (showHoverDisplay && ElementNameTooltip.singelton != null)
 			if (value == true)
-				ElementNameTooltip.singelton.Display(element.name, (RectTransform)transform);
+			{
+				if (element != null)
+					ElementNameTooltip.singelton.Display(element.name, (RectTransform)transform);
+			}
 			else
 				ElementNameTooltip.singelton.Hide();
 	}
@@ -238,5 +246,11 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 		else
 			FullScreenElementDisplay.singelton.Display(element);
 		OnHover(false);
+	}
+
+	// Update the UI everytime there is a change in the inspector
+	private void OnValidate()
+	{
+		UpdateUI();
 	}
 }
