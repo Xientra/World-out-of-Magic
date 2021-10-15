@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Continent
   m_EditorClassIdentifier: 
   importance: 999
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: c2dfae27e379c9c44b27c0033fdc3020, type: 3}
   category: Geology
   parentElement: {fileID: 0}
   description: 'On the Contient [Name] there are [number (5?)] Kingdoms.

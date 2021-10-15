@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lightning Strike
   m_EditorClassIdentifier: 
   importance: 999
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 26c2d97c40f213748875bb0e33866e45, type: 3}
   category: _
   parentElement: {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
   description: 'A highly learned spell for all elemental mages even though it has

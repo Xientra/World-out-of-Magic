@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Undead Expanse
   m_EditorClassIdentifier: 
   importance: 999
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: d3cf7a92d6d0e9b4fbe737c1ae5d431d, type: 3}
   category: _
   parentElement: {fileID: 11400000, guid: 8558394a57adc6e4f9a83c29da368504, type: 2}
   description: 'The magic of cursed soil.

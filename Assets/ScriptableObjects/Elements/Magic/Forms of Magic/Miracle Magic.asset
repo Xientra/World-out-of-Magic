@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Miracle Magic
   m_EditorClassIdentifier: 
   importance: 999
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 3e45cf173a194ce4894e8bcce99397ee, type: 3}
   category: Magic
   parentElement: {fileID: 0}
   description: "The highest form of Soul Arts: Miracle \nMagic.\nAlso the highest

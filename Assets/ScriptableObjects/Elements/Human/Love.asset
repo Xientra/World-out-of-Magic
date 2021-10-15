@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Love
   m_EditorClassIdentifier: 
   importance: 999
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 99f2171f6be77ee4aa5cd60098f4efc2, type: 3}
   category: Human
   parentElement: {fileID: 0}
   description: Idk what this is

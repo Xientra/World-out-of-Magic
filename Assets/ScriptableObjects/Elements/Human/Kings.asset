@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Kings
   m_EditorClassIdentifier: 
   importance: 999
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 7d9157906fa172b4785dc29783274cde, type: 3}
   category: Human
   parentElement: {fileID: 0}
   description: 'Kings are humans ruling over a Kingdom inhabited by other humans.
