@@ -199,6 +199,18 @@ public class GameData : MonoBehaviour
 		return result;
 	}
 
+	/// <summary> Do not use at runtime pls. O(#combinations). </summary>
+	public static Element ResultOfRecipe(Recipe r)
+	{
+		GameData gd = GameData.singelton != null ? GameData.singelton : GameObject.FindGameObjectWithTag("GameController").GetComponent<GameData>();
+
+		for (int i = 0; i < gd.allElements.Length; i++)
+			for (int j = 0; j < gd.allElements[i].recipes.Length; j++)
+				if (gd.allElements[i].recipes[j] == r)
+					return gd.allElements[i];
+
+		return null;
+	}
 	#endregion
 
 

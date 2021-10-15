@@ -10,28 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Fey Forest
+  m_Name: Crystal Forest
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
   category: Geology
   parentElement: {fileID: 0}
-  description: 'Fey Forests or also just called Giant Forests are enourmous forests
-    with trees and plantlife that reaches enourmous sizes.
+  description: 'A Forest containing translucent light blue crystals that can absorb
+    and store small amounts of magic.
 
-    They mark the edges
-    or human civilazation and little tales are told about what lies beyond them.
+    These crystals slowly grow over time,
+    given the amount of magic they absorb.
 
-    When
-    faries have not claimed them already monsters will be numerous here.'
+    The size of these crystals range
+    from the size of a hand to gigantic shards taller than the trees around it.'
   recipes:
   - ingredient1: {fileID: 11400000, guid: 88868aae9f84d194bac521e02ae9309e, type: 2}
-    ingredient2: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
+    ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
     explanation: 
   - ingredient1: {fileID: 11400000, guid: a86e39616077d4b4f91fcdfdb3a2d4cf, type: 2}
-    ingredient2: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
+    ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
     explanation: 
   subElements: []
-  id: dcc175dc81b25714fbb581983cb6c7ea
-  approved: 1
-  id_inspection: dcc175dc81b25714fbb581983cb6c7ea
+  id: de1666bbdac4fff43854efa66081825f
+  approved: 0
+  id_inspection: de1666bbdac4fff43854efa66081825f

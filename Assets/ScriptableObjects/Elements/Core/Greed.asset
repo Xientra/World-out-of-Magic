@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 21300000, guid: 816a6c94403823a4a8558931b2edb4cc, type: 3}
-  category: Core
+  category: Human
   parentElement: {fileID: 0}
   description: 'Coming from the humans selfishness and the greates reason for conflict
     between humans.

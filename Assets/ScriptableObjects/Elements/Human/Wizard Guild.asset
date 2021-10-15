@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
-  category: Geology
+  category: Human
   parentElement: {fileID: 0}
   description: 'The Wizard Guild is a powerfull institution overseeing the whole
     continent and edjucating people in magic and controlling what spells are forbidden

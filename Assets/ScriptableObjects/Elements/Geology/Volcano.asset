@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Undead
+  m_Name: Volcano
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
-  category: Monster
+  category: Geology
   parentElement: {fileID: 0}
-  description: Zombies and Skelletons of the once living.
+  description: '[No Description Yet]'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
-    ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
+  - ingredient1: {fileID: 11400000, guid: a86e39616077d4b4f91fcdfdb3a2d4cf, type: 2}
+    ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
     explanation: 
   subElements: []
-  id: 87ebc582f2c2a0c489aa2f222ac3ed2a
+  id: e4a4c648487d71644b100ba30a5ac46b
   approved: 0
-  id_inspection: 87ebc582f2c2a0c489aa2f222ac3ed2a
+  id_inspection: e4a4c648487d71644b100ba30a5ac46b

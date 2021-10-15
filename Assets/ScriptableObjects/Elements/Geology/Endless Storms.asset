@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
-  m_Name: Dryads
+  m_Name: Endless Storms
   m_EditorClassIdentifier: 
   importance: 999
   image: {fileID: 0}
-  category: Nature
+  category: Geology
   parentElement: {fileID: 0}
-  description: 'A fairy deeply connected to nature.
-
-    Some call them guardians
-    of nature but only few of them possess the ability to properly fight.'
+  description: '[No Description Yet]'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 7e8cd74f7986397449a61e0fff840423, type: 2}
+  - ingredient1: {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
     ingredient2: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
     explanation: 
+  - ingredient1: {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
+    ingredient2: {fileID: 11400000, guid: a86e39616077d4b4f91fcdfdb3a2d4cf, type: 2}
+    explanation: 
   subElements: []
-  id: f0d39961d50d75b45a7cd2133835bd82
-  approved: 1
-  id_inspection: f0d39961d50d75b45a7cd2133835bd82
+  id: 6509ff56e01d7744abf4df13432dd948
+  approved: 0
+  id_inspection: 6509ff56e01d7744abf4df13432dd948

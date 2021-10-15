@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Jungle
+  m_EditorClassIdentifier: 
+  importance: 999
+  image: {fileID: 0}
+  category: Geology
+  parentElement: {fileID: 0}
+  description: 'Jungle, unlike normal forests have been artificially, magically enhanced
+    by someone or something in the past. This is usually done to guard something
+    like a temple that should be forgotten by the world or the hord of a Dragon that
+    should never be touched by anyone.
+
+    Jungles are not inherently magic like
+    Fey Forests, nor are they a monster like Living Plants but magic has increased
+    the vitatily of the plants and animals and shaped the environment to be more
+    dangerous.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: a86e39616077d4b4f91fcdfdb3a2d4cf, type: 2}
+    ingredient2: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
+    explanation: 
+  - ingredient1: {fileID: 11400000, guid: a86e39616077d4b4f91fcdfdb3a2d4cf, type: 2}
+    ingredient2: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
+    explanation: 
+  subElements: []
+  id: 76f9583331c265f4dad185785cee375e
+  approved: 0
+  id_inspection: 76f9583331c265f4dad185785cee375e

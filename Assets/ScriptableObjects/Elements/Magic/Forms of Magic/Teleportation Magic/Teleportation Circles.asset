@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Teleportation Circles
+  m_EditorClassIdentifier: 
+  importance: 999
+  image: {fileID: 0}
+  category: _
+  parentElement: {fileID: 11400000, guid: 0bc6929799feaf346893da6dab448989, type: 2}
+  description: 'In all greater Cities there are or is a Teleportation Circle. A highy
+    guarded place that serves as a gateway to cities that also posess such a Teleportation
+    Circle.
+
+    These Circles are maintained by the Wizard Guild and one of the
+    most known achievements of the Wizard Guild.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
+    ingredient2: {fileID: 11400000, guid: 0bc6929799feaf346893da6dab448989, type: 2}
+    explanation: 
+  - ingredient1: {fileID: 11400000, guid: 7216cd8e114b7394eb6f516aab6ecdbe, type: 2}
+    ingredient2: {fileID: 11400000, guid: 0bc6929799feaf346893da6dab448989, type: 2}
+    explanation: 
+  subElements: []
+  id: 2dce5250b367a804385d03b1077919f5
+  approved: 0
+  id_inspection: 2dce5250b367a804385d03b1077919f5

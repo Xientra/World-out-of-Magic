@@ -29,7 +29,7 @@ public class ElementInspector : Editor
 			List<Recipe> rs = GameData.RecipiesWithElement(e);
 			Debug.Log(rs.Count == 0 ? ("No \"" + e.name + "\" is not in a recipe.") : ("Yes \"" + e.name + "\" is in a recipe."));
 			foreach (Recipe r in rs)
-				Debug.Log(r.ingredient1.name + " + " + r.ingredient2.name + " give something.");
+				Debug.Log(r.ingredient1.name + " + " + r.ingredient2.name + " = " + GameData.ResultOfRecipe(r).name);
 		}
 	}
 

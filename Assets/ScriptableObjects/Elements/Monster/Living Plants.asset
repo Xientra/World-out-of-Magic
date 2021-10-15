@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Living Plants
+  m_EditorClassIdentifier: 
+  importance: 999
+  image: {fileID: 0}
+  category: Monster
+  parentElement: {fileID: 0}
+  description: "There are many different forms of living plants and the line between
+    them and fey, like for example treants or Dryads is often very blury.\nLiving
+    Plants however are distinct in that they have the characteristics of monsters
+    that fey do not. Namely praying on Humans and being of generelly lower inteligence.
+    \nEven though they do have the ability to walk, burror or in general move around
+    they most of the time disguise themselfs among regular plants and then wait until
+    potential pray walkes into their ambush."
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
+    ingredient2: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
+    explanation: 
+  subElements: []
+  id: fe569f840ac039c4e9544070f74ff611
+  approved: 0
+  id_inspection: fe569f840ac039c4e9544070f74ff611
