@@ -36,7 +36,11 @@ MonoBehaviour:
   - ingredient1: {fileID: 11400000, guid: 6d541093eb4ae484782f3447bd381b5e, type: 2}
     ingredient2: {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
     explanation: 
-  subElements: []
+  subElements:
+  - {fileID: 11400000, guid: fcd173a5104b25b46aed138983bec6da, type: 2}
+  - {fileID: 11400000, guid: fa03d07774e1acd499c192866a74ada9, type: 2}
+  - {fileID: 11400000, guid: c6e983190a2fd1242988442df080abe1, type: 2}
+  - {fileID: 11400000, guid: 06dee5ae658ca1c4bac080df4a0c72d5, type: 2}
   id: e37d06104a4e458489b6e39f2c7a278a
   approved: 0
   id_inspection: e37d06104a4e458489b6e39f2c7a278a

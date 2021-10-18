@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Ressurection
+  m_EditorClassIdentifier: 
+  importance: 999
+  image: {fileID: 0}
+  category: _
+  parentElement: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
+  description: 'The ressurection of a dead human. However with a few limitations:
+    first it cannot be longer than 3 days after the person died and the body has
+    to be in sufficient condition.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
+    ingredient2: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+    explanation: 
+  - ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
+    ingredient2: {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
+    explanation: 
+  - ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
+    ingredient2: {fileID: 11400000, guid: 7e3765da29c9cd8449ecb69d36170909, type: 2}
+    explanation: 
+  subElements: []
+  id: 0b8a7305429f24e4384a837209c6fa81
+  approved: 0
+  id_inspection: 0b8a7305429f24e4384a837209c6fa81

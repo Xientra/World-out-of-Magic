@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Full Recovery
+  m_EditorClassIdentifier: 
+  importance: 999
+  image: {fileID: 0}
+  category: _
+  parentElement: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
+  description: Fully heals a single target from any illness, wounds even scars or
+    lost limbs.
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
+    ingredient2: {fileID: 11400000, guid: cbbb5aa9b5d5a6743aa8ce47fdd5c737, type: 2}
+    explanation: 
+  subElements: []
+  id: cc68911b0071c8247b53c508cc10e925
+  approved: 0
+  id_inspection: cc68911b0071c8247b53c508cc10e925

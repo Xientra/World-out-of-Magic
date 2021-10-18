@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Holy Ground
+  m_EditorClassIdentifier: 
+  importance: 999
+  image: {fileID: 0}
+  category: _
+  parentElement: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
+  description: 'Creating a immense magic circle on the ground shimmering in golden
+    white light.
+
+    Any human in that circle has increased stamina and physical
+    strength and can not die. They can suffer from deadly wounds and pass out but
+    as long as the spell is active simply healing the wounds will keep anyone alive.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
+    ingredient2: {fileID: 11400000, guid: 333b2a2385a6a274b8d993cf38c78d75, type: 2}
+    explanation: 
+  subElements: []
+  id: 346bb0bf481124c4899075f5f18227f4
+  approved: 0
+  id_inspection: 346bb0bf481124c4899075f5f18227f4

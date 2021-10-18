@@ -23,11 +23,14 @@ MonoBehaviour:
     These Circles are maintained by the Wizard Guild and one of the
     most known achievements of the Wizard Guild.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
-    ingredient2: {fileID: 11400000, guid: 0bc6929799feaf346893da6dab448989, type: 2}
+  - ingredient1: {fileID: 11400000, guid: 0bc6929799feaf346893da6dab448989, type: 2}
+    ingredient2: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
     explanation: 
-  - ingredient1: {fileID: 11400000, guid: 7216cd8e114b7394eb6f516aab6ecdbe, type: 2}
-    ingredient2: {fileID: 11400000, guid: 0bc6929799feaf346893da6dab448989, type: 2}
+  - ingredient1: {fileID: 11400000, guid: 0bc6929799feaf346893da6dab448989, type: 2}
+    ingredient2: {fileID: 11400000, guid: 7216cd8e114b7394eb6f516aab6ecdbe, type: 2}
+    explanation: 
+  - ingredient1: {fileID: 11400000, guid: 0bc6929799feaf346893da6dab448989, type: 2}
+    ingredient2: {fileID: 11400000, guid: 333b2a2385a6a274b8d993cf38c78d75, type: 2}
     explanation: 
   subElements: []
   id: 2dce5250b367a804385d03b1077919f5

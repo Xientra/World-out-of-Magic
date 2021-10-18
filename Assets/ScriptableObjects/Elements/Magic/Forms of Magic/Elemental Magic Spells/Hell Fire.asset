@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ebaa756e5387c4fbe5af34696b8549, type: 3}
+  m_Name: Hell Fire
+  m_EditorClassIdentifier: 
+  importance: 999
+  image: {fileID: 0}
+  category: _
+  parentElement: {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
+  description: 'Ethernal fire that cannot be put out by water or other normal means.
+
+    Incredible
+    dangerous.'
+  recipes:
+  - ingredient1: {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
+    ingredient2: {fileID: 11400000, guid: ca0ac0a2b7f62df4aa2bb5fe0cee0559, type: 2}
+    explanation: 
+  subElements: []
+  id: 2e768372125d32c4786ce0e50797be49
+  approved: 0
+  id_inspection: 2e768372125d32c4786ce0e50797be49
