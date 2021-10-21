@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
 
 	private AudioSource audioSource;
 
+	public bool muted = false;
 
 	private void Awake()
 	{
@@ -54,6 +55,9 @@ public class AudioManager : MonoBehaviour
 
 	private void PlayAudioUseType(AudioUseType aut)
 	{
+		if (muted)
+			return;
+
 		audioSource.volume = aut.volume;
 		audioSource.pitch = aut.pitch;
 
@@ -67,6 +71,9 @@ public class AudioManager : MonoBehaviour
 
 	private void PlayAdditionalClip(AudioClip clip, float volume, float pitch)
 	{
+		if (muted)
+			return;
+
 		AudioSource newAudioSource = gameObject.AddComponent<AudioSource>();
 
 		newAudioSource.volume = volume;
