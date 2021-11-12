@@ -138,6 +138,9 @@ public class GameData : MonoBehaviour
 		unlockedElements.Add(e);
 
 		ElementContainer newEc = new ElementContainer(e, ElementContainer.ElementCombinationStatus(e));
+		newEc.glow = true;
+		if (newEc.e.parentElement != null)
+			unlockedElementContainer.Find(ec => ec.e == newEc.e.parentElement).glow = true;
 
 		// checks if isDone has to be set on any of the elements that make this element
 		for (int i = 0; i < e.recipes.Length; i++)

@@ -80,6 +80,8 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	[Space(5)]
 	public RecipeListDisplay recipeListDisplay = null;
 	public SubElementListDisplay subElementListDisplay = null;
+	[Space(5)]
+	public Image glowImage;
 
 	public void UpdateUI()
 	{
@@ -130,6 +132,8 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 				image.sprite = null;
 			}
 		}
+
+		glowImage?.gameObject.SetActive(elementContainer != null ? elementContainer.glow : false);
 
 		if (frame != null)
 		{
@@ -187,6 +191,7 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 		if (recipeListDisplay != null)
 			recipeListDisplay.SetRecipes(null);
 
+		glowImage?.gameObject.SetActive(elementContainer != null ? elementContainer.glow : false);
 
 		if (image != null)
 		{
@@ -228,6 +233,13 @@ public class ElementDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
 		if (infoButton != null)
 			infoButton.gameObject.SetActive(value);
+
+		if (value == true)
+			if (elementContainer != null)
+			{
+				elementContainer.glow = false;
+				glowImage?.gameObject.SetActive(false);
+			}
 
 		if (showHoverDisplay && ElementNameTooltip.singelton != null)
 			if (value == true)

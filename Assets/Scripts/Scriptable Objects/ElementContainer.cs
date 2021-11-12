@@ -10,6 +10,8 @@ public class ElementContainer
 	public Element e { get => element; set => element = value; }
 	public Element element;
 
+	public bool glow = false;
+
 	[Tooltip("True if this element is not part in any combination.")]
 	public bool isFinal = false;
 	[Tooltip("True if all combination with this element have been exhausted.")]
