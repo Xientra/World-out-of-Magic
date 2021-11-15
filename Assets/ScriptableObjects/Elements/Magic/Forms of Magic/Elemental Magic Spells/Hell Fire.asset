@@ -21,7 +21,8 @@ MonoBehaviour:
     Incredible
     dangerous.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
     ingredient2: {fileID: 11400000, guid: ca0ac0a2b7f62df4aa2bb5fe0cee0559, type: 2}
     explanation: 
   subElements: []

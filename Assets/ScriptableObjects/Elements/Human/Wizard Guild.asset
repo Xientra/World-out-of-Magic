@@ -27,7 +27,8 @@ MonoBehaviour:
     These wizards are called Gray
     WIzards.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: ec90d4955c85dea4cac9f670a2bfab6a, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: ec90d4955c85dea4cac9f670a2bfab6a, type: 2}
     ingredient2: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
     explanation: 
   subElements: []

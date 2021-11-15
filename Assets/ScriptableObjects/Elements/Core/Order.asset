@@ -18,10 +18,12 @@ MonoBehaviour:
   parentElement: {fileID: 0}
   description: Order and Logic, the thing humans made their strongest tool.
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
     ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
     explanation: From Chaos came Order.
-  - ingredient1: {fileID: 11400000}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000}
     ingredient2: {fileID: 11400000}
     explanation: Continuing to bring more order into ordered things is a pointless
       task many wizards are doing their entire lifes.

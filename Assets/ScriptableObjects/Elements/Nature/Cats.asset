@@ -41,7 +41,8 @@ MonoBehaviour:
     of cats and the other way around. Cats are attracted to everything magical and
     their reactions help wizards get a grasp on certian magical effects.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: aa5ece70715e8cf4aabb447a2fd7ff51, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: aa5ece70715e8cf4aabb447a2fd7ff51, type: 2}
     ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
     explanation: 
   subElements: []

@@ -57,7 +57,8 @@ MonoBehaviour:
     waters, that require breaks but it is very usefull in combat, where it opens
     up a whole region to escape to or attact from.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: aa5ece70715e8cf4aabb447a2fd7ff51, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: aa5ece70715e8cf4aabb447a2fd7ff51, type: 2}
     ingredient2: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
     explanation: 
   subElements: []

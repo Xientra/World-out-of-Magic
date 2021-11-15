@@ -24,10 +24,12 @@ MonoBehaviour:
     The
     only other lifeform that has greed are dragons.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
     ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
     explanation: 
-  - ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
     ingredient2: {fileID: 11400000, guid: 78632573fee173f48b6ec24760a3dbc7, type: 2}
     explanation: 
   subElements: []

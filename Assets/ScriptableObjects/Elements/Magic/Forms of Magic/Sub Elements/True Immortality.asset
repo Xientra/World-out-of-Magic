@@ -22,7 +22,8 @@ MonoBehaviour:
     the souls and magic of other being, mostly humans, the caster is able to add
     their lifespan to their own.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 6d541093eb4ae484782f3447bd381b5e, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 6d541093eb4ae484782f3447bd381b5e, type: 2}
     ingredient2: {fileID: 11400000, guid: 550ce6dfadea58647b92ca49869b33ca, type: 2}
     explanation: 
   subElements: []

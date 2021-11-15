@@ -18,7 +18,8 @@ MonoBehaviour:
   parentElement: {fileID: 0}
   description: The end of all life.
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
     ingredient2: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
     explanation: 
   subElements: []

@@ -27,12 +27,14 @@ MonoBehaviour:
     It is speculated that knowledge and emotions a human experiences
     are the things that make their soul stronger.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: cbbb5aa9b5d5a6743aa8ce47fdd5c737, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: cbbb5aa9b5d5a6743aa8ce47fdd5c737, type: 2}
     ingredient2: {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
     explanation: Ressurection as never possible though the healing capabilities that
       Polymorth provided but in it's attempts humans found out about a incredibly
       importantpart of their being.
-  - ingredient1: {fileID: 11400000, guid: 41698e7b1811be641bf7fece7b1a4077, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 41698e7b1811be641bf7fece7b1a4077, type: 2}
     ingredient2: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
     explanation: 
   subElements: []

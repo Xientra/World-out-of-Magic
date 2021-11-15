@@ -28,7 +28,8 @@ MonoBehaviour:
     arts. As it was discovered a soul can be destroyed creating insane amounts of
     magic in the process making it a field of interrest in all kinds of applications.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 2e8679f9f4025ee46a55ad446b02b411, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 2e8679f9f4025ee46a55ad446b02b411, type: 2}
     ingredient2: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
     explanation: 
   subElements: []

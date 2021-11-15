@@ -24,7 +24,8 @@ MonoBehaviour:
     to complete but has incredibly powerfull effects at the end like causing earthquakes
     or shooting a gigantic Lightning spear from the sky.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: a4163f0df76852342a6d5e4fd9d3d6e1, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: a4163f0df76852342a6d5e4fd9d3d6e1, type: 2}
     ingredient2: {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
     explanation: 
   subElements: []

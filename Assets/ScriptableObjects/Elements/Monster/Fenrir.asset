@@ -28,10 +28,12 @@ MonoBehaviour:
     indefinitely however there are not many really strong Fenrir compared to how
     many there are in total.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
     ingredient2: {fileID: 11400000, guid: 7b79fccc6e0fc13479f13dcd2e5f41fa, type: 2}
     explanation: 
-  - ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
     ingredient2: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
     explanation: 
   subElements: []

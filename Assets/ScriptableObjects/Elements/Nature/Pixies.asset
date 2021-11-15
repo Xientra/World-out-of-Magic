@@ -23,7 +23,8 @@ MonoBehaviour:
 
     [This is kinda a duplicate of Fairies]'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 7e8cd74f7986397449a61e0fff840423, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 7e8cd74f7986397449a61e0fff840423, type: 2}
     ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
     explanation: 
   subElements: []

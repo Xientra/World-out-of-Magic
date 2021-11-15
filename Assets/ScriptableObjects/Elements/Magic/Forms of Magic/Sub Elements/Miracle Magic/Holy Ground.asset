@@ -23,7 +23,8 @@ MonoBehaviour:
     strength and can not die. They can suffer from deadly wounds and pass out but
     as long as the spell is active simply healing the wounds will keep anyone alive.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
     ingredient2: {fileID: 11400000, guid: 333b2a2385a6a274b8d993cf38c78d75, type: 2}
     explanation: 
   subElements: []

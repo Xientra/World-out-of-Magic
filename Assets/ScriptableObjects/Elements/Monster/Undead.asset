@@ -18,7 +18,8 @@ MonoBehaviour:
   parentElement: {fileID: 0}
   description: Zombies and Skelletons of the once living.
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
     ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
     explanation: 
   subElements: []

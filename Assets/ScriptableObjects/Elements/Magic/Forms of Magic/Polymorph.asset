@@ -27,7 +27,8 @@ MonoBehaviour:
     the ability to change onces body or parts of it into animals or have body stimulating
     effects, like numbing pain.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
     ingredient2: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
     explanation: 
   subElements: []

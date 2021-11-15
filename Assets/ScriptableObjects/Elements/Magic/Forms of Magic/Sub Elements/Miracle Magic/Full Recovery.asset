@@ -19,7 +19,8 @@ MonoBehaviour:
   description: Fully heals a single target from any illness, wounds even scars or
     lost limbs.
   recipes:
-  - ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
     ingredient2: {fileID: 11400000, guid: cbbb5aa9b5d5a6743aa8ce47fdd5c737, type: 2}
     explanation: 
   subElements: []

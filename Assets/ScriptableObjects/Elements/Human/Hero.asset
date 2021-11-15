@@ -23,7 +23,8 @@ MonoBehaviour:
     from a few Fenris but ancient monsters can only be beaten by the most legendary
     of heroes.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 7b1e6a61b9ebc98438e670beffb19e14, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 7b1e6a61b9ebc98438e670beffb19e14, type: 2}
     ingredient2: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
     explanation: 
   subElements: []

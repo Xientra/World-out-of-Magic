@@ -32,7 +32,8 @@ MonoBehaviour:
     and effort it takes to learn it. And so very very few people focus entirely on
     Magic Manipulation Magic.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
     ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
     explanation: 
   subElements:

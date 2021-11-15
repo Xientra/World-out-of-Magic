@@ -23,10 +23,12 @@ MonoBehaviour:
     In addition to perpetual foggy areas, swamps and dense forests
     are also often used locations for these traps.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 88868aae9f84d194bac521e02ae9309e, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 88868aae9f84d194bac521e02ae9309e, type: 2}
     ingredient2: {fileID: 11400000, guid: 0bc6929799feaf346893da6dab448989, type: 2}
     explanation: 
-  - ingredient1: {fileID: 11400000, guid: a86e39616077d4b4f91fcdfdb3a2d4cf, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: a86e39616077d4b4f91fcdfdb3a2d4cf, type: 2}
     ingredient2: {fileID: 11400000, guid: 0bc6929799feaf346893da6dab448989, type: 2}
     explanation: 
   subElements: []

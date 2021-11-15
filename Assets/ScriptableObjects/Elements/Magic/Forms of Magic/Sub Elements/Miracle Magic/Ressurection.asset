@@ -20,13 +20,16 @@ MonoBehaviour:
     first it cannot be longer than 3 days after the person died and the body has
     to be in sufficient condition.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
     ingredient2: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
     explanation: 
-  - ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
     ingredient2: {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
     explanation: 
-  - ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
     ingredient2: {fileID: 11400000, guid: 7e3765da29c9cd8449ecb69d36170909, type: 2}
     explanation: 
   subElements: []

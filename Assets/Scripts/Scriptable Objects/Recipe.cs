@@ -5,6 +5,9 @@ using System.Collections.Generic;
 [Serializable]
 public class Recipe
 {
+	[HideInInspector]
+	public Element result;
+
 	public Element ingredient1;
 	public Element ingredient2;
 

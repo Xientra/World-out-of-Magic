@@ -70,6 +70,11 @@ public class Element : ScriptableObject
 		// ----- parent/sub elements ----- //
 		if (parentElement != null)
 			category = "_";
+
+		// ----- recipe result ----- //
+		if (recipes != null)
+			for (int i = 0; i < recipes.Length; i++)
+				recipes[i].result = this;
 	}
 #endif
 }

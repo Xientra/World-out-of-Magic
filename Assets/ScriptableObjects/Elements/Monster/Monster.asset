@@ -32,7 +32,8 @@ MonoBehaviour:
     that has surpassed this filter is called ancient because at that time it has
     lived for few centuries.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
     ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
     explanation: 
   subElements: []

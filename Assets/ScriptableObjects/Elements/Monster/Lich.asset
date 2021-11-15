@@ -22,7 +22,8 @@ MonoBehaviour:
     Now most lich are
     one of the most evil and powerfull creatures to exist.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: ec90d4955c85dea4cac9f670a2bfab6a, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: ec90d4955c85dea4cac9f670a2bfab6a, type: 2}
     ingredient2: {fileID: 11400000, guid: 550ce6dfadea58647b92ca49869b33ca, type: 2}
     explanation: 
   subElements: []

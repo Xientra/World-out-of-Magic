@@ -26,7 +26,8 @@ MonoBehaviour:
     In some cities Kings take the second roll behind
     Wizards Unions or even Merchant Guilds.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: f367d0dfa5622e145a90d4127bdf9c53, type: 2}
     ingredient2: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
     explanation: 
   subElements: []

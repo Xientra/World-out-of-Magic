@@ -25,7 +25,8 @@ MonoBehaviour:
     This form of magic is the most common among
     all of the Wizards, as it has the best combat applicability.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
     ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
     explanation: 
   subElements:

@@ -26,10 +26,12 @@ MonoBehaviour:
     the vitatily of the plants and animals and shaped the environment to be more
     dangerous.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: a86e39616077d4b4f91fcdfdb3a2d4cf, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: a86e39616077d4b4f91fcdfdb3a2d4cf, type: 2}
     ingredient2: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
     explanation: 
-  - ingredient1: {fileID: 11400000, guid: a86e39616077d4b4f91fcdfdb3a2d4cf, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: a86e39616077d4b4f91fcdfdb3a2d4cf, type: 2}
     ingredient2: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
     explanation: 
   subElements: []

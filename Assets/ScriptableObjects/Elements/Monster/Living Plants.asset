@@ -24,7 +24,8 @@ MonoBehaviour:
     they most of the time disguise themselfs among regular plants and then wait until
     potential pray walkes into their ambush."
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 65fbfd893e4065449810b5163899cf37, type: 2}
     ingredient2: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
     explanation: 
   subElements: []

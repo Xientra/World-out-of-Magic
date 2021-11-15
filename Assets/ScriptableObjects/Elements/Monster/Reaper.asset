@@ -32,7 +32,8 @@ MonoBehaviour:
     Many soliders tell to have seen
     him on the battlefield where he claims the souls of those fallen.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
     ingredient2: {fileID: 11400000, guid: d3d0e4f3ac043624a965f33ec9ab4def, type: 2}
     explanation: 
   subElements: []

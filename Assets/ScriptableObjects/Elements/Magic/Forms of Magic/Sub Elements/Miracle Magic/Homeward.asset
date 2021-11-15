@@ -20,7 +20,8 @@ MonoBehaviour:
     This spell is able to send a person to a place he or she desires to be. If none
     is specified it will send the person the the place closest to their heart.
   recipes:
-  - ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
     ingredient2: {fileID: 11400000, guid: 0bc6929799feaf346893da6dab448989, type: 2}
     explanation: 
   subElements: []

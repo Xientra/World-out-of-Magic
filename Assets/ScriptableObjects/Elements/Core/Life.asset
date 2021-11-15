@@ -18,7 +18,8 @@ MonoBehaviour:
   parentElement: {fileID: 0}
   description: The fickle things between nothing and death.
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
     ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
     explanation: 
   subElements: []

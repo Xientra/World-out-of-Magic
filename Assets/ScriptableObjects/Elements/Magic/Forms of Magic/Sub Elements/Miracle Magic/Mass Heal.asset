@@ -20,7 +20,8 @@ MonoBehaviour:
     instead only touches the souls of the targets and showes their souls how to heal
     themselfs.
   recipes:
-  - ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: fcc05d30945a6bf45a7954016e1f5adb, type: 2}
     ingredient2: {fileID: 11400000, guid: 561522be9487aab40985753c918f392a, type: 2}
     explanation: 
   subElements: []

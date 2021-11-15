@@ -23,7 +23,8 @@ MonoBehaviour:
     at least the reanimation of animals bodies is not forbidden by the Wizard Guild
     the use of this magic is highly shunned by the common folk.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 399da410926c24e4bb85cd9c748d3028, type: 2}
     ingredient2: {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
     explanation: 
   subElements: []

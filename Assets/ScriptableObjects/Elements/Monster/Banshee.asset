@@ -22,7 +22,8 @@ MonoBehaviour:
     The cry of these creatures is known to cause
     mass panic and fear and sometimes even death.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 7e8cd74f7986397449a61e0fff840423, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 7e8cd74f7986397449a61e0fff840423, type: 2}
     ingredient2: {fileID: 11400000, guid: 8272b3fec77ba9946b747c8ae3166c4a, type: 2}
     explanation: 
   subElements: []

@@ -21,7 +21,8 @@ MonoBehaviour:
     Some call them guardians
     of nature but only few of them possess the ability to properly fight.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 7e8cd74f7986397449a61e0fff840423, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 7e8cd74f7986397449a61e0fff840423, type: 2}
     ingredient2: {fileID: 11400000, guid: fe1e31a8089356f4f83ef25fef167dc9, type: 2}
     explanation: 
   subElements: []

@@ -28,10 +28,12 @@ MonoBehaviour:
     If never clensed it will
     turn the whole world into undead.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 8558394a57adc6e4f9a83c29da368504, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 8558394a57adc6e4f9a83c29da368504, type: 2}
     ingredient2: {fileID: 11400000, guid: 7e3765da29c9cd8449ecb69d36170909, type: 2}
     explanation: 
-  - ingredient1: {fileID: 11400000, guid: 8558394a57adc6e4f9a83c29da368504, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 8558394a57adc6e4f9a83c29da368504, type: 2}
     ingredient2: {fileID: 11400000, guid: dc87649e49da97148b338911a9000ea2, type: 2}
     explanation: 
   subElements: []

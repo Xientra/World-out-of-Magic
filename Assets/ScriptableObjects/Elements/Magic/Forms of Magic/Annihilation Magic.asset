@@ -29,10 +29,12 @@ MonoBehaviour:
     that any attempts of humans to use it have failed in the past only the titans
     that roamed the earth aeons ago are said to have used this kind of magic.'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: 6d541093eb4ae484782f3447bd381b5e, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 6d541093eb4ae484782f3447bd381b5e, type: 2}
     ingredient2: {fileID: 11400000, guid: 51d65b9ec3aefb346a7b8ee297218965, type: 2}
     explanation: 
-  - ingredient1: {fileID: 11400000, guid: 64fd6f7c4dd57c944a209a9c9e0c3924, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 64fd6f7c4dd57c944a209a9c9e0c3924, type: 2}
     ingredient2: {fileID: 11400000, guid: 03015df837adce3489dac12964a7ebb5, type: 2}
     explanation: 
   subElements:

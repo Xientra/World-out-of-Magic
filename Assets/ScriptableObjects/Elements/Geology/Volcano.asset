@@ -18,7 +18,8 @@ MonoBehaviour:
   parentElement: {fileID: 0}
   description: '[No Description Yet]'
   recipes:
-  - ingredient1: {fileID: 11400000, guid: a86e39616077d4b4f91fcdfdb3a2d4cf, type: 2}
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: a86e39616077d4b4f91fcdfdb3a2d4cf, type: 2}
     ingredient2: {fileID: 11400000, guid: 09840e63ea012a547926dccca97c0749, type: 2}
     explanation: 
   subElements: []
