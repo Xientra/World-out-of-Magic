@@ -202,7 +202,7 @@ public class GameData : MonoBehaviour
 		return result;
 	}
 
-	/// <summary> Do not use at runtime pls. O(#combinations). </summary>
+	/// <summary> Avoid using at runtime pls. O(#combinations). </summary>
 	public static Element ResultOfRecipe(Recipe r)
 	{
 		GameData gd = GameData.singelton != null ? GameData.singelton : GameObject.FindGameObjectWithTag("GameController").GetComponent<GameData>();
@@ -303,6 +303,6 @@ public class SaveData
 		this.unlockedElementIDs = unlockedElementIDs;
 		this.unlockedElementNames = unlockedElementNames;
 	}
-}
 
-#endregion
+	#endregion
+}

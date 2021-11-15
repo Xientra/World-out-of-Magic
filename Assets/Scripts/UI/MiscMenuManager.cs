@@ -20,7 +20,7 @@ public class MiscMenuManager : MonoBehaviour
 
 	public void Btn_ShowHint()
 	{
-		Debug.Log("Tell Game Data to show a hint now...");
+		Debug.Log(HintManager.GetElementWithMostCombinationsRemaining().name);
 	}
 
 	public void Btn_SetSoundeffects(bool value)
