@@ -23,6 +23,10 @@ MonoBehaviour:
     ingredient1: {fileID: 11400000, guid: d71b008e0a6b0d747a30fa1e928a69f0, type: 2}
     ingredient2: {fileID: 11400000, guid: 550ce6dfadea58647b92ca49869b33ca, type: 2}
     explanation: 
+  - result: {fileID: 11400000}
+    ingredient1: {fileID: 11400000, guid: 980d80228da5f2742b257e6cfc0692f9, type: 2}
+    ingredient2: {fileID: 11400000, guid: 550ce6dfadea58647b92ca49869b33ca, type: 2}
+    explanation: 
   subElements: []
   id: a08c6daff3037164580145bbc6a07a21
   approved: 1

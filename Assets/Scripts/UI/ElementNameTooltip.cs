@@ -66,9 +66,9 @@ public class ElementNameTooltip : MonoBehaviour
 
 		RectTransform trans = ((RectTransform)transform);
 
+		// position under whatever hovering over
 		if (newPos.y + trans.sizeDelta.y / 2 > hoverOver.position.y - hoverOver.sizeDelta.y / 2 - verticalSpace)
 			newPos.y = hoverOver.position.y - hoverOver.sizeDelta.y / 2 - trans.sizeDelta.y / 2 - verticalSpace;
-
 
 		// clamp tranform to screen size (or rather the direct parent, which is the canvas)
 		RectTransform parentTransform = ((RectTransform)transform.parent.transform);
@@ -76,6 +76,10 @@ public class ElementNameTooltip : MonoBehaviour
 			newPos.x = parentTransform.position.x + parentTransform.sizeDelta.x / 2 - trans.sizeDelta.x / 2;
 		if (newPos.x - trans.sizeDelta.x / 2 < parentTransform.position.x - parentTransform.sizeDelta.x / 2)
 			newPos.x = parentTransform.position.x - parentTransform.sizeDelta.x / 2 + trans.sizeDelta.x / 2;
+
+		// if the tranform is clipping throught the screen at the bottom, put the tooltip on top instead
+		if (newPos.y - trans.sizeDelta.y / 2 < parentTransform.position.y - parentTransform.sizeDelta.y / 2)
+			newPos.y = hoverOver.position.y + hoverOver.sizeDelta.y / 2 + trans.sizeDelta.y / 2 + verticalSpace;
 
 		transform.position = newPos;
 	}
